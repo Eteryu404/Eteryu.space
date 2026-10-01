@@ -55,7 +55,7 @@ body {
 }
 
 .md-header__ellipsis::after {
-    content: "Baza wiedzy dotycząca prywatności i cyberbezpieczeństwa";
+    content: "Przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności.";
     position: absolute;
     top: 100%;
     left: 0;
