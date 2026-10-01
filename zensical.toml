@@ -1,7 +1,7 @@
 # main project configuration
 [project]
-site_name = "Baza wiedzy Eteryu.space"
-site_description = "Baza wiedzy i techniczne poradniki dotyczące prywatności i cyberbezpieczeństwa."
+site_name = "Eteryu.space"
+site_description = "Przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności."
 site_author = "Eteryu"
 site_url = "https://eteryu.space"
 copyright = "Copyright &copy; 2026 Eteryu"
