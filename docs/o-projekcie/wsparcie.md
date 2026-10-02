@@ -15,7 +15,7 @@ Projekt tworzę samodzielnie, w wolnym czasie. Domena i narzędzia są opłacane
 Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakładać konta, żeby wesprzeć jednorazowo. Nie przyjmuję kryptowalut.
 </small>
 
-## Na co idą wsparcie?
+## Na co idzie wsparcie?
 
 - **Domena i narzędzia.** Opłacam je z własnej kieszeni, bo to one dają projektowi stały adres i niezależność od platform.
 - **Testy i research.** Dostęp do VPN-ów, konta w usługach, czasem sprzęt, który mogę opisać w kontekście prywatności i bezpieczeństwa.
