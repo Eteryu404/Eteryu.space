@@ -1,8 +1,10 @@
 ---
+title: Eteryu.space
 icon: lucide/home
 hide:
   - toc
   - footer
+  - page_title
 ---
 
 # Eteryu.space
@@ -77,11 +79,12 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 
 W sekcji artykułów wychodzę poza ramy instrukcji. Analizuję, dlaczego niektóre rozwiązania przestają być bezpieczne, testuję nowe podejścia do decentralizacji i dyskutuję o filozofii wolności cyfrowej.
 
-[Przejdź do sekcji Artykuły $\rightarrow$](blog/index.md)
+[Przejdź do sekcji Artykuły ➔](blog/index.md){ .md-button }
 
 ---
 
 ## Twoja droga do wolności cyfrowej
-Niezależnie od tego, czy jesteś początkującym użytkownikiem, czy zaawansowanym entuzjastą bezpieczeństwa, Eteryu.space dostarcza narzędzi do świadomego zarządzania własnym śladem w sieci. 
 
-**Zacznij od małych kroków, ale rób je w oparciu o twarde dowody i kryptografię, a nie marketingowe obietnice.**
+> Niezależnie od tego, czy jesteś początkującym użytkownikiem, czy zaawansowanym entuzjastą bezpieczeństwa, Eteryu.space dostarcza narzędzi do świadomego zarządzania własnym śladem w sieci. 
+> 
+> **Zacznij od małych kroków, ale rób je w oparciu o twarde dowody i kryptografię, a nie marketingowe obietnice.**
