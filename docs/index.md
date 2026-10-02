@@ -4,7 +4,6 @@ icon: lucide/home
 hide:
   - toc
   - footer
-  - page_title
 ---
 
 !!! success "Standardy bezpieczeństwa"
