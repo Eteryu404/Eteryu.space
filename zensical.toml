@@ -27,7 +27,10 @@ nav = [
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md"
     ]},
-    { "Artykuły" = ["blog/index.md"] }
+    { "Artykuły" = ["blog/index.md"] },
+    { "O projekcie" = [
+        "o-projekcie/wsparcie.md"
+    ]}
 ]
 
 # theme settings
