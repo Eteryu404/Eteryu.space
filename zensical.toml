@@ -37,9 +37,6 @@ favicon = "assets/img/1552167043208769.png"
 logo = "assets/img/1552167043208769.png"
 language = "pl"
 
-# blog plugin activation (Official Zensical way)
-[project.plugins.blog]
-
 # ui features
 features = [
     "announce.dismiss",
@@ -132,3 +129,6 @@ combine_header_slug = true
 custom_checkbox = true
 
 [project.markdown_extensions.pymdownx.tilde]
+
+# blog plugin activation (Official Zensical way)
+[project.plugins.blog]
