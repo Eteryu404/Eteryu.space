@@ -1,14 +1,10 @@
 ---
-title: Eteryu.space
 icon: lucide/home
 hide:
   - toc
   - footer
   - page_title
 ---
-
-# Eteryu.space
-**Przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności.**
 
 !!! success "Standardy bezpieczeństwa"
     Cyberbezpieczeństwo to proces, a nie cel. Treści na tej stronie podlegają cyklicznej weryfikacji pod kątem najnowszych wektorów ataków i ewolucji modelu Zero Trust.
