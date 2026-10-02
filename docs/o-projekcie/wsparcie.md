@@ -12,7 +12,7 @@ Projekt tworzę samodzielnie, w wolnym czasie. Domena i narzędzia są opłacane
 [:material-heart:{ .pg-red } Wspieraj na Ko-fi](https://ko-fi.com/eteryu){ class="md-button md-button--primary" }
 
 <small>
-Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakładać konta, żeby wesprzeć jednorazowo. Nie przyjmuję kryptowalut.
+Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakładać konta, żeby wesprzeć jednorazowo.
 </small>
 
 ## Na co idzie wsparcie?
