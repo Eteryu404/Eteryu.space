@@ -107,7 +107,7 @@ Wielu użytkowników obawia się, czy aplikacje bankowe w ogóle ruszą na alter
 - [Zestawienie PrivSec.dev (Wersja webowa)](https://privsec.dev/posts/android/banking-applications-compatibility-with-grapheneos/#poland)
 - [Plik źródłowy na GitHubie PrivSec](https://github.com/PrivSec-dev/privsec.dev/blob/main/content/posts/android/Banking%20Applications%20compatibility%20with%20GrapheneOS.md#poland)
 
-Warto pamiętać, że `GrapheneOS` chroni nas znacznie głębiej niż na poziomie samych uprawnień w interfejsie. System natywnie blokuje dostęp do mechanizmów Dynamic Code Loading (`DCL`) poprzez pamięć operacyjną czy pamięć masową oraz skutecznie odpiera dziesiątki innych exploitów. O tym procesie, jak i o analizie zagrożeń za pomocą frameworku `STRIDE`, pisałem już szczegółowo w moim poprzednim artykule: [Świadomy kompromis: Dynamic Code Loading vs Piaskownica GrapheneOS](blog/posts/swiadomy-kompromis-dcl-piaskownica-grapheneos.md).
+Warto pamiętać, że `GrapheneOS` chroni nas znacznie głębiej niż na poziomie samych uprawnień w interfejsie. System natywnie blokuje dostęp do mechanizmów Dynamic Code Loading (`DCL`) poprzez pamięć operacyjną czy pamięć masową oraz skutecznie odpiera dziesiątki innych exploitów. O tym procesie, jak i o analizie zagrożeń za pomocą frameworku `STRIDE`.
 
 ## Podsumowanie
 
