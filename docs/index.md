@@ -6,7 +6,8 @@ hide:
   - footer
 ---
 
-# Eteryu.space
+# Prywatność to nie luksus, to konieczność.
+**Tu zaczyna się Twoja droga do cyfrowej wolności.**
 
 !!! success "Standardy bezpieczeństwa"
     Cyberbezpieczeństwo to proces, a nie cel. Treści na tej stronie podlegają cyklicznej weryfikacji pod kątem najnowszych wektorów ataków i ewolucji modelu Zero Trust.
