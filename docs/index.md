@@ -1,4 +1,5 @@
 ---
+titla: Eteryu.space
 icon: lucide/home
 hide:
   - toc
