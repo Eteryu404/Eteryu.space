@@ -6,6 +6,7 @@ authors:
 categories:
   - Prywatność
   - Narzędzia
+  - Apple
 ---
 
 # Pragmatyczny puryzm. Jak wycisnąłem maksimum prywatności z iOS przed przejściem na GrapheneOS
