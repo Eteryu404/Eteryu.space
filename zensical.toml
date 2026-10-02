@@ -26,7 +26,7 @@ nav = [
         "narzedzia/index.md",
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md",
-        "narzedzia/konfiguracja-przegladarki.md"
+        "narzedzia/konfiguracja-przegladarek.md"
     ]},
     { "Artykuły" = ["blog/index.md"] },
     { "Wsparcie" = "o-projekcie/wsparcie.md" }
