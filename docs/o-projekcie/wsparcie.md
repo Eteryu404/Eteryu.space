@@ -1,0 +1,45 @@
+---
+title: Wsparcie
+description: Jak możesz wesprzeć niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej suwerenności.
+---
+
+# Wsparcie
+
+**Eteryu.space to niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej suwerenności.** Znajdziesz tu bazę wiedzy, rekomendacje narzędzi i artykuły o tym, jak odzyskać kontrolę nad własnymi danymi. Bez reklam, bez sponsorowanych treści i bez pośredników, którzy mogliby wpływać na to, co się tu pojawia.
+
+Projekt tworzę samodzielnie, w wolnym czasie. Domena i narzędzia są opłacane z mojej kieszeni, a treści powstają niezależnie od jakichkolwiek zewnętrznych oczekiwań. Jeśli doceniasz to, co robię, możesz wesprzeć projekt dobrowolną wpłatą.
+
+[:material-heart:{ .pg-red } Wspieraj na Ko-fi](https://ko-fi.com/eteryu){ class="md-button md-button--primary" }
+
+<small>
+Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakładać konta, żeby wesprzeć jednorazowo. Nie przyjmuję kryptowalut.
+</small>
+
+## Na co idą wsparcie?
+
+- **Domena i narzędzia.** Opłacam je z własnej kieszeni, bo to one dają projektowi stały adres i niezależność od platform.
+- **Testy i research.** Dostęp do VPN-ów, konta w usługach, czasem sprzęt, który mogę opisać w kontekście prywatności i bezpieczeństwa.
+- **Czas.** Teksty, konfiguracje, eksperymenty i weryfikacja tego, co trafia na stronę.
+
+## Czego nie robisz, wspierając projekt?
+
+- **Nie kupujesz rekomendacji.** Wszystko, co opisuję jako dobre, wybieram niezależnie od tego, czy ktoś mi za to płaci. Jeśli kiedyś pojawi się materiał sponsorowany, będzie to wyraźnie oznaczone.
+- **Nie masz wpływu na treść.** Wsparcie to wyłącznie podziękowanie, nie zamówienie.
+- **Nie musisz się ujawniać.** Wpłata anonimowa jest w porządku.
+
+## Inne formy wsparcia
+
+- **Podziel się projektem.** Link na Mastodonie, na forum, w rozmowie z kimś, kto szuka alternatyw dla Big Techu.
+- **Zgłoś błąd lub sugestię.** Przez [Mastodon](https://infosec.exchange/@eteryu) albo GitHub Issues, jeśli projekt jest publiczny.
+- **Podaj źródło lub poprawkę.** Jeśli widzisz nieaktualną informację albo lepsze narzędzie, napisz. Baza wiedzy żyje z takich uwag.
+
+## FAQ
+
+**Czy wsparcie jest jednorazowe czy miesięczne?**
+Ko-fi obsługuje oba tryby. Możesz wesprzeć raz albo ustawić powtarzalną wpłatę. Nie ma progu minimalnego.
+
+**Czy mogę dostać fakturę?**
+Nie, to nie darowizna na organizację pożytku publicznego, tylko osobiste wsparcie dla twórcy. Ko-fi wyśle Ci potwierdzenie transakcji.
+
+**Czy wsparcie coś zmienia w tym, co piszesz?**
+Nie. Nie przyjmuję sponsorowanych treści i nie zmieniam rekomendacji za pieniądze.
