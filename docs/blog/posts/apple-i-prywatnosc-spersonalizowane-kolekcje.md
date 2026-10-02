@@ -68,3 +68,10 @@ Dla mnie ta sytuacja to podręcznikowy przykład korporacyjnej hipokryzji i kole
 Życie z iPhonem, gdy jesteś zorientowany na prywatność lub ruch FOSS, to niestety sztuka ciągłych kompromisów i trudnych wyborów. W zamkniętym ogrodzie Apple zasady gry ustala tylko jedna firma.
 
 Właśnie dlatego przesiadka na systemy takie jak **GrapheneOS** przestaje być niszową zabawą dla paranoików. To po prostu jedyny logiczny i pragmatyczny krok, jeśli chcesz odzyskać pełną kontrolę nad tym, co dzieje się z Twoimi danymi na Twoim własnym telefonie.
+
+!!! tip "Sprawdź, co Apple już o Tobie wie"
+
+    Wejdź na **privacy.apple.com**, zaloguj się i pobierz swoje dane. 
+    Przeszukaj je pod kątem fraz „App Store Analytics", „DSID" albo 
+    „Personalized Collections". Możesz się zdziwić, jak szczegółowe 
+    dane Apple ma o Twoim korzystaniu ze sklepu.
