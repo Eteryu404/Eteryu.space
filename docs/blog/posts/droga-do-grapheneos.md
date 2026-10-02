@@ -44,30 +44,30 @@ Sprawę natychmiast zgłosiłem na Policję, a urządzenie zostało zakwalifikow
 
 Musiałem działać jak inżynier w strefie konfliktu. Zastosowałem podręcznikową taktykę izolacji skażonego hosta za pomocą trzech kroków:
 
-!!! info "Krok 1: Bezpieczny bastion dla dowodów (ente Photos)"
-    Zanim zacząłem głębszą konfigurację, zabezpieczyłem zrzuty ekranu dokumentujące aktywność aplikacji oraz sam komunikat o MDM. Ponieważ napastnik usuwał pliki z Google Photos, zainstalowałem **ente Photos** — w pełni szyfrowaną (E2EE) alternatywę. Dzięki temu napastnik stracił możliwość manipulowania dowodami dla Policji.
+### 1. Bezpieczny bastion dla dowodów (ente Photos)
+Zanim zacząłem głębszą konfigurację, zabezpieczyłem zrzuty ekranu dokumentujące aktywność aplikacji oraz sam komunikat o MDM. Ponieważ napastnik bezczelnie usuwał pliki z Google Photos, zainstalowałem **ente Photos** — w pełni szyfrowaną (E2EE) alternatywę dla chmury giganta. Napastnik stracił możliwość manipulowania tymi plikami, co uratowało moją dokumentację dla Policji.
 
-!!! info "Krok 2: Zapora ogniowa w trybie Default-Deny"
-    Zainstalowałem lokalny firewall **RethinkDNS** i przełączyłem go w tryb całkowitej blokady ruchu wychodzącego. Ręcznie tworzyłem białą listę zaufanych aplikacji. Odcięcie procesów `Shell` oraz `SystemUI` od sieci sparaliżowało architekturę Command & Control (C2) napastnika.
+### 2. Zapora ogniowa w trybie Default-Deny
+Zainstalowałem lokalny firewall **RethinkDNS** i natychmiast przełączyłem go w tryb całkowitej blokady ruchu wychodzącego. Analizując logi w locie, zauważyłem, że ataki i próby eksfiltracji danych szły głównie przez systemowe procesy `Shell` oraz `SystemUI`. Odcięcie im dostępu do sieci sparaliżowało architekturę Command & Control (C2) napastnika.
 
-!!! info "Krok 3: Szyfrowany i filtrowany DNS od Quad9"
-    W RethinkDNS zmieniłem routing zapytań na **Quad9 DNS**, który automatycznie dropuje zapytania do znanych złośliwych domen i serwerów botnetowych.
+### 3. Szyfrowany i filtrowany DNS od Quad9
+W RethinkDNS zmieniłem domyślny routing zapytań na **Quad9 DNS**. Poza szyfrowaniem ruchu, Quad9 automatycznie dropuje zapytania do znanych złośliwych domen i serwerów botnetowych na poziomie infrastruktury.
 
-Dzięki tej sterylnej kwarantannie zyskałem cenny czas. Wszystkie dowody przesłałem prowadzącej sprawę policjantce za pomocą bezpiecznej skrzynki **Tuta Mail**. W tym środowisku spokojnie zmieniłem hasła i klucze sesyjne we wszystkich krytycznych usługach.
+Dzięki tej sterylnej kwarantannie zyskałem cenny czas. Wszystkie dowody przesłałem prowadzącej sprawę policjantce za pomocą bezpiecznej, szyfrowanej skrzynki **Tuta Mail**. W tym sztucznie utrzymywanym środowisku spokojnie zmieniłem hasła i klucze sesyjne we wszystkich krytycznych usługach.
 
 ## Nowy początek: GrapheneOS jako cyfrowa forteca
 
-Po odesłaniu wadliwego urządzenia skontaktowałem się ze sprzedawcą. W ramach wymiany otrzymałem pewny egzemplarz Pixela 8, a serwisant **samodzielnie wgrał GrapheneOS na nowy telefon przed wysyłką**, aby mieć pewność, że sprzęt jest 100% czysty.
+Po odesłaniu wadliwego urządzenia skontaktowałem się ze sprzedawcą. Sklep wykazał się niesamowitą postawą — w ramach wymiany nie tylko dostarczyli mi pewny egzemplarz Pixela 8, ale ich serwisant **samodzielnie wgrał GrapheneOS na nowy telefon przed wysyłką**. Chciał mieć absolutną pewność, że sprzęt trafi do mnie w 100% czysty i bezpieczny.
 
 Wgranie GrapheneOS całkowicie eliminuje ryzyko przetrwania ukrytych profilów korporacyjnych (dzięki mechanizmowi Verified Boot). Na tym systemie buduję swój obecny Threat Model, oparty na braku ślepego zaufania (Zero Trust):
 
-* **Całkowita de-googlizacja:** Profil główny jest wolny od kodu Google (FOSS). Używam menedżerów **Obtainium** i **Accrescent**.
-* **Ścisła izolacja (Multiple Profiles):** Usługi komercyjne i Google Play zamknąłem w odizolowanym profilu użytkownika z ograniczonym dostępem do sieci.
-* **Separacja sieciowa:** Ruch obu profili jest odseparowany przez niezależne instancje WireGuard w trybie Always-on.
+* **Całkowita de-googlizacja:** Profil główny jest całkowicie wolny od kodu Google (FOSS). Przestarzałego F-Droida zastąpiłem nowoczesnymi, bezpiecznymi menedżerami **Obtainium** i **Accrescent**.
+* **Ścisła izolacja (Multiple Profiles):** Wszystkie usługi komercyjne zamknąłem w odizolowanym, osobnym profilu użytkownika.
+* **Separacja sieciowa:** Ruch sieciowy obu profili jest całkowicie odseparowany przez niezależne instancje WireGuard w trybie Always-on.
 
 ## Wnioski na przyszłość
 
 Prywatność i cyberbezpieczeństwo to nie są hobbystyczne fanaberie. Skompromitowane urządzenie mobilne to bezpośrednie zagrożenie dla Twojego życia osobistego, finansów i spokoju psychicznego.
 
 !!! tip "Nie czekaj na anomalię"
-    Jeśli podejrzewasz, że Twój system zachowuje się nienaturalnie — nie czekaj. Odetnij procesy systemowe od sieci, zabezpiecz tożsamość za pomocą szyfrowanych narzędzi i szukaj rozwiązań, które dają Ci pełną kontrolę nad sprzętem. Dla mnie tą jedyną odpowiedzią stał się duet czystego sprzętu i GrapheneOS.
+    Jeśli podejrzewasz, że Twój system zachowuje się nienaturalnie — nie czekaj. Odetnij procesy systemowe od sieci, zabezpiecz tożsamość za pomocą szyfrowanych narzędzi i szukaj rozwiązań, które dają Ci pełną kontrolę nad krzemem, za który zapłaciłeś. Dla mnie tą jedyną, bezpieczną odpowiedzią stał się duet czystego sprzętu i GrapheneOS.
