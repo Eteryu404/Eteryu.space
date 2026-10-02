@@ -139,4 +139,10 @@ Wdrożenie realnego de-Google nie wymaga już teraz ciągłej walki z systemem, 
 
 Dopiero teraz, trzymając w ręku urządzenie, w którym to ja kontroluję każdy proces, każdy klucz kryptograficzny i każde uprawnienie bez pytania korporacji o zgodę, czuję, że odzyskałem pełną cyfrową suwerenność. Pokonałem drogę od ubezwłasnowolnionego konsumenta do realnego właściciela własnego cyfrowego śladu. Droga przez „pragmatyczny puryzm” była jednak potrzebna – to ona ukształtowała moje dzisiejsze nawyki.
 
+!!! tip "Polisa, nie poświęcenie"
+
+    Wybierz **jedną** funkcję smart, z której zrezygnujesz dziś: Spotlight, 
+    autokorektę albo sugestie Siri. Zobacz, czy przez tydzień za nią zatęsknisz. 
+    Większość nawyków cyfrowych to iluzja wygody, którą można zastąpić rutyną.
+
 *A o tym, jak dokładnie wygląda mój aktualny setup Pixela 8, jak konfiguruję Profile użytkowników i jak ujarzmiłem usługi Google w bezpiecznym sandboxie, przeczytacie już niedługo w osobnym wpisie.*
