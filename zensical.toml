@@ -38,6 +38,11 @@ favicon = "assets/img/1552167043208769.png"
 logo = "assets/img/1552167043208769.png"
 language = "pl"
 
+# blog configuration
+[project.blog]
+path = "blog"
+date_format = "%Y-%m-%d"
+
 # ui features
 features = [
     "announce.dismiss",
