@@ -6,9 +6,9 @@ icon: lucide/heart
 
 # Wsparcie
 
-**Eteryu.space to niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej suwerenności.** Znajdziesz tu bazę wiedzy, rekomendacje narzędzi i artykuły o tym, jak odzyskać kontrolę nad własnymi danymi. Bez reklam, bez sponsorowanych treści i bez pośredników, którzy mogliby wpływać na to, co się tu pojawia.
+**Eteryu.space to niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności.** Znajdziesz tu bazę wiedzy, rekomendacje narzędzi i artykuły o tym, jak odzyskać kontrolę nad własnymi danymi. Bez reklam, bez sponsorowanych treści i bez pośredników, którzy mogliby wpływać na to, co się tu pojawia.
 
-Projekt tworzę samodzielnie, w wolnym czasie. Domena i narzędzia są opłacane z mojej kieszeni, a treści powstają niezależnie od jakichkolwiek zewnętrznych oczekiwań. Jeśli doceniasz to, co robię, możesz wesprzeć projekt dobrowolną wpłatą.
+Projekt tworzę samodzielnie, w wolnym czasie. Domena i narzędzia są opłacane z mojej kieszeni, a treści powstają niezależnie od jakichkolwiek zewnętrznych oczekiwań. Wsparcie trafia bezpośrednio do mnie jako autora i pomaga utrzymać projekt w obecnym kształcie. Jeśli doceniasz to, co robię, możesz wesprzeć projekt dobrowolną wpłatą.
 
 [:material-heart:{ .pg-red } Wspieraj na Ko-fi](https://ko-fi.com/eteryu){ class="md-button md-button--primary" }
 
@@ -18,7 +18,7 @@ Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakłada�
 
 ## Na co idzie wsparcie?
 
-- **Domena i narzędzia.** Opłacam je z własnej kieszeni, bo to one dają projektowi stały adres i niezależność od platform.
+- **Domena i narzędzia.** Opłacam je z własnej kieszeni, a wsparcie trafia bezpośrednio do mnie. To ono daje projektowi stały adres i niezależność od platform.
 - **Testy i research.** Dostęp do VPN-ów, konta w usługach, czasem sprzęt, który mogę opisać w kontekście prywatności i bezpieczeństwa.
 - **Czas.** Teksty, konfiguracje, eksperymenty i weryfikacja tego, co trafia na stronę.
 
@@ -35,6 +35,9 @@ Ko-fi obsługuje płatności przez PayPal i Stripe (karta). Nie musisz zakłada�
 - **Podaj źródło lub poprawkę.** Jeśli widzisz nieaktualną informację albo lepsze narzędzie, napisz. Baza wiedzy żyje z takich uwag.
 
 ## FAQ
+
+**Do kogo trafia wsparcie?**
+Bezpośrednio do mnie jako autora projektu. Nie ma tu fundacji, organizacji ani pośredników, którzy pobieraliby prowizję poza samym Ko-fi. Wsparcie pomaga pokryć koszty domeny, narzędzi i czasu, który wkładam w treści.
 
 **Czy wsparcie jest jednorazowe czy miesięczne?**
 Ko-fi obsługuje oba tryby. Możesz wesprzeć raz albo ustawić powtarzalną wpłatę. Nie ma progu minimalnego.
