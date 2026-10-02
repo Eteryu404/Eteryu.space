@@ -1,26 +1,24 @@
 ---
-title: Baza wiedzy
 icon: lucide/home
 hide:
   - toc
   - footer
 ---
 
-# Baza wiedzy Eteryu.space
+# Eteryu.space
+**Przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności.**
 
-!!! success "Ciągły audyt i weryfikacja procedur"
-    Cyberbezpieczeństwo nie jest stanem docelowym, lecz procesem. Zawartość tej platformy podlega cyklicznym audytom pod kątem najnowszych wektorów ataków, zmian w architekturze oprogramowania oraz ewolucji modelu Zero Trust.
+!!! success "Standardy bezpieczeństwa"
+    Cyberbezpieczeństwo to proces, a nie cel. Treści na tej stronie podlegają cyklicznej weryfikacji pod kątem najnowszych wektorów ataków i ewolucji modelu Zero Trust.
 
-Niniejsza platforma to niezależne, ustrukturyzowane kompendium wiedzy z zakresu higieny cyfrowej, **zbudowane wokół bezpieczeństwa urządzeń mobilnych**. Jej głównym celem jest dostarczanie obiektywnych, pozbawionych marketingowego szumu i sprawdzonych procedur pozwalających na odzyskanie pełnej kontroli nad własną technologią – **przede wszystkim w ekosystemach Android oraz iOS**.
+W świecie, w którym technologia staje się narzędziem totalnej inwigilacji, odzyskanie kontroli nad własnymi danymi nie jest już tylko wyborem – jest koniecznością. **Eteryu.space** to niezależny ekosystem wiedzy, który łączy w sobie praktyczne instrukcje wdrożeniowe oraz analizy najnowszych trendów w obszarze prywatności.
 
-Materiały zostały zaprojektowane z myślą o uniwersalności i łatwości wdrożenia. Dokumentacja oferuje przejrzyste instrukcje konfiguracji oraz rekomendacje zweryfikowanego oprogramowania, umożliwiając każdemu użytkownikowi świadome budowanie bezpiecznego środowiska, ze szczególnym uwzględnieniem smartfona jako głównego centrum dowodzenia.
+Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (Android i iOS)**, dostarczając konkretne, weryfikowalne procedury, które zamienią Twoje urządzenie z narzędzia śledzącego w bezpieczną fortecę.
 
-!!! tip "Od czego zacząć?"
-    Zanim przystąpisz do rekonfiguracji urządzeń i wdrażania zaawansowanych procedur, musisz zdefiniować swój indywidualny profil ryzyka. Zapoznaj się z absolutnym fundamentem, aby racjonalnie dobierać narzędzia i unikać tzw. szumu technologicznego.
-    
-    [Rozpocznij lekturę](fundamenty/modelowanie-zagrozen.md){ .md-button .md-button--primary }
+---
 
-## Wybierz obszar
+## Baza Wiedzy
+*Ustrukturyzowana wiedza i sprawdzone procedury. Idealne miejsce, aby zacząć budować swoje bezpieczne środowisko od zera.*
 
 <div class="grid cards" markdown>
 
@@ -28,7 +26,7 @@ Materiały zostały zaprojektowane z myślą o uniwersalności i łatwości wdro
     
     ---
     
-    Krytyczne minimum bezpieczeństwa. Procedury zarządzania aktualizacjami, konfiguracja bezpiecznego protokołu DNS oraz podstawy zarządzania poświadczeniami.
+    Krytyczne minimum. Zarządzanie aktualizacjami, bezpieczny DNS i fundamenty higieny haseł.
     
     [➔ Przejdź do sekcji](fundamenty/index.md)
 
@@ -36,15 +34,29 @@ Materiały zostały zaprojektowane z myślą o uniwersalności i łatwości wdro
     
     ---
     
-    Zaawansowane techniki redukcji cyfrowego śladu. Maskowanie poczty email, izolacja usług oraz mechanizmy obrony przed zautomatyzowanym profilowaniem behawioralnym.
+    Redukcja cyfrowego śladu. Maskowanie poczty, izolacja usług i walka z profilowaniem.
     
     [➔ Przejdź do sekcji](prywatnosc/index.md)
+
+</div>
+
+!!! tip "Od czego zacząć?"
+    Nie wiesz, od czego zacząć? Zdefiniuj swój profil ryzyka i dobierz narzędzia racjonalnie. 
+    
+    [Rozpocznij od Fundamentów](fundamenty/modelowanie-zagrozen.md){ .md-button .md-button--primary }
+
+---
+
+## Rekomendacje
+*Wyselekcjonowany katalog zweryfikowanego oprogramowania, stanowiący fundament do budowy stabilnego i wyizolowanego środowiska pracy.*
+
+<div class="grid cards" markdown>
 
 -   :lucide-boxes: **Narzędzia i oprogramowanie**
     
     ---
     
-    Wyselekcjonowany katalog zweryfikowanego oprogramowania, stanowiący fundament do budowy stabilnego i wyizolowanego środowiska pracy.
+    Przeglądarki, komunikatory i aplikacje systemowe, które szanują Twoją prywatność.
     
     [➔ Przejdź do katalogu](narzedzia/index.md)
 
@@ -52,8 +64,24 @@ Materiały zostały zaprojektowane z myślą o uniwersalności i łatwości wdro
     
     ---
     
-    Utwardzanie urządzeń mobilnych (Hardening). Konfiguracja zaawansowanych uprawnień, fizyczne klucze zabezpieczeń oraz praktyczne mechanizmy izolacji aplikacji (Android / iOS).
+    Hardening urządzeń. GrapheneOS, klucze sprzętowe i zaawansowana izolacja.
     
     *➔ W przygotowaniu*
 
 </div>
+
+---
+
+## Artykuły
+*Bieżące komentarze, krytyczne spojrzenie na popularne narzędzia oraz ewolucja podejścia do prywatności.*
+
+W sekcji artykułów wychodzę poza ramy instrukcji. Analizuję, dlaczego niektóre rozwiązania przestają być bezpieczne, testuję nowe podejścia do decentralizacji i dyskutuję o filozofii wolności cyfrowej.
+
+[Przejdź do sekcji Artykuły $\rightarrow$](blog/index.md)
+
+---
+
+## Twoja droga do wolności cyfrowej
+Niezależnie od tego, czy jesteś początkującym użytkownikiem, czy zaawansowanym entuzjastą bezpieczeństwa, Eteryu.space dostarcza narzędzi do świadomego zarządzania własnym śladem w sieci. 
+
+**Zacznij od małych kroków, ale rób je w oparciu o twarde dowody i kryptografię, a nie marketingowe obietnice.**
