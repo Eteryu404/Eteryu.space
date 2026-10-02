@@ -52,12 +52,13 @@ Poczta to najważniejszy punkt całego systemu, ponieważ to właśnie tam trafi
 
 Możesz instalować dziesiątki rozszerzeń blokujących reklamy w przeglądarce, ale nie ochronią one systemu operacyjnego ani poszczególnych aplikacji przed wysyłaniem telemetrii. Najskuteczniejsza blokada działa na poziomie całej sieci. Taka konfiguracja drastycznie zmniejsza powierzchnię ataku bez konieczności instalowania jakichkolwiek dodatkowych programów.
 
-> **Jak skonfigurować bezpieczny DNS:**
->
-> - Na urządzeniach z systemem **Android** wejdź w ustawienia systemowe i odszukaj opcję `Prywatny DNS` (zazwyczaj w zakładce *Sieć i internet*). Zamiast opcji automatycznej, wybierz ręczne wprowadzanie nazwy hosta, wpisz adres wybranego dostawcy i zapisz zmiany.
-> - Na urządzeniach **Apple (iOS/macOS)** wejdź na stronę internetową wybranego dostawcy i pobierz z niej zaufany profil konfiguracyjny (Configuration Profile), który natywnie zmieni serwery w systemie.
->
-> **Ważne:** *Zawsze polecam sprawdzone narzędzia, które zebrałem na mojej [liście /curated](https://eteryu.space/curated/). Jeśli chcesz wycinać reklamy, wpisz adres **`dns.adguard-dns.com`**. Aby agresywnie blokować złośliwe oprogramowanie, użyj **`dns.quad9.net`**. Osobom pragnącym pełnej kontroli świetnie sprawdzi się `NextDNS`.*
+=== "Android"
+
+    Wejdź w ustawienia systemowe i odszukaj opcję `Prywatny DNS` (zazwyczaj w zakładce *Sieć i internet*). Zamiast opcji automatycznej wybierz ręczne wprowadzanie nazwy hosta, wpisz adres wybranego dostawcy i zapisz zmiany.
+
+=== "Apple (iOS / macOS)"
+
+    Wejdź na stronę internetową wybranego dostawcy i pobierz z niej zaufany profil konfiguracyjny (Configuration Profile), który natywnie zmieni serwery w systemie. Zatwierdź instalację profilu w ustawieniach urządzenia.
 
 ## 4. Autopilot bezpieczeństwa i aktualizacje (2 minuty)
 
