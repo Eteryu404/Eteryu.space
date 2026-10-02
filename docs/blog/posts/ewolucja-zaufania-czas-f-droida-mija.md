@@ -1,4 +1,5 @@
 ---
+title: Ewolucja zaufania. Dlaczego czas F-Droida mija
 date: 2026-06-07
 categories:
   - Prywatność
