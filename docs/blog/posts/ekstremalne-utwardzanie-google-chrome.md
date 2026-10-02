@@ -15,8 +15,6 @@ W świecie cyberbezpieczeństwa często rozmawiamy o modelach zagrożeń (`Threa
 
 Śledztwo ujawniło wtedy brutalną prawdę. Telefon posiadał ukryty profil korporacyjny do zarządzania urządzeniami mobilnymi (`MDM`). Byłem ofiarą potężnego systemu szpiegowskiego. Z tej pułapki udało mi się wyrwać tylko dzięki zastosowaniu radykalnej zapory. Główną bitwę o przetrwanie wygrał wtedy `RethinkDNS` ustawiony w bezwzględnym trybie domyślnej blokady ruchu (`Default Deny`) oraz szyfrowany `Quad9 DNS`, które wspólnie całkowicie sparaliżowały sieć komunikacyjną napastnika.
 
-Pełną historię tego incydentu oraz moją drogę do bezpiecznego systemu opisałem w moim pierwszym wpisie na blogu: [Jak okiełznałem system z MDM. Moja droga do GrapheneOS](blog/posts/droga-do-grapheneos.md).
-
 ## Architektura absolutnej władzy
 
 Aby w pełni zrozumieć sens naszych dzisiejszych działań, musimy na chwilę zatrzymać się przy samej technologii zarządzania urządzeniami. Systemy klasy `MDM` posiadają absolutną i niepodważalną władzę nad systemem operacyjnym. Zostały zaprojektowane dla wielkich korporacji, aby administrator mógł zdalnie i bezgłośnie zarządzać tysiącami urządzeń swoich pracowników.
