@@ -11,25 +11,23 @@ extra_css = ["assets/css/extra.css"]
 
 # manual navigation menu
 nav = [
-    { "Baza wiedzy" = "index.md" },
-    { "Blog" = "blog/index.md" },
-    { "Fundamenty" = [
+    { "Start" = "index.md" },
+    { "Baza Wiedzy" = [
         "fundamenty/index.md",
         "fundamenty/modelowanie-zagrozen.md",
         "fundamenty/aktualizacje.md",
         "fundamenty/menedzer-hasel.md",
-        "fundamenty/bezpieczny-dns.md"
-    ]},
-    { "Prywatność i tożsamość" = [
+        "fundamenty/bezpieczny-dns.md",
         "prywatnosc/index.md",
         "prywatnosc/identyfikator-reklamowy.md",
         "prywatnosc/aliasy.md"
     ]},
-    { "Narzędzia" = [
+    { "Rekomendacje" = [
         "narzedzia/index.md",
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md"
-    ]}
+    ]},
+    { "Blog" = ["blog/index.md"] }
 ]
 
 # theme settings
@@ -39,10 +37,8 @@ favicon = "assets/img/1552167043208769.png"
 logo = "assets/img/1552167043208769.png"
 language = "pl"
 
-# blog configuration
-[project.blog]
-path = "blog"
-date_format = "%Y-%m-%d"
+# blog plugin activation (Official Zensical way)
+[project.plugins.blog]
 
 # ui features
 features = [
