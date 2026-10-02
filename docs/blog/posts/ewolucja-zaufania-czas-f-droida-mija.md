@@ -6,9 +6,9 @@ categories:
   - GrapheneOS
 ---
 
-![F-Droid](https://i.postimg.cc/dQG3ZcJx/f-droid-default-hero.jpg)
-
 W polskiej społeczności użytkowników dbających o prywatność F-Droid ma status niemal kultowy. Dla wielu to synonim wolnego oprogramowania (FOSS) i jedyna słuszna ucieczka przed inwigilacją ze strony Google Play. Każda próba krytyki tego zielonego robocika spotyka się z natychmiastowym oporem. Bronimy go z powodów czysto ideologicznych. Niestety, w świecie cyberbezpieczeństwa sama ideologia to za mało. Podczas gdy Android ewoluował, F-Droid utknął w przeszłości, stając się dziś jednym z najsłabszych ogniw na bezpiecznych systemach takich jak GrapheneOS.
+
+<!-- more -->
 
 ## Trzy grzechy główne F-Droida
 
