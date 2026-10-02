@@ -1,6 +1,7 @@
 ---
 title: Wsparcie
 description: Jak możesz wesprzeć niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej suwerenności.
+icon: lucide/heart
 ---
 
 # Wsparcie
