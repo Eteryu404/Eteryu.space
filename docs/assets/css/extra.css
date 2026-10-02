@@ -184,3 +184,8 @@ body {
 .md-typeset .grid.cards > ul > li:active {
     background-color: var(--md-accent-fg-color--transparent);
     }
+
+/* custom colored icons */
+.pg-red {
+    color: #e53935 !important;
+}
