@@ -1,4 +1,5 @@
 ---
+title: Jak okiełznałem system z MDM. Moja droga do GrapheneOS
 date: 2026-06-05
 categories:
   - Prywatność
