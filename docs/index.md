@@ -78,7 +78,7 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 
 W sekcji artykułów wychodzę poza ramy instrukcji. Analizuję, dlaczego niektóre rozwiązania przestają być bezpieczne, testuję nowe podejścia do decentralizacji i dyskutuję o filozofii wolności cyfrowej.
 
-[Czytaj artykuły](blog/index.md){ .md-button }
+[Czytaj artykuły](blog/index.md){ class="md-button md-button--primary" }
 
 ---
 
