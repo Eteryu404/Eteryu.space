@@ -1,6 +1,8 @@
 ---
 title: Pragmatyczny puryzm. Jak wycisnąłem maksimum prywatności z iOS przed przejściem na GrapheneOS
 date: 2026-06-10
+authors:
+  - Eteryu
 categories:
   - Prywatność
   - Narzędzia
