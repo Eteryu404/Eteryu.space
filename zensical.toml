@@ -15,9 +15,10 @@ nav = [
     { "Baza Wiedzy" = [
         "fundamenty/index.md",
         "fundamenty/modelowanie-zagrozen.md",
-        "fundamenty/aktualizacje.md",
         "fundamenty/menedzer-hasel.md",
+        "fundamenty/2fa.md",
         "fundamenty/bezpieczny-dns.md",
+        "fundamenty/aktualizacje.md",
         "prywatnosc/index.md",
         "prywatnosc/identyfikator-reklamowy.md",
         "prywatnosc/aliasy.md"
