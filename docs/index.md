@@ -42,9 +42,9 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 </div>
 
 !!! tip "Od czego zacząć?"
-    Nie wiesz, od czego zacząć? Zdefiniuj swój profil ryzyka i dobierz narzędzia racjonalnie. 
-    
-    [Rozpocznij od Fundamentów](fundamenty/modelowanie-zagrozen.md){ .md-button .md-button--primary }
+    Nie wiesz, od czego zacząć? Zdefiniuj swój profil ryzyka i dobierz narzędzia racjonalnie.
+
+    [Rozpocznij od Fundamentów](fundamenty/index.md){ .md-button .md-button--primary }
 
 ---
 
