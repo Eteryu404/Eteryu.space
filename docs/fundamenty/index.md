@@ -10,15 +10,13 @@ Poniższe praktyki to absolutne minimum cyfrowego przetrwania. Nie wymagają one
 
 ## Jak korzystać z tej sekcji
 
-Poniższe kroki ułożone są w kolejności wdrożenia. Nie musisz przechodzić ich wszystkich naraz. Zacznij od pierwszego, wdróż go w życie, a dopiero potem przejdź do następnego.
+Kroki poniżej ułożone są w kolejności wdrożenia. Zacznij od pierwszego, wdróż go w życie, a dopiero potem przejdź do następnego.
 
 1. **Modelowanie zagrożeń** — najpierw zrozum, przed czym się bronisz.
-2. **Menedżer haseł** — fundament poświadczeń, bez którego reszta jest dziurawa.
+2. **Menedżer haseł** — fundament poświadczeń.
 3. **Uwierzytelnianie dwuskładnikowe (2FA)** — drugi czynnik do już zabezpieczonych kont.
-4. **Filtrowanie DNS** — warstwa sieciowa, która działa w tle dla wszystkich aplikacji.
+4. **Filtrowanie DNS** — warstwa sieciowa dla wszystkich aplikacji.
 5. **Rygorystyczne aktualizacje** — nawyk utrzymujący całość w działaniu.
-
-Każdy krok to osobny artykuł. Możesz do niego wrócić w dowolnym momencie, ale zachowanie tej kolejności oszczędzi Ci czasu i uniknie sytuacji, w której zabezpieczasz coś, co i tak jest dziurawe.
 
 <div class="grid cards" markdown>
 
