@@ -27,7 +27,7 @@ Ustawienia znajdziesz w menu `⋮` → **Ustawienia** → **Brave Shields i pryw
 <details class="warning" markdown>
 <summary>Używaj domyślnych list filtrów</summary>
 
-Brave pozwala na wybór dodatkowych filtrów treści. Odradzamy korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
+Brave pozwala na wybór dodatkowych filtrów treści. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
 </details>
 
 - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
