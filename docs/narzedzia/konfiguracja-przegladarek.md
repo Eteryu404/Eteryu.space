@@ -71,6 +71,8 @@ Ustawienia znajdziesz w menu `⋮` → **Ustawienia** → **Wyszukiwarki**.
 
 - [ ] Odznacz **Sugestie wyszukiwania**
 
+---
+
 ## Bezpieczny DNS
 
 Nawet najbardziej rygorystyczna konfiguracja przeglądarki traci sens, jeśli Twój dostawca internetu widzi niezabezpieczone zapytania DNS. Zaleca się skonfigurowanie prywatnego DNS w ustawieniach systemu Android, co chroni ruch globalnie, dla wszystkich aplikacji.
