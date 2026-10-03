@@ -61,3 +61,16 @@ Kroki poniżej ułożone są w kolejności wdrożenia. Zacznij od pierwszego, wd
     [➔ Przejdź do artykułu](aktualizacje.md)
 
 </div>
+
+!!! info "Czego te fundamenty nie robią"
+
+    Powyższe kroki chronią Cię przed najczęstszymi i najbardziej masowymi zagrożeniami: wyciekami danych, atakami polegającymi na ponownym użyciu hasła (*credential stuffing*), phishingiem, telemetrią reklamową i profilowaniem behawioralnym. To wystarczy, by przestać być łatwym celem.
+
+    Nie chronią jednak przed wszystkim. Fundamenty nie zastąpią:
+
+    - **Anonimowości w sieci.** Żadne z tych narzędzi nie ukrywa Twojej tożsamości. Do tego celu służy wyłącznie sieć Tor, która rządzi się własnymi zasadami i wymaga zupełnie innego podejścia.
+    - **Ochrony przed ukierunkowanym atakiem.** Jeśli jesteś celem konkretnej grupy (dziennikarz, aktywista, osoba publiczna), Twój model zagrożeń jest inny i wymaga dedykowanych procedur.
+    - **Ochrony przed fizycznym dostępem.** Ktoś, kto ma Twoje odblokowane urządzenie w rękach, może obejść większość tych zabezpieczeń.
+    - **Ochrony przed Twoimi własnymi błędami.** Najlepszy menedżer haseł nie pomoże, jeśli klikniesz w link w fałszywym mailu i sam podasz dane logowania.
+
+    Fundamenty to punkt startowy, nie cel. Gdy je wdrożysz, dopiero zaczynasz świadomie kształtować swój model zagrożeń. Kolejne warstwy ochrony dobierasz adekwatnie do tego, przed czym realnie musisz się bronić.
