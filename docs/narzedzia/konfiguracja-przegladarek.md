@@ -7,7 +7,7 @@ icon: lucide/settings-2
 
 Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają jednak anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Poniższa konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
 
-# :fontawesome-brands-brave: Brave
+# Brave
 
 ## Ustawienia Tarcz
 
