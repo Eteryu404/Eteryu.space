@@ -1,5 +1,5 @@
 ---
-title: Fundamenty cyfrowej higieny
+title: Fundamenty Cyfrowej Higieny
 description: Pięć kroków cyfrowej higieny w kolejności wdrożenia. Zrozum swoje zagrożenia, zabezpiecz poświadczenia, odetnij telemetrię i aktualizuj na czas.
 icon: lucide/shield-half
 ---
