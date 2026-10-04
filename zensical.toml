@@ -16,18 +16,20 @@ extra_javascript = ["assets/js/analytics.js"]
 nav = [
     { "Start" = "index.md" },
     { "Baza Wiedzy" = [
-        "fundamenty/index.md",
-        "fundamenty/modelowanie-zagrozen.md",
-        "fundamenty/menedzer-hasel.md",
-        "fundamenty/2fa.md",
-        "fundamenty/bezpieczny-dns.md",
-        "fundamenty/aktualizacje.md",
-        "prywatnosc/index.md",
-        "prywatnosc/identyfikator-reklamowy.md",
-        "prywatnosc/aliasy.md"
+        { "Fundamenty" = [
+            "fundamenty/fundamenty-cyfrowej-higieny.md",
+            "fundamenty/modelowanie-zagrozen.md",
+            "fundamenty/menedzer-hasel.md",
+            "fundamenty/2fa.md",
+            "fundamenty/bezpieczny-dns.md",
+            "fundamenty/aktualizacje.md"
+        ]},
+        { "Prywatność" = [
+            "prywatnosc/identyfikator-reklamowy.md",
+            "prywatnosc/aliasy.md"
+        ]}
     ]},
     { "Rekomendacje" = [
-        "narzedzia/index.md",
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md",
         "narzedzia/konfiguracja-przegladarek.md"
