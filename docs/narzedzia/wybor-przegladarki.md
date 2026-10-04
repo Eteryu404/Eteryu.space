@@ -1,5 +1,6 @@
 ---
-title: Wybór przeglądarki
+title: Wybór Przeglądarki
+description: Kryteria wyboru przeglądarki pod kątem bezpieczeństwa architektury. Dlaczego Chrome, Vanadium i Brave wygrywają z alternatywami opartymi na Firefoksie.
 icon: lucide/globe-lock
 ---
 
