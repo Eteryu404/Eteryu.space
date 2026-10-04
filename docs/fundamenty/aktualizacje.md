@@ -1,5 +1,5 @@
 ---
-title: Rygorystyczne aktualizacje
+title: Rygorystyczne Aktualizacje
 description: Dlaczego aktualizacje to fundament higieny cyfrowej. Mechanika ataków N-Day i Zero Click oraz procedury zarządzania cyklem życia urządzeń.
 icon: lucide/refresh-cw
 ---
