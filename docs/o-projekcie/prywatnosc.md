@@ -1,5 +1,6 @@
 ---
-title: Prywatność na stronie
+title: Prywatność Na Stronie
+description: Jak Eteryu.space podchodzi do prywatności czytelników. Analityka Umami bez ciasteczek, bez danych osobowych i bez śledzenia między stronami.
 icon: lucide/eye-off
 ---
 
