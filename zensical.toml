@@ -8,6 +8,8 @@ copyright = "Copyright &copy; 2026 Eteryu"
 
 # custom styles
 extra_css = ["assets/css/extra.css"]
+# custom scripts
+extra_javascript = ["assets/js/analytics.js"]
 
 # manual navigation menu
 nav = [
