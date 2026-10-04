@@ -1,5 +1,5 @@
 ---
-title: Uwierzytelnianie dwuskładnikowe (2FA)
+title: Uwierzytelnianie Dwuskładnikowe (2FA)
 description: Druga warstwa ochrony dla kluczowych kont. Porównanie SMS, aplikacji TOTP i kluczy sprzętowych oraz procedura zabezpieczenia głównej skrzynki pocztowej.
 icon: lucide/shield-check
 ---
