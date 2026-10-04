@@ -1,5 +1,6 @@
 ---
-title: Aliasy pocztowe
+title: Aliasy Pocztowe
+description: Jak wykorzystać aliasy pocztowe do izolacji usług, ochrony głównego adresu e-mail przed wyciekami i oślepienia systemów śledzących.
 icon: lucide/mails
 ---
 
