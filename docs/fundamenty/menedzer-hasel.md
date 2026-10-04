@@ -1,5 +1,6 @@
 ---
-title: Menedżer haseł
+title: Menedżer Haseł
+description: Jak wdrożyć menedżer haseł, skonstruować silną frazę hasłową i zarządzać poświadczeniami w trójwarstwowym systemie kategoryzacji.
 icon: lucide/key
 ---
 
