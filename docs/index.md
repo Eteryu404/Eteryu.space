@@ -29,7 +29,7 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
     
     Krytyczne minimum. Zarządzanie aktualizacjami, bezpieczny DNS i fundamenty higieny haseł.
     
-    [➔ Przejdź do sekcji](fundamenty/index.md)
+    [➔ Przejdź do sekcji](fundamenty/fundamenty-cyfrowej-higieny.md)
 
 -   :lucide-fingerprint: **Prywatność i tożsamość**
     
@@ -44,7 +44,7 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 !!! tip "Od czego zacząć?"
     Nie wiesz, od czego zacząć? Zdefiniuj swój profil ryzyka i dobierz narzędzia racjonalnie.
 
-    [Rozpocznij od Fundamentów](fundamenty/index.md){ .md-button .md-button--primary }
+    [Rozpocznij od Fundamentów](fundamenty/fundamenty-cyfrowej-higieny.md){ .md-button .md-button--primary }
 
 ---
 
