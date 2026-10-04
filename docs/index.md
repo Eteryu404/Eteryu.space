@@ -1,6 +1,5 @@
 ---
 title: Eteryu.space
-icon: lucide/home
 hide:
   - toc
   - footer
