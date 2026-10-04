@@ -1,5 +1,6 @@
 ---
 title: Eteryu.space
+description: Niezależny przewodnik po prywatności, bezpieczeństwie i cyfrowej wolności. Baza wiedzy, rekomendacje narzędzi i artykuły o cyfrowej higienie.
 hide:
   - toc
   - footer
