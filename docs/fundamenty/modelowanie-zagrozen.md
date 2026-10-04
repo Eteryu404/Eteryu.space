@@ -1,5 +1,6 @@
 ---
-title: Modelowanie zagrożeń
+title: Modelowanie Zagrożeń
+description: Jak zdefiniować własny profil ryzyka operacyjnego i dobrać zabezpieczenia do realnych zagrożeń, a nie do paranoi. Metodologia analizy zagrożeń i zasady OPSEC.
 icon: lucide/crosshair
 ---
 
