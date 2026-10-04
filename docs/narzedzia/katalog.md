@@ -1,5 +1,6 @@
 ---
-title: Katalog oprogramowania
+title: Katalog Oprogramowania
+description: Rygorystycznie wyselekcjonowany katalog narzędzi open source zorientowanych na prywatność. Aplikacje, przeglądarki, DNS, VPN i menedżery haseł.
 icon: lucide/list
 ---
 
