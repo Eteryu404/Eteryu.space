@@ -32,7 +32,7 @@ nav = [
         "narzedzia/konfiguracja-przegladarek.md"
     ]},
     { "Artykuły" = ["blog/index.md"] },
-    { "O projekcie" = [
+    { "O Projekcie" = [
         "o-projekcie/prywatnosc.md",
         "o-projekcie/wsparcie.md"
     ]}
