@@ -12,7 +12,6 @@ extra_css = ["assets/css/extra.css"]
 extra_javascript = ["assets/js/analytics.js"]
 
 # manual navigation menu
-# manual navigation menu
 nav = [
     { "Start" = "index.md" },
     { "Baza Wiedzy" = [
@@ -41,7 +40,7 @@ nav = [
 
 # theme settings
 [project.theme]
-variant = "classic"
+variant = "modern"
 custom_dir = "overrides"
 favicon = "assets/img/1552167043208769.png"
 logo = "assets/img/1552167043208769.png"
