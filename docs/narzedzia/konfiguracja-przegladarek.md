@@ -1,5 +1,6 @@
 ---
-title: Konfiguracja przeglądarek
+title: Konfiguracja Przeglądarek
+description: Gotowe do wdrożenia instrukcje utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii i bezpiecznego DNS.
 icon: lucide/settings-2
 ---
 
