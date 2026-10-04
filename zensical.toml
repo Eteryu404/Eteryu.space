@@ -8,6 +8,7 @@ copyright = "Copyright &copy; 2026 Eteryu"
 
 # custom styles
 extra_css = ["assets/css/extra.css"]
+
 # custom scripts
 extra_javascript = ["assets/js/analytics.js"]
 
@@ -127,7 +128,7 @@ pygments_lang_class = true
 
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
 
 [project.markdown_extensions.pymdownx.tabbed]
@@ -139,5 +140,5 @@ custom_checkbox = true
 
 [project.markdown_extensions.pymdownx.tilde]
 
-# blog plugin activation (Official Zensical way)
+# blog plugin activation
 [project.plugins.blog]
