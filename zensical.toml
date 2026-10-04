@@ -41,6 +41,7 @@ nav = [
 
 # theme settings
 [project.theme]
+variant = "classic"
 custom_dir = "overrides"
 favicon = "assets/img/1552167043208769.png"
 logo = "assets/img/1552167043208769.png"
