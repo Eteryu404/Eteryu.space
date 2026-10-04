@@ -1,5 +1,6 @@
 ---
-title: Identyfikator reklamowy
+title: Identyfikator Reklamowy
+description: Jak trwale usunąć identyfikator reklamowy (Ad ID / IDFA) w Androidzie i iOS, żeby odciąć systemową telemetrię i utrudnić profilowanie behawioralne.
 icon: lucide/barcode
 ---
 
