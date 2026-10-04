@@ -20,7 +20,9 @@ Możesz też skontaktować się ze mną bezpośrednio na [Mastodonie](https://in
 
 ## Wsparcie
 
-Jeśli doceniasz to, co robię, możesz wesprzeć projekt dobrowolną wpłatą na [Ko-fi](https://ko-fi.com/eteryu). Wsparcie trafia bezpośrednio do mnie i pomaga pokryć koszty domeny oraz czasu poświęconego na treści.
+Jeśli doceniasz to, co robię, możesz wesprzeć projekt dobrowolną wpłatą na Ko-fi. Wsparcie trafia bezpośrednio do mnie i pomaga pokryć koszty domeny oraz czasu poświęconego na treści.
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/eteryu)
 
 ## Licencja
 
