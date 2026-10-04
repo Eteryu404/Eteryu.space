@@ -189,3 +189,17 @@ body {
 .pg-red {
     color: #e53935 !important;
 }
+
+/* separation between drawer logo and nav list */
+.md-nav__title[for="__drawer"] {
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid var(--md-default-bg-color--lighter);
+}
+
+@media (max-width: 1220px) {
+    .md-nav__title[for="__drawer"] {
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+}
