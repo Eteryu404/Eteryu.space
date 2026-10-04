@@ -1,6 +1,6 @@
 ---
 title: Prywatność na stronie
-icon: lucide/shield-check
+icon: lucide/eye-off
 ---
 
 # Prywatność na stronie
