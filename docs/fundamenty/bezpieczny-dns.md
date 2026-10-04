@@ -1,5 +1,6 @@
 ---
 title: Bezpieczny DNS
+description: Jak działa DNS, dlaczego domyślna konfiguracja operatora to luka w prywatności, i jak wdrożyć prywatny DNS na Androidzie oraz iOS.
 icon: lucide/server
 ---
 
