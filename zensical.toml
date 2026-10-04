@@ -12,6 +12,7 @@ extra_css = ["assets/css/extra.css"]
 extra_javascript = ["assets/js/analytics.js"]
 
 # manual navigation menu
+# manual navigation menu
 nav = [
     { "Start" = "index.md" },
     { "Baza Wiedzy" = [
@@ -32,7 +33,10 @@ nav = [
         "narzedzia/konfiguracja-przegladarek.md"
     ]},
     { "Artykuły" = ["blog/index.md"] },
-    { "Wsparcie" = "o-projekcie/wsparcie.md" }
+    { "O projekcie" = [
+        "o-projekcie/prywatnosc.md",
+        "o-projekcie/wsparcie.md"
+    ]}
 ]
 
 # theme settings
