@@ -24,20 +24,20 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 <div class="grid cards" markdown>
 
 -   :lucide-shield-half: **Fundamenty cyfrowe**
-    
+
     ---
-    
+
     Krytyczne minimum. Zarządzanie aktualizacjami, bezpieczny DNS i fundamenty higieny haseł.
-    
+
     [➔ Przejdź do sekcji](fundamenty/fundamenty-cyfrowej-higieny.md)
 
 -   :lucide-fingerprint: **Prywatność i tożsamość**
-    
+
     ---
-    
+
     Redukcja cyfrowego śladu. Maskowanie poczty, izolacja usług i walka z profilowaniem.
-    
-    [➔ Przejdź do sekcji](prywatnosc/index.md)
+
+    [➔ Przejdź do sekcji](prywatnosc/identyfikator-reklamowy.md)
 
 </div>
 
@@ -54,19 +54,19 @@ Koncentruję się przede wszystkim na **bezpieczeństwie urządzeń mobilnych (A
 <div class="grid cards" markdown>
 
 -   :lucide-boxes: **Narzędzia i oprogramowanie**
-    
+
     ---
-    
+
     Przeglądarki, komunikatory i aplikacje systemowe, które szanują Twoją prywatność.
-    
-    [➔ Przejdź do katalogu](narzedzia/index.md)
+
+    [➔ Przejdź do katalogu](narzedzia/katalog.md)
 
 -   :lucide-shield-check: **Zaawansowana ochrona**
-    
+
     ---
-    
+
     Hardening urządzeń. GrapheneOS, klucze sprzętowe i zaawansowana izolacja.
-    
+
     *➔ W przygotowaniu*
 
 </div>
@@ -84,6 +84,6 @@ W sekcji artykułów wychodzę poza ramy instrukcji. Analizuję, dlaczego niekt�
 
 ## Twoja droga do wolności cyfrowej
 
-> Niezależnie od tego, czy jesteś początkującym użytkownikiem, czy zaawansowanym entuzjastą bezpieczeństwa, Eteryu.space dostarcza narzędzi do świadomego zarządzania własnym śladem w sieci. 
-> 
+> Niezależnie od tego, czy jesteś początkującym użytkownikiem, czy zaawansowanym entuzjastą bezpieczeństwa, Eteryu.space dostarcza narzędzi do świadomego zarządzania własnym śladem w sieci.
+>
 > **Zacznij od małych kroków, ale rób je w oparciu o twarde dowody i kryptografię, a nie marketingowe obietnice.**
