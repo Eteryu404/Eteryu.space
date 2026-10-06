@@ -219,6 +219,17 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/tutao/tutanota)
 
+-   :material-email-lock: **Proton Mail**
+    
+    ---
+    
+    Uniwersalny klient poczty oferujący szyfrowanie end to end, samoniszczące wiadomości i ochronę przed trackerami w mailach. Kod aplikacji jest dostępny na GitHubie na licencji GPLv3.
+    
+    !!! warning "Higiena metadanych i wybór paczki"
+        Aplikacja zawiera biblioteki Google (Firebase) oraz Sentry do raportowania błędów. Dotyczy to zarówno wersji z Google Play, jak i gotowych plików APK publikowanych w GitHub Releases. Sentry jest wyłączone wyłącznie w buildach kompilowanych samodzielnie ze źródeł, bez ustawiania zmiennych `SENTRY_DSN_MAIL` i `SENTRY_DSN_ACCOUNT`. Jeśli nie kompilujesz aplikacji samodzielnie, musisz zaakceptować obecność tych bibliotek.
+    
+    [➔ Przejdź do repozytorium](https://github.com/ProtonMail/android-mail)
+
 -   :material-email-plus: **Addy.io**
     
     ---
