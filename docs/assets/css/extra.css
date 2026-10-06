@@ -243,22 +243,26 @@ body {
 
 .md-typeset .stack td {
     border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 0.4rem;
-    padding: 0.6rem 1rem;
-    transition: border-color 0.2s ease;
+    padding: 0.7rem 1rem;
     vertical-align: middle;
-}
-
-.md-typeset .stack tr:hover td {
-    border-color: var(--md-accent-fg-color);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .md-typeset .stack td:first-child {
+    border-right: none;
+    border-radius: 0.4rem 0 0 0.4rem;
     color: var(--md-default-fg-color--light);
-    font-weight: 500;
+    font-size: 0.85em;
     width: 40%;
 }
 
 .md-typeset .stack td:last-child {
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-weight: 500;
     width: 60%;
+}
+
+.md-typeset .stack tr:hover td {
+    border-color: var(--md-accent-fg-color);
+    background-color: var(--md-default-bg-color--lightest);
 }
