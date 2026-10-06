@@ -1,6 +1,6 @@
 /* slate scheme background colors (soft dark slate) */
 [data-md-color-scheme="slate"] {
-    --md-hue: 232; 
+    --md-hue: 232;
     --md-default-bg-color: hsla(var(--md-hue), 15%, 12%, 1);
     --md-default-bg-color--light: hsla(var(--md-hue), 15%, 12%, 0.54);
     --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 12%, 0.26);
@@ -11,22 +11,18 @@
     --md-default-fg-color--lightest: hsla(var(--md-hue), 15%, 95%, 0.20);
 }
 
-/* force links to use accent color */
+/* site-wide body variables (links, fonts) */
 body {
     --md-typeset-a-color: var(--md-accent-fg-color) !important;
+    --md-text-font-family: "Roboto", -apple-system, sans-serif;
+    --md-code-font-family: "Roboto Mono", SFMono-Regular, Consolas, monospace;
 }
 
-/* darker header and tabs (flat, no shadow or line) */
+/* darker header, flat (no shadow, no border) */
 [data-md-color-scheme="slate"] .md-header {
     background-color: hsla(var(--md-hue), 15%, 9%, 1);
     border-bottom: none !important;
     box-shadow: none !important;
-}
-
-[data-md-color-scheme="slate"] .md-tabs {
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-    background-color: hsla(var(--md-hue), 15%, 9%, 1);
 }
 
 [data-md-color-scheme="default"] .md-header {
@@ -36,12 +32,7 @@ body {
     color: black;
 }
 
-[data-md-color-scheme="default"] .md-tabs {
-    color: black;
-    background-color: white;
-}
-
-/* subtitle in header */
+/* taller header and scroll offset for the floating subtitle */
 .md-header__inner {
     min-height: 5.6rem;
 }
@@ -50,6 +41,7 @@ body {
     --md-scroll-margin: 6rem;
 }
 
+/* floating site subtitle below the header title */
 .md-header__ellipsis {
     position: relative;
 }
@@ -67,88 +59,30 @@ body {
     white-space: nowrap;
 }
 
-/* move level 2 items further out */
-.md-nav[data-md-level="2"] > .md-nav__list {
-    margin-left: 1.45em;
-    padding-left: 0.75em;
-    position: relative;
-}
-
-/* colored bar before level 2 items */
-.md-nav[data-md-level="2"] > .md-nav__list::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 1px;
-    background: linear-gradient(
-        to bottom,
-        #21af90 0%,
-        #21af90 50%,
-        #21af90 100%
-    );
-}
-
-@media (max-width: 1220px) {
-    .md-nav[data-md-level="2"] > .md-nav__list::before {
-        opacity: 0%;
-    }
-
-    .md-nav[data-md-level="2"] > .md-nav__list {
-        margin-left: 0;
-        padding-left: 0;
-    }
-}
-
-/* disabled colored headers, kept bold */
-.md-typeset h1 {
-    font-weight: 700;
-}
-
-/* darker footer and top border */
-[data-md-color-scheme="slate"] .md-footer {
-    border-top: 1px solid var(--md-default-bg-color--lighter);
-    background-color: hsla(var(--md-hue), 15%, 9%, 1);
-}
-
-/* shrink footer */
-.md-footer__link {
-    margin-bottom: 0 !important;
-    margin-top: 0.2rem !important;
-}
-
-/* custom footer spacing and typography */
-.md-copyright {
-    padding: 0.4rem 0 0.5rem 0 !important; /* doubled base space above, tight gap below */
-    font-size: 0.65rem !important;
-}
-
-.md-social {
-    padding: 0 0 0.75rem 0 !important; /* breathing room at the very bottom */
-}
-
-/* fine-print typography for copyright highlight (standard font) */
-.md-copyright__highlight {
-    font-size: 0.55rem !important;
-    color: var(--md-footer-fg-color--lighter) !important;
-}
-
-/* match footer meta background (7% lightness for the very bottom) */
-[data-md-color-scheme="slate"] .md-footer-meta {
-    background-color: hsla(var(--md-hue), 15%, 7%, 1);
-}
-
-/* custom logo */
 /* hide logo in the main header */
 .md-header__button.md-logo {
     display: none !important;
 }
 
-/* center items vertically only in the main drawer title */
+/* rounded tabs, darker background */
+[data-md-color-scheme="slate"] .md-tabs {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    background-color: hsla(var(--md-hue), 15%, 9%, 1);
+}
+
+[data-md-color-scheme="default"] .md-tabs {
+    color: black;
+    background-color: white;
+}
+
+/* center drawer title vertically and separate from nav list */
 .md-nav__title[for="__drawer"] {
     display: flex !important;
     align-items: center !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid var(--md-default-bg-color--lighter);
 }
 
 /* strip native padding causing vertical drop, balance horizontal spacing */
@@ -168,6 +102,53 @@ body {
     display: block !important;
 }
 
+/* move level 2 nav items further out */
+.md-nav[data-md-level="2"] > .md-nav__list {
+    margin-left: 1.45em;
+    padding-left: 0.75em;
+    position: relative;
+}
+
+/* colored bar before level 2 nav items */
+.md-nav[data-md-level="2"] > .md-nav__list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        #21af90 0%,
+        #21af90 50%,
+        #21af90 100%
+    );
+}
+
+/* tighten drawer and hide colored bar on narrow viewports */
+@media (max-width: 1220px) {
+    .md-nav__title[for="__drawer"] {
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .md-nav[data-md-level="2"] > .md-nav__list::before {
+        opacity: 0%;
+    }
+
+    .md-nav[data-md-level="2"] > .md-nav__list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+/* lighter headings (H1–H3) */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    font-weight: 400 !important;
+}
+
 /* grid cards interactive hover and active effects */
 .md-typeset .grid.cards > ul > li {
     transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -183,32 +164,42 @@ body {
 /* delicate transparent background tint on click */
 .md-typeset .grid.cards > ul > li:active {
     background-color: var(--md-accent-fg-color--transparent);
-    }
+}
+
+/* darker footer and top border */
+[data-md-color-scheme="slate"] .md-footer {
+    border-top: 1px solid var(--md-default-bg-color--lighter);
+    background-color: hsla(var(--md-hue), 15%, 9%, 1);
+}
+
+/* match footer meta background (7% lightness for the very bottom) */
+[data-md-color-scheme="slate"] .md-footer-meta {
+    background-color: hsla(var(--md-hue), 15%, 7%, 1);
+}
+
+/* shrink footer */
+.md-footer__link {
+    margin-bottom: 0 !important;
+    margin-top: 0.2rem !important;
+}
+
+/* custom footer spacing and typography */
+.md-copyright {
+    padding: 0.4rem 0 0.5rem 0 !important;
+    font-size: 0.65rem !important;
+}
+
+.md-social {
+    padding: 0 0 0.75rem 0 !important;
+}
+
+/* fine-print typography for copyright highlight */
+.md-copyright__highlight {
+    font-size: 0.55rem !important;
+    color: var(--md-footer-fg-color--lighter) !important;
+}
 
 /* custom colored icons */
 .pg-red {
     color: #e53935 !important;
-}
-
-/* separation between drawer logo and nav list */
-.md-nav__title[for="__drawer"] {
-    margin-bottom: 1rem !important;
-    padding-bottom: 1rem !important;
-    border-bottom: 1px solid var(--md-default-bg-color--lighter);
-}
-
-@media (max-width: 1220px) {
-    .md-nav__title[for="__drawer"] {
-        margin-bottom: 0.75rem !important;
-        padding-bottom: 0.75rem !important;
     }
-}
-
-
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3,
-.md-typeset {
-    font-family: Roboto, -apple-system, sans-serif !important;
-    font-weight: 400 !important;
-}
