@@ -40,14 +40,7 @@ To jest **domyślny wybór** dla zdecydowanej większości usług.
 
 Klucz fizyczny (np. YubiKey) to urządzenie USB/NFC, które kryptograficznie potwierdza Twoją tożsamość. Metoda jest odporna na phishing, bo klucz weryfikuje domenę, do której się logujesz.
 
-!!! tip "Kiedy warto rozważyć klucz sprzętowy"
-    FIDO2 jest zalecany, jeśli:
-
-    - Chcesz chronić konta o najwyższej wartości (główna skrzynka, menedżer haseł, bank).
-    - Twoje konto jest celem ataków ukierunkowanych (dziennikarz, aktywista, osoba publiczna).
-    - Chcesz mieć metodę, która nie wymaga pamiętania niczego ani noszenia telefonu.
-
-    Dla większości użytkowników TOTP w dedykowanej aplikacji jest wystarczające. FIDO2 to dodatkowa warstwa, nie zamiennik.
+FIDO2 jest zalecany, jeśli chcesz chronić konta o najwyższej wartości (główna skrzynka, menedżer haseł, bank), jesteś celem ataków ukierunkowanych (dziennikarz, aktywista, osoba publiczna) lub chcesz mieć metodę, która nie wymaga pamiętania niczego ani noszenia telefonu. Dla większości użytkowników TOTP w dedykowanej aplikacji jest jednak wystarczające. FIDO2 to dodatkowa warstwa, nie zamiennik.
 
 ## Wybór aplikacji TOTP
 
@@ -59,8 +52,7 @@ Rekomendowane aplikacje FOSS:
 - **Ente Auth** — otwartoźródłowa, z opcjonalną synchronizacją E2EE między urządzeniami.
 - **2FAS** — otwartoźródłowa, prostsza w obsłudze, dobra dla początkujących.
 
-!!! warning "Nie używaj aplikacji od dostawców usług"
-    Aplikacje typu Google Authenticator, Microsoft Authenticator czy Authy mają jedną wspólną wadę: są tworzone przez firmy, których model biznesowy opiera się na zbieraniu danych. Wybieraj aplikacje niezależne, które nie wymagają konta i nie mają dostępu do sieci, jeśli nie muszą.
+Aplikacje typu Google Authenticator, Microsoft Authenticator czy Authy mają jedną wspólną wadę: są tworzone przez firmy, których model biznesowy opiera się na zbieraniu danych. Wybieraj aplikacje niezależne, które nie wymagają konta i nie mają dostępu do sieci, jeśli nie muszą.
 
 ## Kolejność wdrażania
 
@@ -85,29 +77,23 @@ To jeden z najczęściej popełnianych błędów.
 
 Przy konfiguracji 2FA każda usługa wygeneruje zestaw jednorazowych kodów zapasowych. To Twoja ostatnia linia obrony, jeśli zgubisz telefon lub klucz sprzętowy.
 
-!!! warning "Kody zapasowe trzeba zapisać zanim będą potrzebne"
-    Kody zapasowe są wyświetlane tylko raz, podczas konfiguracji. Jeśli ich nie zapiszesz, a później stracisz dostęp do aplikacji TOTP, odzyskanie konta może być niemożliwe lub bardzo utrudnione.
+Kody zapasowe są wyświetlane tylko raz, podczas konfiguracji. Jeśli ich nie zapiszesz, a później stracisz dostęp do aplikacji TOTP, odzyskanie konta może być niemożliwe lub bardzo utrudnione.
 
-    Zapisz je w sposób trwały:
+Zapisz je w sposób trwały:
 
-    - **Wydrukuj i schowaj w fizycznie bezpiecznym miejscu** (sejf, skrytka bankowa). To najprostsza i najskuteczniejsza metoda.
-    - **Zapisz w oddzielnym menedżerze haseł**, który nie jest tym samym, w którym trzymasz główne hasła.
-    - **Nigdy nie zapisuj ich w notatkach systemowych, w chmurze czy w wiadomości e-mail do samego siebie.**
+- **Wydrukuj i schowaj w fizycznie bezpiecznym miejscu** (sejf, skrytka bankowa). To najprostsza i najskuteczniejsza metoda.
+- **Zapisz w oddzielnym menedżerze haseł**, który nie jest tym samym, w którym trzymasz główne hasła.
+- **Nigdy nie zapisuj ich w notatkach systemowych, w chmurze czy w wiadomości e-mail do samego siebie.**
 
 ## Ciągłość działania (Disaster Recovery)
 
 Utrata dostępu do aplikacji TOTP to scenariusz, który zdarza się częściej, niż się wydaje. Rozbita klawiatura, kradzież telefonu, przypadkowe usunięcie aplikacji. W każdym z tych przypadków musisz mieć plan B.
 
-!!! success "Procedura awaryjna: eksport bazy TOTP"
-    Aplikacje takie jak Aegis czy Ente Auth pozwalają na eksport zaszyfrowanej kopii bazy z wszystkimi tokenami. Wykonaj eksport **teraz**, zanim będzie potrzebny:
+Aplikacje takie jak Aegis czy Ente Auth pozwalają na eksport zaszyfrowanej kopii bazy z wszystkimi tokenami. Wykonaj eksport **teraz**, zanim będzie potrzebny:
 
-    1. Otwórz ustawienia aplikacji i znajdź opcję eksportu.
-    2. Zabezpiecz eksportowaną bazę silnym hasłem.
-    3. Zapisz plik na zaszyfrowanym nośniku offline (pendrive, karta SD) i schowaj razem z kodami zapasowymi.
-    4. Powtarzaj eksport po każdej zmianie kluczowych kont.
+1. Otwórz ustawienia aplikacji i znajdź opcję eksportu.
+2. Zabezpiecz eksportowaną bazę silnym hasłem.
+3. Zapisz plik na zaszyfrowanym nośniku offline (pendrive, karta SD) i schowaj razem z kodami zapasowymi.
+4. Powtarzaj eksport po każdej zmianie kluczowych kont.
 
-    Bez tej kopii, w przypadku utraty telefonu, stracisz dostęp do wszystkich kont chronionych 2FA jednocześnie.
-
-## Podsumowanie
-
-2FA to druga warstwa ochrony, której nie zastąpi żadne hasło, nawet najdłuższe. Wybieraj TOTP w dedykowanej aplikacji FOSS, unikaj SMS tam, gdzie to możliwe, i traktuj główną skrzynkę pocztową jako centrum całej cyfrowej tożsamości. Zapisz kody zapasowe i eksportuj bazę TOTP, zanim będzie za późno. To trzy nawyki, które realnie chronią Cię przed większością scenariuszy przejęcia konta.
+Bez tej kopii, w przypadku utraty telefonu, stracisz dostęp do wszystkich kont chronionych 2FA jednocześnie.
