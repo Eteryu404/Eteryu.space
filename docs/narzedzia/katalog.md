@@ -132,14 +132,6 @@ icon: lucide/list
     
     [➔ Przejdź do strony](https://www.wireguard.com/install/)
 
--   :material-server-security: **Mullvad DNS**
-    
-    ---
-    
-    Utwardzony, darmowy resolver DNS oparty na infrastrukturze w pamięci operacyjnej, co gwarantuje całkowity brak logów. Oferuje gotowe profile blokujące.
-    
-    [➔ Przejdź do strony](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls)
-
 -   :material-shield-lock: **Mullvad VPN**
     
     ---
@@ -379,6 +371,14 @@ icon: lucide/list
     Uniwersalna alternatywa dla rozwiązań komercyjnych oferująca bezpieczne przechowywanie multimediów z szyfrowaniem end to end.
     
     [➔ Przejdź do repozytorium](https://github.com/ente/ente)
+
+-   :material-image-multiple: **Iris Gallery**
+    
+    ---
+    
+    Utwardzona, w pełni offline galeria zdjęć z wbudowanym edytorem, inspektorem EXIF oraz prywatnym sejfem. Manifest nie żąda uprawnienia INTERNET, a audyty Exodus Privacy nie wykryły żadnych trackerów.
+    
+    [➔ Przejdź do repozytorium](https://github.com/MohamadOday/iris-gallery)
 
 -   :material-image-multiple: **ReFra**
     
