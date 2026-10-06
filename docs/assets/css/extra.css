@@ -248,6 +248,7 @@ body {
     transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
+/* pierwsza kolumna: etykieta funkcji, tylko lewa strona zaokrąglona */
 .md-typeset .stack td:first-child {
     border-right: none;
     border-radius: 0.4rem 0 0 0.4rem;
@@ -256,12 +257,14 @@ body {
     width: 40%;
 }
 
+/* druga kolumna: nazwa narzędzia, tylko prawa strona zaokrąglona */
 .md-typeset .stack td:last-child {
     border-radius: 0 0.4rem 0.4rem 0;
     font-weight: 500;
     width: 60%;
 }
 
+/* hover na całym wierszu */
 .md-typeset .stack tr:hover td {
     border-color: var(--md-accent-fg-color);
     background-color: var(--md-default-bg-color--lightest);
