@@ -6,8 +6,10 @@ icon: lucide/list
 
 # Katalog oprogramowania 
 
-!!! abstract "Cel artykułu"
-    Katalog zawiera rygorystycznie wyselekcjonowane narzędzia cyfrowe zorientowane na prywatność. Zestawienie obejmuje aplikacje otwartoźródłowe, rozwiązania z dostępnym kodem do wglądu oraz w pełni lokalne środowiska zamknięte. Narzędzia te stanowią fundament budowy architektury Zero Trust oraz skutecznej minimalizacji cyfrowego śladu.
+!!! abstract "Kryteria wyboru"
+    Katalog zawiera rygorystycznie wyselekcjonowane narzędzia cyfrowe zorientowane na prywatność. Zestawienie obejmuje wyłącznie rozwiązania zweryfikowane w praktyce oraz aplikacje otwartoźródłowe, rozwiązania z dostępnym kodem do wglądu i w pełni lokalne środowiska zamknięte.
+
+    Narzędzia te stanowią fundament budowy architektury Zero Trust oraz skutecznej minimalizacji cyfrowego śladu. Ograniczenia i czerwone flagi są opisane wprost przy każdym narzędziu.
 
 ## Zarządzanie aplikacjami
 
