@@ -203,3 +203,8 @@ body {
         padding-bottom: 0.75rem !important;
     }
 }
+
+
+.md-typeset h1 {
+    font-weight: 400 !important;
+}
