@@ -96,4 +96,6 @@ Aplikacje takie jak Aegis czy Ente Auth pozwalają na eksport zaszyfrowanej kopi
 3. Zapisz plik na zaszyfrowanym nośniku offline (pendrive, karta SD) i schowaj razem z kodami zapasowymi.
 4. Powtarzaj eksport po każdej zmianie kluczowych kont.
 
+Uwaga na pułapkę: jeśli wrzucisz eksport bazy TOTP do chmury, która sama jest chroniona przez 2FA z tej samej bazy, to w scenariuszu utraty telefonu nie odzyskasz ani chmury, ani kodów. Kopia w chmurze może być uzupełnieniem, ale nigdy nie zastąpi kopii offline. Kod zapasowy do chmury trzymaj osobno, najlepiej razem z eksportem na tym samym nośniku fizycznym.
+
 Bez tej kopii, w przypadku utraty telefonu, stracisz dostęp do wszystkich kont chronionych 2FA jednocześnie.
