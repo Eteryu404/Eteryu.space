@@ -4,7 +4,7 @@ description: Praktyczne zastąpienie usług Google sześcioma narzędziami, któ
 icon: lucide/package
 ---
 
-# Zestaw: De-Google
+# Zestaw De-Google
 
 Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z nich przetestowałem i opisałem w [katalogu](../narzedzia/katalog.md).
 
