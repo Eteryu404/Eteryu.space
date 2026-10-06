@@ -1,5 +1,5 @@
 ---
-title: "Zestaw: De-Google"
+title: "Zestaw De-Google"
 description: Praktyczne zastąpienie usług Google sześcioma narzędziami, których sam używam.
 icon: lucide/package
 ---
@@ -7,6 +7,8 @@ icon: lucide/package
 # Zestaw: De-Google
 
 Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z nich przetestowałem i opisałem w [katalogu](../narzedzia/katalog.md).
+
+<div class="stack" markdown>
 
 | Funkcja | Narzędzie |
 |---|---|
@@ -16,7 +18,8 @@ Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z ni
 | Chmura | [Filen](../narzedzia/katalog.md#przechowywanie-danych-i-chmura) |
 | Mapy | CoMaps |
 | Telefon | GrapheneOS |
-{ .stack }
+
+</div>
 
 ## Dla kogo i przed czym chroni
 
@@ -42,7 +45,7 @@ Zastępuje Google Drive. Szyfrowanie zero-knowledge, pliki są szyfrowane przed 
 
 ## CoMaps
 
-Zastępuje Google Maps. Fork Organic Maps bazujący na OpenStreetMap. Działa w pełni offline po pobraniu map, nie wymaga konta i nie wysyła zapytań o lokalizację do zewnętrznych serwerów. Szczegóły w [katalogu](../narzedzia/katalog.md).
+Zastępuje Google Maps. Fork Organic Maps bazujący na OpenStreetMap. Działa w pełni offline po pobraniu map, nie wymaga konta i nie wysyła zapytań o lokalizację do zewnętrznych serwerów.
 
 ## GrapheneOS
 
