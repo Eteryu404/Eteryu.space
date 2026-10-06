@@ -30,7 +30,8 @@ nav = [
     { "Rekomendacje" = [
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md",
-        "narzedzia/konfiguracja-przegladarek.md"
+        "narzedzia/konfiguracja-przegladarek.md",
+        "narzedzia/wyszukiwarki.md"
     ]},
     { "Artykuły" = ["blog/index.md"] },
     { "O Projekcie" = [
