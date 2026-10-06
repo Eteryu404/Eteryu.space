@@ -88,6 +88,10 @@ scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
+# hide "Made with Zensical" generator notice
+[project.extra]
+generator = false
+
 # footer social links
 [[project.extra.social]]
 icon = "fontawesome/brands/mastodon"
