@@ -149,6 +149,12 @@ body {
     font-weight: 400 !important;
 }
 
+/* subtle separator under H2 */
+.md-typeset h2 {
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.3rem;
+}
+
 /* grid cards interactive hover and active effects */
 .md-typeset .grid.cards > ul > li {
     transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
