@@ -222,3 +222,39 @@ body {
 .pg-red {
     color: #e53935 !important;
     }
+
+/* stack table */
+.md-typeset table.stack {
+    border-collapse: separate;
+    border-spacing: 0 0.4rem;
+    border: none;
+    display: table;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.md-typeset table.stack thead {
+    display: none;
+}
+
+.md-typeset table.stack td {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    transition: border-color 0.2s ease;
+    vertical-align: middle;
+}
+
+.md-typeset table.stack tr:hover td {
+    border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset table.stack td:first-child {
+    color: var(--md-default-fg-color--light);
+    font-weight: 500;
+    width: 40%;
+}
+
+.md-typeset table.stack td:last-child {
+    width: 60%;
+}
