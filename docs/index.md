@@ -52,3 +52,5 @@ Koncentruję się przede wszystkim na bezpieczeństwie urządzeń mobilnych (And
 ---
 
 **Zacznij od małych kroków, ale rób je w oparciu o twarde dowody i kryptografię, a nie marketingowe obietnice.**
+
+---
