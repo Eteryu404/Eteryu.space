@@ -165,6 +165,7 @@ body {
     height: 0.5rem;
     border-radius: 50%;
     background: var(--md-accent-fg-color);
+    margin-top: 0.5em;
 }
 
 /* grid cards interactive hover and active effects */
