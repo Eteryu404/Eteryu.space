@@ -1,5 +1,5 @@
 ---
-title: Wybór wyszukiwarki
+title: Wybór Wyszukiwarki
 description: Prywatne wyszukiwarki, które nie budują profilu reklamowego na podstawie Twoich zapytań. Porównanie indeksów, jurysdykcji i modeli biznesowych.
 icon: lucide/search
 ---
