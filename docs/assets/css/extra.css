@@ -149,10 +149,22 @@ body {
     font-weight: 400 !important;
 }
 
-/* subtle separator under H2 */
+/* section marker before H2 */
 .md-typeset h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     border-bottom: 1px solid var(--md-default-fg-color--lightest);
     padding-bottom: 0.3rem;
+}
+
+.md-typeset h2::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--md-accent-fg-color);
 }
 
 /* grid cards interactive hover and active effects */
