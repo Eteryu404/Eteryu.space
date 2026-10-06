@@ -223,49 +223,36 @@ body {
     color: #e53935 !important;
     }
 
-/* stack table (zestawy) */
+/* stack (zestawy) */
 .md-typeset .stack {
-    margin: 1.5em auto;
     max-width: 32rem;
+    margin: 1.5em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
-.md-typeset .stack table {
-    border-collapse: separate;
-    border-spacing: 0 0.4rem;
-    border: none;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.md-typeset .stack thead {
-    display: none;
-}
-
-.md-typeset .stack td {
+.md-typeset .stack-row {
+    display: flex;
+    align-items: center;
     border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.4rem;
     padding: 0.7rem 1rem;
-    vertical-align: middle;
     transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-/* pierwsza kolumna: etykieta funkcji, tylko lewa strona zaokrąglona */
-.md-typeset .stack td:first-child {
-    border-right: none;
-    border-radius: 0.4rem 0 0 0.4rem;
-    color: var(--md-default-fg-color--light);
-    font-size: 0.85em;
-    width: 40%;
-}
-
-/* druga kolumna: nazwa narzędzia, tylko prawa strona zaokrąglona */
-.md-typeset .stack td:last-child {
-    border-radius: 0 0.4rem 0.4rem 0;
-    font-weight: 500;
-    width: 60%;
-}
-
-/* hover na całym wierszu */
-.md-typeset .stack tr:hover td {
+.md-typeset .stack-row:hover {
     border-color: var(--md-accent-fg-color);
     background-color: var(--md-default-bg-color--lightest);
+}
+
+.md-typeset .stack-label {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.85em;
+    flex: 0 0 40%;
+}
+
+.md-typeset .stack-value {
+    font-weight: 500;
+    flex: 1;
 }
