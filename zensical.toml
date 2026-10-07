@@ -145,5 +145,15 @@ custom_checkbox = true
 
 [project.markdown_extensions.pymdownx.tilde]
 
-# blog plugin activation
+# blog plugin
 [project.plugins.blog]
+
+# social cards plugin
+[project.plugins.social]
+enabled = true
+cards = true
+cards_dir = "assets/images/social"
+cards_layout = "default"
+
+[project.plugins.social.cards_layout_options]
+background_color = "black"   
