@@ -222,3 +222,51 @@ body {
 .pg-red {
     color: #e53935 !important;
     }
+
+/* ==========================================================================
+   STACK LIST (Zestawy)
+   ========================================================================== */
+
+.stack-list {
+    max-width: 36rem;
+    margin: 1.5em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.stack-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.4rem;
+    padding: 0.7rem 1.1rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.stack-row:hover {
+    border-color: var(--md-accent-fg-color);
+    background-color: var(--md-default-bg-color--lightest);
+}
+
+.stack-label {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.85em;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.stack-value {
+    font-weight: 500;
+    text-align: right;
+    flex-grow: 1;
+}
+
+.stack-value a {
+    text-decoration: none;
+}
+
+.stack-value a:hover {
+    text-decoration: underline;
+}
