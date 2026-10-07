@@ -1,44 +1,50 @@
 ---
-title: "Zestaw De-Google"
+title: "Zestaw: De-Google"
 description: Praktyczne zastąpienie usług Google sześcioma narzędziami, których sam używam.
 icon: lucide/package
 ---
 
-# Zestaw De-Google
+# Zestaw: De-Google
 
 Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z nich przetestowałem i opisałem w [katalogu](../narzedzia/katalog.md).
 
-<div class="stack" markdown>
+<div class="grid cards" markdown>
 
-<div class="stack-row" markdown>
-<span class="stack-label">Wyszukiwarka</span>
-<span class="stack-value">[Brave Search](../narzedzia/wyszukiwarki.md)</span>
-</div>
+-   **Wyszukiwarka**
 
-<div class="stack-row" markdown>
-<span class="stack-label">Przeglądarka</span>
-<span class="stack-value">[Brave](../narzedzia/konfiguracja-przegladarek.md)</span>
-</div>
+    ---
 
-<div class="stack-row" markdown>
-<span class="stack-label">Poczta</span>
-<span class="stack-value">[Tuta Mail](../narzedzia/katalog.md#komunikacja-i-poczta)</span>
-</div>
+    [Brave Search](../narzedzia/wyszukiwarki.md)
 
-<div class="stack-row" markdown>
-<span class="stack-label">Chmura</span>
-<span class="stack-value">[Filen](../narzedzia/katalog.md#przechowywanie-danych-i-chmura)</span>
-</div>
+-   **Przeglądarka**
 
-<div class="stack-row" markdown>
-<span class="stack-label">Mapy</span>
-<span class="stack-value">CoMaps</span>
-</div>
+    ---
 
-<div class="stack-row" markdown>
-<span class="stack-label">Telefon</span>
-<span class="stack-value">GrapheneOS</span>
-</div>
+    [Brave](../narzedzia/konfiguracja-przegladarek.md)
+
+-   **Poczta**
+
+    ---
+
+    [Tuta Mail](../narzedzia/katalog.md#komunikacja-i-poczta)
+
+-   **Chmura**
+
+    ---
+
+    [Filen](../narzedzia/katalog.md#przechowywanie-danych-i-chmura)
+
+-   **Mapy**
+
+    ---
+
+    CoMaps
+
+-   **Telefon**
+
+    ---
+
+    GrapheneOS
 
 </div>
 
