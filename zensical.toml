@@ -147,17 +147,3 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
-
-#rss plugin
-[project.plugins.rss]
-enabled = true   
-
-# social cards plugin
-[project.plugins.social]
-enabled = true
-cards = true
-cards_dir = "assets/img/social"
-cards_layout = "default"
-
-[project.plugins.social.cards_layout_options]
-background_color = "black"   
