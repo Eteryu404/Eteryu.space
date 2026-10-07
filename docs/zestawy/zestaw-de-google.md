@@ -8,7 +8,7 @@ icon: lucide/package
 
 Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z nich przetestowałem i opisałem w [katalogu](../narzedzia/katalog.md).
 
-<center>
+<center markdown>
 
 | Funkcja | Narzędzie |
 |---|---|
