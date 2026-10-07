@@ -8,6 +8,8 @@ icon: lucide/package
 
 Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z nich przetestowałem i opisałem w [katalogu](../narzedzia/katalog.md).
 
+<center>
+
 | Funkcja | Narzędzie |
 |---|---|
 | Wyszukiwarka | [Brave Search](../narzedzia/wyszukiwarki.md) |
@@ -16,6 +18,8 @@ Sześć narzędzi, które zastępują najważniejsze usługi Google. Każde z ni
 | Chmura | [Filen](../narzedzia/katalog.md#przechowywanie-danych-i-chmura) |
 | Mapy | CoMaps |
 | Telefon | GrapheneOS |
+
+</center>
 
 ## Dla kogo i przed czym chroni
 
