@@ -222,37 +222,3 @@ body {
 .pg-red {
     color: #e53935 !important;
     }
-
-/* stack (zestawy) */
-.md-typeset .stack {
-    max-width: 32rem;
-    margin: 1.5em auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.md-typeset .stack-row {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 0.4rem;
-    padding: 0.7rem 1rem;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.md-typeset .stack-row:hover {
-    border-color: var(--md-accent-fg-color);
-    background-color: var(--md-default-bg-color--lightest);
-}
-
-.md-typeset .stack-label {
-    color: var(--md-default-fg-color--light);
-    font-size: 0.85em;
-    flex: 0 0 40%;
-}
-
-.md-typeset .stack-value {
-    font-weight: 500;
-    flex: 1;
-}
