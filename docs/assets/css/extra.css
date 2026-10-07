@@ -222,11 +222,3 @@ body {
 .pg-red {
     color: #e53935 !important;
     }
-
-/* centered tables */
-.md-typeset table {
-    display: table;
-    margin: 1.5em auto;
-    width: auto;
-    max-width: 100%;
-}
