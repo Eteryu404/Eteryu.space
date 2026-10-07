@@ -223,10 +223,7 @@ body {
     color: #e53935 !important;
     }
 
-/* ==========================================================================
-   STACK LIST (Zestawy)
-   ========================================================================== */
-
+/* stack list (zestawy) */
 .stack-list {
     max-width: 36rem;
     margin: 1.5em auto;
@@ -238,7 +235,6 @@ body {
 .stack-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0.7rem 1.1rem;
     transition: background-color 0.2s ease;
 }
@@ -254,14 +250,14 @@ body {
 .stack-label {
     color: var(--md-default-fg-color--light);
     font-size: 0.9em;
-    flex-shrink: 0;
+    flex: 0 0 9rem;
     margin-right: 1rem;
 }
 
 .stack-value {
     font-weight: 500;
-    text-align: right;
-    flex-grow: 1;
+    text-align: left;
+    flex: 1;
 }
 
 .stack-value a {
