@@ -70,14 +70,15 @@ Oba protokoły szyfrują DNS, ale różnią się charakterystyką. Wybór zależ
 **DoH — wybierz, jeśli:**
 
 - Korzystasz z publicznych sieci Wi-Fi (kawiarnie, hotele, lotniska), które często blokują niestandardowe porty.
+- **Korzystasz głównie z sieci komórkowej.** Operatorzy często blokują port 853 używany przez DoT, a DoH na porcie 443 jest znacznie trudniejszy do zablokowania.
 - Chcesz, żeby ruch DNS wyglądał jak zwykły ruch HTTPS. DoH używa portu 443, tego samego co przeglądanie stron. Trudniej go wykryć i zablokować.
 - Zależy Ci na maksymalnym ukryciu zapytań DNS przed operatorem sieci.
 
 **DoT — wybierz, jeśli:**
 
-- Korzystasz głównie z sieci komórkowej albo domowego Wi-Fi, gdzie port 853 nie jest blokowany.
-- Zależy Ci na niższych opóźnieniach. DoT jest „lżejszy" niż DoH, bo nie owija DNS w dodatkową warstwę HTTP.
+- Korzystasz głównie z domowego Wi-Fi, gdzie masz pewność, że port 853 nie jest blokowany.
 - Administrujesz własnym serwerem DNS i chcesz używać standardowego portu dla DNS over TLS.
+- Zależy Ci na prostocie konfiguracji w sieci, którą w pełni kontrolujesz.
 
 **Nie potrzebujesz ani DoH, ani DoT — jeśli:**
 
