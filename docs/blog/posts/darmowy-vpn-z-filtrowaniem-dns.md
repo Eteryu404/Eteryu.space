@@ -1,6 +1,6 @@
 ---
 title: "Darmowy VPN z filtrowaniem DNS. Proton VPN + DoH/DoT przez WG Tunnel"
-description: "Poradnik: jak połączyć darmowy Proton VPN z szyfrowanym DNS (DoH/DoT) i filtrowaniem reklam przez WG Tunnel. Standardowy WireGuard tego nie potrafi – zobacz, jak to obejść."
+description: "Jak połączyć darmowy Proton VPN z szyfrowanym DNS (DoH/DoT) i filtrowaniem reklam przez WG Tunnel. Standardowy WireGuard tego nie potrafi – zobacz, jak to obejść."
 date: 2026-10-09
 authors:
   - Eteryu
