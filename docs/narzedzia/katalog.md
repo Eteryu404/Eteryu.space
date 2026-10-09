@@ -31,6 +31,14 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/RoundSalmon4/AppVerifierBG)
 
+-   :material-check-decagram: **Verified Apps**
+    
+    ---
+    
+    Narzędzie wspierające weryfikację autentyczności aplikacji Android poprzez porównywanie podpisów i skrótów z zaufanymi źródłami. Ogranicza ryzyko instalacji zmodyfikowanych paczek.
+    
+    [➔ Przejdź do repozytorium](https://github.com/privacyguides/verified-apps-android)
+
 -   :material-store-search: **Komi Store**
     
     ---
@@ -134,6 +142,14 @@ icon: lucide/list
     
     [➔ Przejdź do strony](https://www.wireguard.com/install/)
 
+-   :material-vpn: **WG Tunnel**
+    
+    ---
+    
+    Zaawansowany klient WireGuard dla Androida z automatycznym tunelowaniem, wieloma profilami i regułami split tunneling. Rozszerza standardowego klienta o wygodę i kontrolę.
+    
+    [➔ Przejdź do repozytorium](https://github.com/wgtunnel/android)
+
 -   :material-shield-lock: **Mullvad VPN**
     
     ---
@@ -141,6 +157,14 @@ icon: lucide/list
     Utwardzony dostawca VPN niewymagający podawania adresu email ani danych osobowych przy rejestracji. Oferuje wbudowane filtrowanie DNS.
     
     [➔ Przejdź do strony](https://mullvad.net/)
+
+-   :material-shield-account: **IVPN**
+    
+    ---
+    
+    Utwardzony, audytowany dostawca VPN z jasną polityką braku logów. Umożliwia rejestrację bez danych osobowych, obsługuje WireGuard i Multi-Hop.
+    
+    [➔ Przejdź do repozytorium](https://github.com/ivpn/android-app)
 
 -   :material-shield-star: **Proton VPN**
     
@@ -174,6 +198,14 @@ icon: lucide/list
         Standardowa kompilacja (w tym ta z Google Play) zawiera biblioteki telemetrii (np. Firebase). Przy instalacji z GitHuba (np. przez Obtainium) należy upewnić się, że pobierana jest wersja pliku APK w wariancie FOSS, która jest całkowicie wyczyszczona z modułów śledzących.
     
     [➔ Przejdź do repozytorium](https://github.com/bitwarden/android)
+
+-   :material-key-variant: **Proton Pass**
+    
+    ---
+    
+    Uniwersalny menedżer haseł z szyfrowaniem end to end, obsługą passkeys, aliasów email oraz integracją z ekosystemem Proton. Kod aplikacji Android jest dostępny publicznie.
+    
+    [➔ Przejdź do repozytorium](https://github.com/protonpass/android-pass)
 
 -   :material-two-factor-authentication: **Aegis**
     
@@ -265,6 +297,14 @@ icon: lucide/list
     
     [➔ Przejdź do strony](https://obsidian.md/)
 
+-   :material-notebook-edit: **Notesnook**
+    
+    ---
+    
+    Otwartoźródłowy, szyfrowany end to end menedżer notatek z synchronizacją, trybem offline i ochroną przed analityką. Pozwala zachować kontrolę nad danymi.
+    
+    [➔ Przejdź do repozytorium](https://github.com/streetwriters/notesnook)
+
 -   :material-note-edit: **Quillpad**
     
     ---
@@ -296,6 +336,14 @@ icon: lucide/list
     Uniwersalna baza wiedzy o strukturze blokowej. Gwarantuje pełną suwerenność dzięki pracy wyłącznie w trybie offline bez wymuszonej synchronizacji.
     
     [➔ Przejdź do repozytorium](https://github.com/logseq/logseq)
+
+-   :material-file-document-edit: **CryptPad**
+    
+    ---
+    
+    Szyfrowana end to end platforma do współpracy nad dokumentami, arkuszami, prezentacjami i tablicami. Model Zero Knowledge, możliwość self-hostingu.
+    
+    [➔ Przejdź do repozytorium](https://github.com/cryptpad/cryptpad)
 
 </div>
 
@@ -340,6 +388,22 @@ icon: lucide/list
     Uniwersalny klient chmury oferujący rygorystyczne szyfrowanie end to end z mocnym naciskiem na architekturę Zero Knowledge.
     
     [➔ Przejdź do repozytorium](https://github.com/FilenCloudDienste/filen-ts)
+
+-   :material-cloud-upload: **Proton Drive**
+    
+    ---
+    
+    Uniwersalny klient chmury z szyfrowaniem end to end i architekturą Zero Knowledge. Umożliwia bezpieczne przechowywanie, udostępnianie i kopie zapasowe plików.
+    
+    [➔ Przejdź do repozytorium](https://github.com/ProtonDriveApps/android-drive)
+
+-   :material-safe-square: **Cryptomator**
+    
+    ---
+    
+    Otwartoźródłowe szyfrowanie plików po stronie klienta przed synchronizacją z chmurą. Tworzy sejfy, do których dostawca chmury nie ma wglądu.
+    
+    [➔ Przejdź do repozytorium](https://github.com/cryptomator/android)
 
 -   :material-cloud-check: **MEGA**
     
@@ -495,5 +559,19 @@ icon: lucide/list
     Uniwersalna aplikacja pogodowa oparta na wyselekcjonowanych i bezpiecznych źródłach danych pozbawiona modułów analitycznych.
     
     [➔ Przejdź do repozytorium](https://github.com/breezy-weather/breezy-weather)
+
+</div>
+
+## Mapy i nawigacja
+
+<div class="grid cards" markdown>
+
+-   :material-map-marker-path: **CoMaps**
+    
+    ---
+    
+    Otwartoźródłowa nawigacja offline oparta na OpenStreetMap. Działa bez trackerów i nie wymaga konta, zapewniając prywatne planowanie tras oraz mapy do pobrania.
+    
+    [➔ Przejdź do repozytorium](https://github.com/comaps/comaps)
 
 </div>
