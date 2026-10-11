@@ -1,0 +1,57 @@
+{% if page.meta.mastodon_id %}
+<section class="md-typeset">
+  <hr />
+  <h2>Komentarze z Fediverse</h2>
+  <p>
+    Dyskusja do tego artykułu toczy się na Mastodonie. Aby wziąć w niej udział, odpowiedz na 
+    <a href="https://infosec.exchange/@{{ page.meta.mastodon_user | default('eteryu') }}/{{ page.meta.mastodon_id }}" target="_blank" rel="noopener">ten wpis</a>.
+  </p>
+
+  <div id="mastodon-comments-list" style="margin-top: 1.5em;">
+    <p><em>Ładowanie komentarzy...</em></p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const host = "infosec.exchange";
+      const id = "{{ page.meta.mastodon_id }}";
+      const container = document.getElementById("mastodon-comments-list");
+
+      if (!id || id === "null") return;
+
+      fetch(`https://${host}/api/v1/statuses/${id}/context`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.descendants && data.descendants.length > 0) {
+            container.innerHTML = "";
+            data.descendants.forEach(reply => {
+              const comment = document.createElement("article");
+              comment.style.cssText = "margin: 1em 0; padding: 1.2em; border: 1px solid var(--md-default-fg-color--lightest, #333); border-radius: 8px; background: rgba(0,0,0,0.15);";
+              
+              const date = new Date(reply.created_at).toLocaleString('pl-PL', { dateStyle: 'medium', timeStyle: 'short' });
+              
+              comment.innerHTML = `
+                <div style="display:flex; align-items:center; gap: 12px; margin-bottom: 0.8em;">
+                  <img src="${reply.account.avatar_static}" alt="${reply.account.display_name}" style="width:38px; height:38px; border-radius:50%;">
+                  <div>
+                    <strong style="display:block;"><a href="${reply.account.url}" target="_blank" rel="noopener" style="text-decoration:none;">${reply.account.display_name}</a></strong>
+                    <span style="opacity: 0.7; font-size: 0.85em;">@${reply.account.acct} • ${date}</span>
+                  </div>
+                </div>
+                <div class="mastodon-comment-content" style="font-size: 0.95em; line-height: 1.5;">
+                  ${reply.content}
+                </div>
+              `;
+              container.appendChild(comment);
+            });
+          } else {
+            container.innerHTML = "<p>Brak odpowiedzi. Bądź pierwszy/a i odpowiedz na Mastodonie!</p>";
+          }
+        })
+        .catch(err => {
+          container.innerHTML = "<p>Nie udało się załadować komentarzy z Fediverse.</p>";
+        });
+    });
+  </script>
+</section>
+{% endif %}
