@@ -147,5 +147,4 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
-rss = true
-rss_name = "feed.xml"
+[project.plugin.rss]
