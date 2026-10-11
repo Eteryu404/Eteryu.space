@@ -7,14 +7,32 @@
     <a href="https://infosec.exchange/@{{ page.meta.mastodon_user | default('eteryu') }}/{{ page.meta.mastodon_id }}" target="_blank" rel="noopener">ten wpis</a>.
   </p>
 
-  <!-- Oficjalny tag Web Component z atrybutem 'tootid' wymaganym przez skrypt dpecos -->
+  <style>
+    /* Ukrywamy podwójny angielski nagłówek i opis z komponentu */
+    mastodon-comments h2,
+    mastodon-comments > p {
+      display: none !important;
+    }
+
+    /* Ukrywamy lub porządkujemy nieostylowane liczniki pod tootem */
+    mastodon-comments .stat, 
+    mastodon-comments .stats {
+      display: none !important;
+    }
+
+    /* Dopasowanie ramki komentarzy do ciemnego motywu Material */
+    mastodon-comments {
+      display: block;
+      margin-top: 1em;
+    }
+  </style>
+
   <mastodon-comments 
     host="infosec.exchange" 
     user="{{ page.meta.mastodon_user | default('eteryu') }}" 
     tootid="{{ page.meta.mastodon_id | string }}">
   </mastodon-comments>
 
-  <!-- Skrypt dpecos/mastodon-comments -->
   <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js" async></script>
 </section>
 {% endif %}
