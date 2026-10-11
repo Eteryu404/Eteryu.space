@@ -157,3 +157,4 @@ custom_checkbox = true
 [project.plugins.rss]
 match_path = "blog/posts/.*"
 date_from_meta.as_creation = "date"
+abstract_chars_count = -1
