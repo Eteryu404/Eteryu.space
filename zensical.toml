@@ -94,14 +94,14 @@ generator = false
 
 # footer social links
 [[project.extra.social]]
-icon = "fontawesome/brands/mastodon"
-link = "https://infosec.exchange/@eteryu"
-name = "Mastodon"
-
-[[project.extra.social]]
 icon = "fontawesome/solid/rss"
 link = "/feed_rss_created.xml"
 name = "Kanał RSS"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/mastodon"
+link = "https://infosec.exchange/@eteryu"
+name = "Mastodon"
 
 # markdown extensions
 [project.markdown_extensions.abbr]
