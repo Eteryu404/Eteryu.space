@@ -188,17 +188,6 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/Kunzisoft/KeePassDX)
 
--   :material-cloud-key: **Bitwarden**
-    
-    ---
-    
-    Uniwersalny i chmurowy menedżer haseł oferujący bezpieczną synchronizację. Umożliwia postawienie własnej instancji serwerowej.
-    
-    !!! warning "Higiena metadanych i wybór paczki"
-        Standardowa kompilacja (w tym ta z Google Play) zawiera biblioteki telemetrii (np. Firebase). Przy instalacji z GitHuba (np. przez Obtainium) należy upewnić się, że pobierana jest wersja pliku APK w wariancie FOSS, która jest całkowicie wyczyszczona z modułów śledzących.
-    
-    [➔ Przejdź do repozytorium](https://github.com/bitwarden/android)
-
 -   :material-key-variant: **Proton Pass**
     
     ---
