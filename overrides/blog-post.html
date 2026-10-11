@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <article class="md-content__inner md-typeset">
+    <!-- 1. Najpierw wyrenderuj treść posta -->
+    {{ page.content }}
+
+    <!-- 2. Sekcja o autorze (jeśli jest zdefiniowany) -->
+    {% if page.meta.authors %}
+      <div class="md-post__authors md-typeset" style="margin-top: 2em; padding-top: 1em; border-top: 1px solid var(--md-default-fg-color--lightest);">
+        {% for author in page.meta.authors %}
+          {% include "partials/author.html" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- 3. Sekcja METADANE (data, czas czytania, kategorie) -->
+    {% if page.meta.date or page.meta.categories %}
+      <div class="md-post__meta md-meta" style="margin-top: 1.5em;">
+        {% include "partials/post-meta.html" %}
+      </div>
+    {% endif %}
+
+    <!-- 4. Na samym dole: Komentarze z Fediverse -->
+    {% include "partials/comments.html" %}
+  </article>
+{% endblock %}
