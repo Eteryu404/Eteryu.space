@@ -147,4 +147,8 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
+
+#rss plugin
 [project.plugin.rss]
+enabled = true
+match_path = "blog/posts/.*"
