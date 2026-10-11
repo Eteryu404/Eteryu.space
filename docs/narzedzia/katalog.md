@@ -196,6 +196,17 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/protonpass/android-pass)
 
+-   :material-shield-key-outline: **2FAS Pass**
+    
+    ---
+    
+    Nowoczesny menedżer haseł na Androida rozwijany w modelu *Local-first*. Oferuje niezawodny, natywny Autofill, obsługę Passkeys oraz tworzenie szyfrowanych kopii zapasowych (E2EE) synchronizowanych przez WebDAV lub NAS.
+    
+    !!! info "Licencja typu Source-Available"
+        Kod źródłowy aplikacji jest publicznie dostępny na GitHubie, lecz udostępniany na licencji **BUSL-1.1**. Każda opublikowana wersja przechodzi na w pełni wolną licencję **GNU GPLv3** automatycznie po upływie 2 lat od wydania.
+    
+    [➔ Przejdź do repozytorium](https://github.com/twofas/2fas-pass-android)
+
 -   :material-two-factor-authentication: **Aegis**
     
     ---
