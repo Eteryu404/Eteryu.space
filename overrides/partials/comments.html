@@ -1,0 +1,22 @@
+{% if page.meta.mastodon_id %}
+<section class="md-typeset">
+  <hr />
+  <h2>Komentarze z Fediverse</h2>
+
+  <!-- Kontener na komentarze dpecos/mastodon-comments -->
+  <div id="mastodon-comments"></div>
+
+  <!-- Skrypt dpecos/mastodon-comments -->
+  <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new MastodonComments({
+        target: '#mastodon-comments',
+        host: '{{ page.meta.mastodon_host | default("infosec.exchange") }}',
+        user: '{{ page.meta.mastodon_user | default("eteryu") }}',
+        id: '{{ page.meta.mastodon_id }}'
+      });
+    });
+  </script>
+</section>
+{% endif %}
