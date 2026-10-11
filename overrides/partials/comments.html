@@ -2,21 +2,19 @@
 <section class="md-typeset">
   <hr />
   <h2>Komentarze z Fediverse</h2>
+  <p>
+    Dyskusja do tego artykułu toczy się na Mastodonie. Aby wziąć w niej udział, odpowiedz na 
+    <a href="https://infosec.exchange/@{{ page.meta.mastodon_user | default('eteryu') }}/{{ page.meta.mastodon_id }}" target="_blank" rel="noopener">ten wpis</a>.
+  </p>
 
-  <!-- Kontener na komentarze dpecos/mastodon-comments -->
-  <div id="mastodon-comments"></div>
+  <!-- Użycie natywnego tagu Web Component projektu dpecos/mastodon-comments -->
+  <mastodon-comments 
+    host="infosec.exchange" 
+    user="{{ page.meta.mastodon_user | default('eteryu') }}" 
+    id="{{ page.meta.mastodon_id }}">
+  </mastodon-comments>
 
-  <!-- Skrypt dpecos/mastodon-comments -->
-  <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      new MastodonComments({
-        target: '#mastodon-comments',
-        host: '{{ page.meta.mastodon_host | default("infosec.exchange") }}',
-        user: '{{ page.meta.mastodon_user | default("eteryu") }}',
-        id: '{{ page.meta.mastodon_id }}'
-      });
-    });
-  </script>
+  <!-- Skrypt inicjalizujący komponent -->
+  <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js" async></script>
 </section>
 {% endif %}
