@@ -7,14 +7,13 @@
     <a href="https://infosec.exchange/@{{ page.meta.mastodon_user | default('eteryu') }}/{{ page.meta.mastodon_id }}" target="_blank" rel="noopener">ten wpis</a>.
   </p>
 
-  <!-- Bezpośrednie wywołanie webcomponentu z prawidłowymi atrybutami -->
+  <!-- Poprawny atrybut dla dpecos/mastodon-comments to toot-id -->
   <mastodon-comments 
     host="infosec.exchange" 
     user="{{ page.meta.mastodon_user | default('eteryu') }}" 
-    status-id="{{ page.meta.mastodon_id | string }}">
+    toot-id="{{ page.meta.mastodon_id }}">
   </mastodon-comments>
 
-  <!-- Skrypt dpecos/mastodon-comments -->
   <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js" async></script>
 </section>
 {% endif %}
