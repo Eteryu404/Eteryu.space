@@ -147,6 +147,7 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
+blog_dir = "blog"
 
 #rss plugin
 [project.plugin.rss]
