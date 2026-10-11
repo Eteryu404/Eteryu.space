@@ -152,6 +152,8 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
+post_meta = "top"
+authors = "top"
 
 # rss plugin
 [project.plugins.rss]
