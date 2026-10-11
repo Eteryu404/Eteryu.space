@@ -7,14 +7,6 @@
   <meta name="twitter:card" content="summary_large_image">
 {% endblock %}
 
-{% block post_meta %}
-  {% if page.meta.authors or page.meta.date %}
-    <div class="md-post__meta md-meta" style="margin-bottom: 1.5em;">
-      {% include "partials/post-meta.html" %}
-    </div>
-  {% endif %}
-{% endblock %}
-
 {% block content %}
   {{ super() }}
   {% include "partials/comments.html" %}
