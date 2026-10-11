@@ -153,3 +153,6 @@ blog_dir = "blog"
 [project.plugins.rss]
 enabled = true
 match_path = "blog/posts/.*"
+
+[project.plugins.rss.date_from_meta]
+as_creation = "date"
