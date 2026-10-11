@@ -7,14 +7,14 @@
     <a href="https://infosec.exchange/@{{ page.meta.mastodon_user | default('eteryu') }}/{{ page.meta.mastodon_id }}" target="_blank" rel="noopener">ten wpis</a>.
   </p>
 
-  <!-- Użycie natywnego tagu Web Component projektu dpecos/mastodon-comments -->
+  <!-- Bezpośrednie wywołanie webcomponentu z prawidłowymi atrybutami -->
   <mastodon-comments 
     host="infosec.exchange" 
     user="{{ page.meta.mastodon_user | default('eteryu') }}" 
-    id="{{ page.meta.mastodon_id }}">
+    status-id="{{ page.meta.mastodon_id | string }}">
   </mastodon-comments>
 
-  <!-- Skrypt inicjalizujący komponent -->
+  <!-- Skrypt dpecos/mastodon-comments -->
   <script src="https://cdn.jsdelivr.net/gh/dpecos/mastodon-comments@latest/mastodon-comments.js" async></script>
 </section>
 {% endif %}
