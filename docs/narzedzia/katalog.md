@@ -215,7 +215,7 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/beemdevelopment/Aegis)
 
--   :material-key-chain: **2FAS**
+-   :material-key-chain: **2FAS Auth**
     
     ---
     
