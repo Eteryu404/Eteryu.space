@@ -11,7 +11,7 @@ tags:
   - no-logs
   - self-hosted
 authors:
-  - eteryu
+  - Eteryu
 ---
 
 Kiedyś używałem publicznego DNS z filtrowaniem. Działał dobrze. Blokował większość reklam, trackerów i tego całego śmiecia, który ciągnie się za każdą stroną. Ale zawsze brakowało mi jednej rzeczy: kontroli.
