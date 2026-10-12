@@ -18,6 +18,8 @@ Kiedyś używałem publicznego DNS z filtrowaniem. Działał dobrze. Blokował w
 
 Nie nad tym, jakie domeny trafiają na listy. One i tak pochodzą od tych samych ludzi, którzy tworzą listy dla publicznych resolverów. Różnica polega na tym, że sam decyduję, z których list korzystam, jak je łączę i co z nich wyciągam. Mogę dodać dowolną listę z internetu, nie tylko te, które ktoś uznał za godne dodania do swojego katalogu. I gdy czegoś nie chcę blokować, dodaję to do własnych wyjątków i następnego dnia jest już przepuszczane. Bez czekania, aż ktoś inny uzna, że to dobry pomysł.
 
+<!-- more -->
+
 To mnie uwierało. Nie z powodu paranoi, ale z poczucia, że oddaję kontrolę nad czymś fundamentalnym. Nad tym, jak moje urządzenia łączą się ze światem.
 
 ## Co to właściwie jest?
