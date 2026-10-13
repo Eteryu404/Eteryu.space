@@ -1,5 +1,5 @@
 {% if page.meta.mastodon_id %}
-<section class="md-typeset">
+<section class="md-typeset" id="fediverse-comments">
   <hr />
   <h2>Komentarze z Fediverse</h2>
   <p>
@@ -12,12 +12,19 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document$.subscribe(function () {
       const host = "infosec.exchange";
       const id = "{{ page.meta.mastodon_id }}";
       const container = document.getElementById("mastodon-comments-list");
+      const section = document.getElementById("fediverse-comments");
 
-      if (!id || id === "null") return;
+      if (!id || id === "null" || !container || !section) return;
+
+      // Przenieś sekcję komentarzy na koniec kontenera artykułu (za metadane)
+      const target = document.querySelector(".md-content__inner");
+      if (target && section.parentElement !== target) {
+        target.appendChild(section);
+      }
 
       fetch(`https://${host}/api/v1/statuses/${id}/context`)
         .then(response => response.json())
