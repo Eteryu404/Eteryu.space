@@ -16,7 +16,7 @@ authors:
 
 Kiedyś używałem publicznego DNS z filtrowaniem. Działał dobrze. Blokował większość reklam, trackerów i tego całego śmiecia, który ciągnie się za każdą stroną. Ale zawsze brakowało mi jednej rzeczy: kontroli.
 
-Nie nad tym, jakie domeny trafiają na listy. One i tak pochodzą od tych samych ludzi, którzy tworzą listy dla publicznych resolverów. Różnica polega na tym, że sam decyduję, z których list korzystam, jak je łączę i co z nich wyciągam. Mogę dodać dowolną listę z internetu, nie tylko te, które ktoś uznał za godne dodania do swojego katalogu. I gdy czegoś nie chcę blokować, dodaję to do własnych wyjątków i następnego dnia jest już przepuszczane. Bez czekania, aż ktoś inny uzna, że to dobry pomysł.
+W publicznych resolverach, takich jak NextDNS czy AdGuard DNS, wybierasz listy z gotowego katalogu. Ja chciałem sam decydować, z których źródeł korzystam, jak je łączę i co z nich wyciągam. Pi-hole też na to pozwala, ale wymaga serwera w domu i domyślnie działa tylko w sieci lokalnej. Żeby filtrował poza domem, trzeba stawiać VPN albo wystawiać go jako publiczny endpoint. Ja nie chciałem ani jednego, ani drugiego.
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ To mnie uwierało. Nie z powodu paranoi, ale z poczucia, że oddaję kontrolę n
 
 ## Co to właściwie jest?
 
-Zbudowałem swój własny serwer DNS. Stoi w chmurze, więc mam do niego dostęp z każdego miejsca na świecie. Filtruje ruch według list, które sam wybieram i sam układam.
+Zbudowałem swój własny serwer DNS. Stoi w chmurze, więc mam do niego dostęp z każdego miejsca na świecie. Nie potrzebuję do tego żadnego sprzętu, żadnego Raspberry Pi, żadnego VPN-a. Filtruje ruch według list, które sam wybieram i sam układam.
 
 Działa to tak. Moje urządzenia pytają mój serwer o adres jakiejś strony. Serwer sprawdza, czy ta domena jest na liście, którą przygotowałem. Jeśli jest, odpowiada „nie znam takiej strony". Jeśli nie ma jej na liście, przekazuje zapytanie dalej.
 
