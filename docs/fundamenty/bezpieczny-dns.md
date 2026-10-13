@@ -9,7 +9,7 @@ icon: lucide/server
 !!! abstract "Cel artykułu"
     Ten materiał wyjaśnia mechanikę działania protokołu DNS oraz zagrożenia wynikające z domyślnej konfiguracji narzucanej przez operatorów.
     
-    Jeśli szukasz konkretnych instrukcji konfiguracji, zajrzyj do poradnika [Jak skonfigurować prywatny DNS](../poradniki/jak-skonfigurowac-prywatny-dns.md).
+    Jeśli szukasz konkretnych instrukcji konfiguracji, zajrzyj do poradnika [Jak skonfigurować prywatny DNS](../poradniki/prywatny-dns-w-5-minut.md).
 
 Zmiana serwerów DNS to absolutny fundament cyfrowej higieny i pierwszy krok do zabezpieczenia urządzenia przed większością realnych zagrożeń. Zobaczmy, co dokładnie dzieje się pod maską Twojego telefonu lub komputera, gdy wpisujesz adres strony internetowej, i dlaczego przejęcie kontroli nad tym procesem to Twoja najważniejsza tarcza obronna.
 
