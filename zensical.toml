@@ -29,12 +29,15 @@ nav = [
     ]},
     { "Poradniki" = [
         "poradniki/jak-zabezpieczyc-telefon-w-15-minut.md",
-        "poradniki/jak-skonfigurowac-prywatny-dns.md",
+        "poradniki/prywatny-dns-w-5-minut.md",
         "poradniki/darmowy-vpn-z-filtrowaniem-dns.md",
         "poradniki/jak-zainstalowac-pixel-camera-na-grapheneos.md",
+        "poradniki/storage-scopes-grapheneos.md",
         "poradniki/cyfrowa-higiena-aliasy-email.md",
         "poradniki/cyfrowa-higiena-bez-podgladaczy.md",
-        "poradniki/cyfrowa-higiena-izolacja-toksycznych-aplikacji.md"
+        "poradniki/cyfrowa-higiena-izolacja-toksycznych-aplikacji.md",
+        "poradniki/cyfrowa-higiena-klawiatura-keylogger.md",
+        "poradniki/cyfrowa-higiena-przerwa-na-kawe.md"
     ]},
     { "Rekomendacje" = [
         "narzedzia/katalog.md",
