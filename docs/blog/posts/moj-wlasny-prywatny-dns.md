@@ -35,6 +35,8 @@ Warto dodać, że to działa na poziomie DNS. Nie blokuje reklam w YouTube ani e
 
 ## Jak łączę listy i usuwam duplikaty
 
+To, co opisałem wyżej, to sam resolver. Ale on nie działa w próżni. Potrzebuje listy, na której może pracować. Przygotowanie tej listy to druga, osobna część całego rozwiązania.
+
 Problem z wieloma źródłami jest taki, że często się nakładają. Ta sama domena może pojawić się w trzech, czterech, pięciu listach jednocześnie. Gdybym wrzucił wszystko do jednego worka bez czyszczenia, miałbym listę pełną powtórzeń, większą niż potrzeba i wolniejszą w działaniu.
 
 Zamiast tego mój pipeline robi coś prostego. Zbiera wszystkie domeny ze wszystkich źródeł do jednego zbioru, który z definicji nie może zawierać duplikatów. Jeśli ta sama domena pojawi się pięć razy, będzie tylko raz.
