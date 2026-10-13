@@ -27,13 +27,18 @@ nav = [
             "prywatnosc/aliasy.md"
         ]}
     ]},
+    { "Poradniki" = [
+        "poradniki/jak-zabezpieczyc-telefon-w-15-minut.md",
+        "poradniki/jak-zainstalowac-pixel-camera-na-grapheneos.md",
+        "poradniki/darmowy-vpn-z-filtrowaniem-dns.md"
+    ]},
     { "Rekomendacje" = [
         "narzedzia/katalog.md",
         "narzedzia/wybor-przegladarki.md",
         "narzedzia/konfiguracja-przegladarek.md",
         "narzedzia/wyszukiwarki.md"
     ]},
-    { "Artykuły" = ["blog/index.md"] },
+    { "Blog" = ["blog/index.md"] },
     { "O Projekcie" = [
         "o-projekcie/prywatnosc.md",
         "o-projekcie/wsparcie.md"
