@@ -74,7 +74,7 @@ Wiele aplikacji żyje własnym życiem, kiedy z nich nie korzystasz. Wejdź w us
 
 Wszystko, co mimo powyższych blokad spróbuje wysłać zapytanie z telefonu, można przefiltrować w locie, zanim dotrze do serwerów szpiegujących. Masz do wyboru dwie proste drogi.
 
-- **Prywatny DNS.** Wbudowana w każdy nowoczesny telefon funkcja. Wchodzisz w ustawienia sieciowe, znajdujesz opcję `Prywatny DNS` i wpisujesz tam darmowy adres filtrujący, np. od `NextDNS` lub `AdGuard`. Od tej sekundy system sam blokuje zapytania do znanych sieci reklamowych. Szczegóły znajdziesz w poradniku [Jak skonfigurować prywatny DNS](jak-skonfigurowac-prywatny-dns.md).
+- **Prywatny DNS.** Wbudowana w każdy nowoczesny telefon funkcja. Wchodzisz w ustawienia sieciowe, znajdujesz opcję `Prywatny DNS` i wpisujesz tam darmowy adres filtrujący, np. od `NextDNS` lub `AdGuard`. Od tej sekundy system sam blokuje zapytania do znanych sieci reklamowych. Szczegóły znajdziesz w poradniku [Jak skonfigurować prywatny DNS](prywatny-dns-w-5-minut.m).
 - **VPN z filtrem.** Jeśli zależy Ci nie tylko na blokowaniu trackerów, ale też na zamaskowaniu adresu IP i zaszyfrowaniu ruchu, użyj sprawdzonych usług, takich jak `Proton VPN` czy `Mullvad`.
 
 ## Podsumowanie
