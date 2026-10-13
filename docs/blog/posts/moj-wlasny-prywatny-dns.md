@@ -31,7 +31,7 @@ Działa to tak. Moje urządzenia pytają mój serwer o adres jakiejś strony. Se
 
 Blokuję reklamy, trackery, telemetrię, domeny malware i phishing. Korzystam z ośmiu źródeł, które sam wybrałem. Jedne skupiają się na reklamach, inne na trackerach, jeszcze inne na zagrożeniach. Każde z nich wnosi coś innego.
 
-Warto dodać, że to działa na poziomie DNS. Nie blokuje reklam w YouTube ani elementów wewnątrz strony. Do tego potrzebny jest osobny content blocker w przeglądarce. Mój resolver jest pierwszą warstwą, nie jedyną.
+Warto dodać, że to działa na poziomie DNS. Nie blokuje reklam w YouTube ani elementów wewnątrz strony. Do tego potrzebny jest osobny content blocker w przeglądarce. Mój resolver jest pierwszą warstwą.
 
 ## Jak łączę listy i usuwam duplikaty
 
