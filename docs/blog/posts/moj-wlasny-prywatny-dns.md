@@ -1,6 +1,6 @@
 ---
 date: 2026-10-12
-title: Mój własny, prywatny DNS. Po co?
+title: Mój własny DNS. Bez serwera, bez logów.
 description: Zbudowałem własny resolver DNS, który blokuje reklamy, trackery, malware i phishing. Bez panelu, bez logów, bez kompromisów.
 mastodon_id: 117429296638656157
 categories:
@@ -56,10 +56,6 @@ Mój resolver przetwarza zapytanie, zwraca odpowiedź i zapomina. Nie zapisuje n
 
 ## Dla kogo to jest
 
-To rozwiązanie dla kogoś, kto ma kilka urządzeń i chce, żeby wszystkie filtrowały tak samo. Telefon, laptop, tablet, cokolwiek. Bez instalowania osobnych aplikacji na każdym z nich.
-
-Dla kogoś, kto ceni prywatność i nie potrzebuje wykresów, żeby czuć, że coś działa.
-
-Dla kogoś, kto chce sam decydować, co blokuje, i nie czekać, aż ktoś inny zrobi to za niego.
+To rozwiązanie dla kogoś, kto ma kilka urządzeń i chce, żeby wszystkie filtrowały tak samo. Telefon, laptop, tablet, cokolwiek. Bez instalowania osobnych aplikacji na każdym z nich. Dla kogoś, kto ceni prywatność i chce sam decydować, co blokuje, zamiast czekać, aż ktoś inny zrobi to za niego.
 
 Jeśli zależy Ci na panelu i statystykach, inne rozwiązania zrobią to lepiej. Ale jeśli cenisz kontrolę i prywatność bardziej niż wygodę, to jest dokładnie to.
