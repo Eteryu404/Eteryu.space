@@ -152,6 +152,7 @@ custom_checkbox = true
 
 # blog plugin
 [project.plugins.blog]
+categories = false
 
 # rss plugin
 [project.plugins.rss]
