@@ -9,5 +9,10 @@
 
 {% block content %}
   {{ super() }}
+  {# Usunęliśmy stąd include komentarzy #}
+{% endblock %}
+
+{% block post_meta %}
+  {{ super() }}
   {% include "partials/comments.html" %}
 {% endblock %}
