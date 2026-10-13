@@ -43,4 +43,4 @@ Odzyskanie kontroli polega na zmianie domyślnego asystenta na wysoce zaufanego 
 
 ## Jak to skonfigurować?
 
-Instrukcje konfiguracji dla Androida, iOS i macOS znajdziesz w poradniku [Jak skonfigurować prywatny DNS w 5 minut](../poradniki/jak-skonfigurowac-prywatny-dns.md).
+Instrukcje konfiguracji dla Androida, iOS i macOS znajdziesz w poradniku [Jak skonfigurować prywatny DNS w 5 minut](../poradniki/prywatny-dns-w-5-minut.md).
