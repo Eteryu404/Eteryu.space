@@ -6,13 +6,3 @@
   <meta name="twitter:image" content="https://eteryu.space/assets/img/meta-eteryu.png">
   <meta name="twitter:card" content="summary_large_image">
 {% endblock %}
-
-{% block content %}
-  {{ super() }}
-  {# Usunęliśmy stąd include komentarzy #}
-{% endblock %}
-
-{% block post_meta %}
-  {{ super() }}
-  {% include "partials/comments.html" %}
-{% endblock %}
