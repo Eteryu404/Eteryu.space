@@ -2,6 +2,7 @@
 date: 2026-10-12
 title: Mój własny, prywatny DNS. Po co?
 description: Zbudowałem własny resolver DNS, który blokuje reklamy, trackery, malware i phishing. Bez panelu, bez logów, bez kompromisów.
+mastodon_id: 117429296638656157
 categories:
   - Prywatność
   - DNS
