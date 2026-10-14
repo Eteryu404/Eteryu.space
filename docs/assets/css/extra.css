@@ -168,6 +168,34 @@ body {
     margin-top: 0.5em;
 }
 
+/* --- cards: non-interactive container, only the inner link is clickable --- */
+
+/* remove transition and tap highlight */
+.md-typeset .grid.cards > ul > li {
+    transition: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: default;
+}
+
+/* neutralise hover / active / focus states left by Material */
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ul > li:active,
+.md-typeset .grid.cards > ul > li:focus,
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid.cards > ul > li:focus-visible {
+    border-color: var(--md-default-fg-color--lightest);
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* make sure the actual link inside still looks and behaves like a link */
+.md-typeset .grid.cards > ul > li a {
+    -webkit-tap-highlight-color: auto;
+    cursor: pointer;
+}
+
 /* darker footer and top border */
 [data-md-color-scheme="slate"] .md-footer {
     border-top: 1px solid var(--md-default-bg-color--lighter);
@@ -204,4 +232,4 @@ body {
 /* custom colored icons */
 .pg-red {
     color: #e53935 !important;
-    }
+}
