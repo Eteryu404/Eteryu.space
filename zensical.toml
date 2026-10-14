@@ -38,7 +38,7 @@ nav = [
             { "Bez Podglądaczy" = "poradniki/cyfrowa-higiena-bez-podgladaczy.md" },
             { "Izolacja Aplikacji" = "poradniki/cyfrowa-higiena-izolacja-toksycznych-aplikacji.md" },
             { "Klawiatura I Schowek" = "poradniki/cyfrowa-higiena-klawiatura-keylogger.md" },
-            { "Przerwa Na Kawę" = "poradniki/cyfrowa-higiena-przerwa-na-kawe.md" }
+            { "Szybkie Zwycięstwa" = "poradniki/cyfrowa-higiena-przerwa-na-kawe.md" }
         ]}
     ]},
     { "Rekomendacje" = [
