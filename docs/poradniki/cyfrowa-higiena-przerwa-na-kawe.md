@@ -1,7 +1,7 @@
 ---
-title: "Cyfrowa higiena podczas przerwy na kawę"
+title: "Szybkie zwycięstwa dla prywatności w 10 minut"
 description: "Kilka prostych nawyków, które odcinają większość komercyjnego szpiegowania na telefonie: identyfikator reklamowy, cztery uprawnienia krytyczne i filtrowanie DNS."
-icon: lucide/coffee
+icon: lucide/zap
 ---
 
 Nasze smartfony bez przerwy nadają o tym, gdzie jesteśmy i co robimy. Dobra wiadomość: odcięcie większości komercyjnego szpiegowania nie wymaga bycia ekspertem od cyberbezpieczeństwa. To kwestia kilku prostych nawyków, które wdrożysz podczas krótkiej przerwy na kawę.
