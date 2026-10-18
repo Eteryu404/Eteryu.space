@@ -58,8 +58,8 @@ nav = [
 [project.theme]
 variant = "modern"
 custom_dir = "overrides"
-favicon = "assets/img/1552167043208769.png"
-logo = "assets/img/1552167043208769.png"
+logo = "assets/images/logo.png"
+favicon = "assets/images/favicon.png"
 language = "pl"
 
 # ui features
