@@ -81,16 +81,15 @@ body {
     display: flex !important;
     align-items: center !important;
     margin-bottom: 1rem !important;
-    /* Dodano oddech u góry (1.5rem) i wyrównano paddingi boczne/dolny */
     padding: 1.5rem 1rem 1rem 1rem !important; 
     border-bottom: 1px solid var(--md-default-bg-color--lighter);
-    /* Zmniejszono czcionkę do 0.85rem dla jeszcze lepszego balansu */
-    font-size: 0.85rem !important; 
+    /* Zmniejszono czcionkę do 0.8rem dla jeszcze lepszego balansu */
+    font-size: 0.8rem !important; 
 }
 
 /* strip native padding causing vertical drop, balance horizontal spacing */
 .md-nav__title[for="__drawer"] .md-logo {
-    margin: 0 1.1rem 0 0 !important; /* Zwiększono odstęp z prawej do 1.1rem dla dodatkowego oddechu */
+    margin: 0 1.4rem 0 0 !important; /* Zwiększono odstęp z prawej do 1.4rem dla większego oddechu */
     padding: 0 !important;
     display: flex !important;
     align-items: center !important;
@@ -98,9 +97,9 @@ body {
 
 /* enforce mobile drawer logo size and circular crop */
 .md-nav__title[for="__drawer"] .md-logo img {
-    width: 2.5rem !important; 
-    height: 2.5rem !important;
-    min-width: 2.5rem !important;
+    width: 2.8rem !important; /* Zwiększono z 2.5rem, by logo było lepiej widoczne */
+    height: 2.8rem !important;
+    min-width: 2.8rem !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     display: block !important;
@@ -136,7 +135,6 @@ body {
 @media (max-width: 1220px) {
     .md-nav__title[for="__drawer"] {
         margin-bottom: 0.75rem !important;
-        /* Podtrzymujemy górny padding (1.5rem) również na mobile */
         padding: 1.5rem 1rem 0.75rem 1rem !important; 
     }
 
