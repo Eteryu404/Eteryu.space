@@ -83,23 +83,28 @@ body {
     margin-bottom: 1rem !important;
     padding-bottom: 1rem !important;
     border-bottom: 1px solid var(--md-default-bg-color--lighter);
+    font-size: 1.1rem !important; /* ciut większy tekst, by balansował z powiększonym logo */
 }
 
 /* strip native padding causing vertical drop, balance horizontal spacing */
 .md-nav__title[for="__drawer"] .md-logo {
-    margin: -0.6rem 1.25rem 0 0.2rem !important;
+    margin: 0 0.85rem 0 0 !important; /* usunięto ujemny margines górny, dodano odstęp z prawej */
     padding: 0 !important;
     display: flex !important;
+    align-items: center !important;
 }
 
 /* enforce mobile drawer logo size and circular crop */
 .md-nav__title[for="__drawer"] .md-logo img {
-    width: 2.3rem !important;
-    height: 2.3rem !important;
-    min-width: 2.3rem !important;
+    width: 2.8rem !important; /* powiększono z 2.3rem dla lepszej widoczności */
+    height: 2.8rem !important;
+    min-width: 2.8rem !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     display: block !important;
+    /* dodano subtelną poświatę i obramowanie, by odciąć się od ciemnego tła */
+    box-shadow: 0 0 10px rgba(189, 58, 159, 0.25) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 /* move level 2 nav items further out */
@@ -232,4 +237,4 @@ body {
 /* custom colored icons */
 .pg-red {
     color: #e53935 !important;
-}
+    }
