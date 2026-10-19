@@ -83,29 +83,27 @@ body {
     margin-bottom: 1rem !important;
     padding: 1.5rem 1rem 1rem 1rem !important; 
     border-bottom: 1px solid var(--md-default-bg-color--lighter);
-    /* Zmniejszono czcionkę do 0.8rem dla jeszcze lepszego balansu */
-    font-size: 0.8rem !important; 
+    /* Lekko powiększono tekst, by zbalansować większe logo */
+    font-size: 0.95rem !important; 
 }
 
 /* strip native padding causing vertical drop, balance horizontal spacing */
 .md-nav__title[for="__drawer"] .md-logo {
-    margin: 0 1.4rem 0 0 !important; /* Zwiększono odstęp z prawej do 1.4rem dla większego oddechu */
+    margin: 0 1rem 0 0 !important; /* Zmniejszono margines, bo samo logo jest teraz szersze */
     padding: 0 !important;
     display: flex !important;
     align-items: center !important;
 }
 
-/* enforce mobile drawer logo size and circular crop */
+/* enforce mobile drawer logo size (no circular crop) */
 .md-nav__title[for="__drawer"] .md-logo img {
-    width: 2.8rem !important; /* Zwiększono z 2.5rem, by logo było lepiej widoczne */
-    height: 2.8rem !important;
-    min-width: 2.8rem !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
+    width: 3.2rem !important; /* Powiększono z 2.8rem */
+    height: 3.2rem !important;
+    min-width: 3.2rem !important;
+    object-fit: contain !important; /* Zapewnia, że cały obrazek (z rogami) jest widoczny */
     display: block !important;
-    /* subtelna poświata i obramowanie */
-    box-shadow: 0 0 10px rgba(189, 58, 159, 0.25) !important; 
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    /* Użyto drop-shadow zamiast box-shadow, aby poświata otaczała same karty SIM, a nie kwadratowe tło pliku */
+    filter: drop-shadow(0 0 8px rgba(229, 73, 255, 0.4)) !important; 
 }
 
 /* move level 2 nav items further out */
@@ -238,4 +236,4 @@ body {
 /* custom colored icons */
 .pg-red {
     color: #e53935 !important;
-        }
+    }
