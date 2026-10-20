@@ -60,5 +60,3 @@ Polecam go każdemu, kto chce mieć kontrolę nad swoim urządzeniem z poziomu s
 Po pięciu miesiącach mogę powiedzieć jedno: GrapheneOS dostarczył mi to, czego oczekiwałem, czyli pełną kontrolę, szybkość i bezpieczeństwo bez zbędnego balastu. 
 
 Czy wrócę do stockowego Androida? Obecnie nie widzę takiej potrzeby, ale w duchu świadomego zaufania nie zamykam na to drzwi. Moja decyzja mogłaby się zmienić w dwóch przypadkach: gdyby na rynku pojawiło się urządzenie, które mnie prawdziwie zachwyci, a jednocześnie kierunek rozwoju samego Androida stałby się dla mnie akceptowalny i zgodny z moim modelem zagrożeń. Na ten moment ewolucja systemu Google podąża w kierunku, którego nie akceptuję. Póki co, zostaję z GrapheneOS.
-
-A jak u Was? Używacie GrapheneOS? Jakie macie doświadczenia po dłuższym czasie? Chętnie poczytam.
