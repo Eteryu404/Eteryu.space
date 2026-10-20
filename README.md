@@ -12,9 +12,9 @@ Celem projektu jest dostarczenie konkretnych, sprawdzonych metod redukcji ryzyka
 
 ## Współpraca
 
-Jeśli napotkasz problem z wdrożeniem zaleceń albo masz ogólne pytania, otwórz nowy wątek w zakładce [Discussions](https://github.com/Eteryu404/Eteryu.space/discussions).
+Jeśli napotkasz problem z wdrożeniem zaleceń albo masz ogólne pytania, otwórz nowy wątek w zakładce [Discussions](https://github.com/realeteryu/Eteryu.space/discussions).
 
-Jeśli chcesz zasugerować poprawkę, zgłosić błąd lub dodać nowy materiał, po prostu otwórz [Issue](https://github.com/Eteryu404/Eteryu.space/issues).
+Jeśli chcesz zasugerować poprawkę, zgłosić błąd lub dodać nowy materiał, po prostu otwórz [Issue](https://github.com/realeteryu/Eteryu.space/issues).
 
 Możesz też skontaktować się ze mną bezpośrednio na [Mastodonie](https://infosec.exchange/@eteryu).
 
