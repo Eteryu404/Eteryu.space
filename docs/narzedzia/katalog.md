@@ -67,6 +67,9 @@ icon: lucide/list
     
     Szybka przeglądarka z domyślnie wbudowaną ochroną przed trackerami. Oferuje świetny balans między wygodą a prywatnością dla codziennego użytkowania.
     
+    !!! warning "Kontrowersje"
+        Brave ma historię kontrowersji, m.in. związanych z linkami afiliacyjnymi (2020) oraz innymi incydentami dotyczącymi prywatności. Mimo to pozostaje jednym z najskuteczniejszych narzędzi do blokowania trackerów.
+    
     [➔ Przejdź do repozytorium](https://github.com/brave/brave-browser)
 
 </div>
@@ -217,6 +220,64 @@ icon: lucide/list
     
     [➔ Przejdź do repozytorium](https://github.com/streetwriters/notesnook)
 
+-   :material-note-edit: **Open Notes**
+    
+    ---
+    
+    Minimalistyczny notatnik oferujący renderowanie Markdown i szyfrowane kopie zapasowe bez zbędnych uprawnień systemowych. Działa w 100% offline.
+    
+    !!! info "Status rozwoju"
+        Ostatnia istotna aktualizacja miała miejsce w październiku 2026. Projekt jest aktywny, choć rozwijany w spokojnym tempie.
+    
+    [➔ Przejdź do repozytorium](https://github.com/Fandroid745/Open-notes)
+
+</div>
+
+## Galerie i edycja zdjęć
+
+<div class="grid cards" markdown>
+
+-   :material-image-lock: **Ente Photos**
+    
+    ---
+    
+    Alternatywa dla rozwiązań komercyjnych oferująca bezpieczne przechowywanie multimediów w chmurze z szyfrowaniem end-to-end.
+    
+    [➔ Przejdź do repozytorium](https://github.com/ente-io/ente)
+
+-   :material-image-multiple: **Iris Gallery**
+    
+    ---
+    
+    Szybka, w pełni offline galeria zdjęć z wbudowanym edytorem i prywatnym sejfem.
+    
+    !!! success "W 100% offline"
+        Manifest nie żąda uprawnienia INTERNET, a audyty Exodus Privacy nie wykryły żadnych trackerów.
+    
+    [➔ Przejdź do repozytorium](https://github.com/MohamadOday/iris-gallery)
+
+-   :material-image-multiple: **ReFra**
+    
+    ---
+    
+    Nowoczesna i szybka galeria zdjęć z wydajnym wariantem funkcjonującym całkowicie bez uprawnień sieciowych.
+    
+    !!! info "Wybór wariantu"
+        Domyślna wersja zawiera funkcje online i uprawnienie INTERNET. Aby uzyskać w pełni offline'owy odpowiednik, wybierz wariant `offline` z wydania na GitHubie.
+    
+    [➔ Przejdź do repozytorium](https://github.com/IacobIonut01/ReFra)
+
+-   :material-image-edit: **Image Toolbox**
+    
+    ---
+    
+    Wielofunkcyjny edytor obrazów działający w pełni lokalnie. Umożliwia zaawansowaną edycję oraz bezpieczne wycinanie metadanych.
+    
+    !!! warning "Uprawnienie sieciowe"
+        Mimo że aplikacja reklamowana jest jako offline, manifest zawiera uprawnienie INTERNET (prawdopodobnie do pobierania modeli AI). Jeśli chcesz mieć pewność, że aplikacja nie łączy się z siecią, zablokuj jej dostęp przez firewall systemowy.
+    
+    [➔ Przejdź do repozytorium](https://github.com/T8RIN/ImageToolbox)
+
 </div>
 
 ## Multimedia
@@ -228,6 +289,9 @@ icon: lucide/list
     ---
     
     Rozbudowany fork NewPipe. Skutecznie omija algorytmy YouTube i natywnie blokuje segmenty sponsorowane w filmach.
+    
+    !!! warning "Wykryty tracker"
+        Audyt Exodus Privacy wykrył w aplikacji jeden tracker. Mimo to pozostaje jednym z najlepszych klientów YouTube pod kątem funkcji i blokowania reklam.
     
     [➔ Przejdź do repozytorium](https://github.com/InfinityLoop1308/PipePipe)
 
@@ -296,27 +360,5 @@ icon: lucide/list
     Prywatna nawigacja offline oparta na OpenStreetMap. Działa bez trackerów i nie wymaga zakładania konta.
     
     [➔ Przejdź do repozytorium](https://github.com/comaps/comaps)
-
-</div>
-
-## Aplikacje w 100% Offline
-
-<div class="grid cards" markdown>
-
--   :material-image-lock: **Iris Gallery**
-    
-    ---
-    
-    W pełni offline galeria zdjęć z wbudowanym edytorem i prywatnym sejfem. Manifest nie żąda uprawnienia INTERNET, a audyty nie wykryły żadnych trackerów.
-    
-    [➔ Przejdź do repozytorium](https://github.com/MohamadOday/iris-gallery)
-
--   :material-note-edit: **Open Notes**
-    
-    ---
-    
-    Minimalistyczny notatnik offline. Oferuje renderowanie Markdown i szyfrowane kopie zapasowe bez zbędnych uprawnień systemowych.
-    
-    [➔ Przejdź do repozytorium](https://github.com/Fandroid745/Open-notes)
 
 </div>
