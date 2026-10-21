@@ -77,3 +77,5 @@ Nie ma przeglądarki idealnej. Jest tylko ta, której wady jesteś w stanie zaak
 *   Jeśli **jesteś na iOS** – nie masz wyboru, ale świadomie włącz Lockdown Mode, jeśli tylko możesz.
 
 To jest właśnie esencja `distrust`: nie ufaj domyślnym ustawieniom, wiedz, co jest pod spodem, i wybieraj z otwartymi oczami.
+
+Pamiętaj jednak, że zaufanie do przeglądarki ma swoją datę ważności – architektura i cykl aktualizacji zmieniają się z czasem. Wracaj tu regularnie, aby zweryfikować, czy Twój wybór nadal jest aktualny.
