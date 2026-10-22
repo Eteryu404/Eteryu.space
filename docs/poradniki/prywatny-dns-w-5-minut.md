@@ -18,33 +18,35 @@ Najprostsze rozwiązania to gotowe usługi chmurowe. Nie musisz nic stawiać, ni
 
 Dla większości użytkowników **NextDNS** to najlepszy wybór, bo daje kontrolę bez potrzeby utrzymywania infrastruktury. Jeśli nie chcesz się rejestrować, wybierz **Control D** z presetem Hagezi albo **AdGuard DNS**.
 
-## Konfiguracja na Androidzie
+## Konfiguracja
 
-W nowszych wersjach Androida (od wersji 9 wzwyż) system natywnie obsługuje szyfrowany DNS przez DoT. Nie musisz instalować żadnej dodatkowej aplikacji.
+=== ":material-android: Android"
 
-1. Otwórz **Ustawienia** systemowe.
-2. Wejdź w **Sieć i internet** → **Prywatny DNS** (może być też w „Zaawansowane").
-3. Wybierz opcję **Nazwa hosta dostawcy prywatnego DNS** zamiast „Automatyczna".
-4. Wpisz adres serwera wygenerowany przez Twojego dostawcę. Przykłady:
-   - NextDNS: `twoj-id.dns.nextdns.io`
-   - Control D (Hagezi Pro Plus): `x-hagezi-proplus.freedns.controld.com`
-   - AdGuard DNS: `dns.adguard-dns.com`
-5. Zapisz zmiany.
+    W nowszych wersjach Androida (od wersji 9 wzwyż) system natywnie obsługuje szyfrowany DNS przez DoT. Nie musisz instalować żadnej dodatkowej aplikacji.
 
-System od tej chwili będzie używał tego resolvera dla wszystkich zapytań DNS, także w aplikacjach.
+    1. Otwórz **Ustawienia** systemowe.
+    2. Wejdź w **Sieć i internet** → **Prywatny DNS** (może być też w „Zaawansowane").
+    3. Wybierz opcję **Nazwa hosta dostawcy prywatnego DNS** zamiast „Automatyczna".
+    4. Wpisz adres serwera wygenerowany przez Twojego dostawcę. Przykłady:
+        - NextDNS: `twoj-id.dns.nextdns.io`
+        - Control D (Hagezi Normal): `x-hagezi-normal.freedns.controld.com`
+        - AdGuard DNS: `dns.adguard-dns.com`
+    5. Zapisz zmiany.
 
-## Konfiguracja na iOS i macOS
+    System od tej chwili będzie używał tego resolvera dla wszystkich zapytań DNS, także w aplikacjach.
 
-Systemy Apple obsługują szyfrowany DNS przez profile konfiguracyjne. Nie potrzebujesz żadnej aplikacji.
+=== ":material-apple: iOS i macOS"
 
-1. Zaloguj się u swojego dostawcy (np. NextDNS).
-2. Wygeneruj **profil konfiguracyjny** (plik `.mobileconfig`).
-3. Pobierz plik na urządzenie.
-4. Wejdź w **Ustawienia** → **Ogólne** → **VPN i zarządzanie urządzeniem**.
-5. Zatwierdź instalację profilu.
-6. Profil pojawi się jako aktywny w **Ustawienia** → **Ogólne** → **VPN i zarządzanie urządzeniem** → **Profil konfiguracji**.
+    Systemy Apple obsługują szyfrowany DNS przez profile konfiguracyjne. Nie potrzebujesz żadnej aplikacji.
 
-Od tej chwili cały ruch DNS z urządzenia będzie szyfrowany.
+    1. Zaloguj się u swojego dostawcy (np. NextDNS).
+    2. Wygeneruj **profil konfiguracyjny** (plik `.mobileconfig`).
+    3. Pobierz plik na urządzenie.
+    4. Wejdź w **Ustawienia** → **Ogólne** → **VPN i zarządzanie urządzeniem**.
+    5. Zatwierdź instalację profilu.
+    6. Profil pojawi się jako aktywny w **Ustawienia** → **Ogólne** → **VPN i zarządzanie urządzeniem** → **Profil konfiguracji**.
+
+    Od tej chwili cały ruch DNS z urządzenia będzie szyfrowany.
 
 ## Weryfikacja
 
