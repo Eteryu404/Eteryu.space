@@ -36,7 +36,7 @@ Ustawienia znajdziesz w:
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
     - [x] Wybierz **Auto-przekierowywanie adresów śledzących**
     - [x] Wybierz **Wymagaj, aby wszystkie połączenia używały HTTPS (rygorystyczne)**
-    - [x] (Opcjonalnie) Wybierz **Blokowanie skryptów**
+    - [x] (Opcjonalnie) Wybierz **Blokowanie skryptów** (1)
     - [x] Wybierz **Blokuj pliki cookie z innych witryn**
     - [x] Wybierz **Blokowanie fingerprintingu**
     - [x] Wybierz **Zapobiegaj fingerprintingowi przez ustawienia języka**
@@ -55,7 +55,7 @@ Ustawienia znajdziesz w:
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
     - [x] Wybierz **Auto-Redirect AMP pages**
     - [x] Wybierz **Auto-Redirect Tracking URLs**
-    - [x] (Opcjonalnie) Wybierz **Block Scripts**
+    - [x] (Opcjonalnie) Wybierz **Block Scripts** (1)
     - [x] Wybierz **Block Fingerprinting**
     - [x] Wybierz **Site Tabs Closed** w sekcji *Auto Shred*
 
@@ -67,8 +67,10 @@ Ustawienia znajdziesz w:
 
 </div>
 
-!!! note "Uwaga o blokowaniu skryptów"
-    Opcja blokowania skryptów wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+
+!!! note "Global Privacy Control i banery cookie"
+    W wersji na Androida **Global Privacy Control (GPC)** jest flagą domyślnie włączoną (możesz to sprawdzić pod `brave://flags/#brave-global-privacy-control-enabled`). Banery zgody na pliki cookie są blokowane przez listę filtrów **EasyList Cookie**. W wersji na iOS GPC działa jako sygnał **tylko dla JavaScript** i warto jawnie włączyć **Enable Global Privacy Control** w sekcji *Shields & Privacy*. Dodatkowo na iOS dostępne jest osobne ustawienie **Block Cookie Consent Notices**.
 
 ## Pozostałe ustawienia prywatności
 
@@ -76,7 +78,7 @@ Ustawienia znajdziesz w:
 
 === "Android"
 
-    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji *Bezpieczne przeglądanie (Safe Browsing)*
+    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji *Bezpieczne przeglądanie (Safe Browsing)* (1)
     - [x] Wybierz **Wyłącz nieobsługiwany przez serwer proxy protokół UDP** w sekcji *WebRTC*
     - [ ] Odznacz **Zezwalaj witrynom na sprawdzanie zapisanych metod płatności**
     - [x] Wybierz opcję wyłączającą przyspieszanie stron w sekcji *Optymalizacja JavaScript*
@@ -92,8 +94,7 @@ Ustawienia znajdziesz w:
 
 </div>
 
-!!! warning "Dlaczego wyłączenie Safe Browsing ma sens na Androidzie?"
-    W przeciwieństwie do wersji desktopowej, implementacja Safe Browsing w Brave na Androidzie **nie pośredniczy** w żądaniach sieciowych. Oznacza to, że każde sprawdzenie adresu URL może zostać wykonane bezpośrednio z Twojego urządzenia, ujawniając Twój adres IP firmie Google. Jeśli zależy Ci na prywatności, bezpieczniej jest polegać na systemowym filtrowaniu DNS (patrz sekcja poniżej) lub zaakceptować to ryzyko, mając świadomość kompromisu.
+1. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Jeśli zależy Ci na prywatności, bezpieczniej jest polegać na systemowym filtrowaniu DNS (patrz sekcja poniżej).
 
 ## Autouzupełnianie, AI i dane lokalne
 
@@ -103,6 +104,7 @@ Ustawienia znajdziesz w:
 - [ ] Odznacz **Brave Rewards / Wallet / VPN / News** — warto ukryć ich ikony w ustawieniach wyglądu
 - [ ] Odznacz **Sugestie w pasku adresu** (sekcja Leo AI)
 - [ ] Odznacz **Sugestie wyszukiwania** (sekcja Wyszukiwarki)
+- [ ] **Wyszukiwarka:** Ustaw **Brave Search** (lub inną prywatną) jako domyślną w `Ustawienia` → `Wyszukiwarki`. Brave Search nie profiluje użytkowników ani nie śledzi zapytań.
 
 ---
 
@@ -110,6 +112,9 @@ Ustawienia znajdziesz w:
 
 !!! tip "Dlaczego DNS ma znaczenie?"
     Nawet najbardziej rygorystyczna konfiguracja przeglądarki traci sens, jeśli Twój dostawca internetu (ISP) widzi niezabezpieczone zapytania DNS. Zamiast konfigurować to w samej przeglądarce, **przenieś ten ciężar na system operacyjny**. Ochroni to ruch globalnie, dla wszystkich aplikacji na telefonie.
+
+!!! note "Dlaczego DNS nie zastępuje Safe Browsing 1:1?"
+    DNS działa na poziomie **domeny** (np. blokuje `zlosliwa-domena.com`). Safe Browsing działa na poziomie **konkretnego adresu URL** (np. blokuje `bezpieczna-domena.com/phishing`). Jeśli złośliwa treść znajduje się na zaufanej domenie (np. w linku do fałszywego logowania), DNS jej nie zatrzyma. DNS to warstwa sieciowa (blokuje połączenie), Safe Browsing to warstwa aplikacji (weryfikuje reputację ścieżki). Rezygnacja z Safe Browsing na rzecz DNS to świadomy kompromis, a nie pełna zamiana.
 
 Polecani dostawcy (wybierz jednego):
 - **Control D** (`p2.freedns.controld.com`) — darmowy resolver bez konta, blokuje reklamy, trackery i malware. Nie przechowuje logów.
@@ -134,7 +139,9 @@ Polecani dostawcy (wybierz jednego):
 
 **Kluczowe cechy Vanadium:**
 - **Brak rozszerzeń:** Podsystem rozszerzeń nie istnieje w Chromium na Androida, a GrapheneOS celowo go nie dodaje. Jest to podyktowane chęcią minimalizacji powierzchni ataku i zapobiegania fingerprintingowi.
-- **Wbudowane filtrowanie treści:** Vanadium posiada wbudowany bloker reklam i trackerów oparty na listach EasyList i EasyPrivacy.
+- **Wbudowane filtrowanie treści:** Vanadium posiada wbudowany bloker reklam i trackerów oparty na listach EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listach językowych.
 - **Utwardzenie jądra:** Domyślnie wyłączone JIT (Just-In-Time compilation), włączone partycjonowanie stanu sieci oraz kontrola przepływu sterowania (Control-flow integrity).
+- **Memory Tagging Extension (MTE):** Vanadium jako pierwsza przeglądarka na świecie wykorzystuje MTE w środowisku produkcyjnym do ochrony sterty przed exploitami.
+- **Origin Keyed Processes:** Włączone domyślnie od wersji 141.0.7390.111.0, zapewniają lepszą izolację witryn (site isolation sandboxing).
 
 *Szczegółowa instrukcja konfiguracji Vanadium pojawi się wkrótce.*
