@@ -70,7 +70,9 @@ Ustawienia znajdziesz w:
 1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 !!! note "Global Privacy Control i banery cookie"
-    W wersji na Androida **Global Privacy Control (GPC)** jest flagą domyślnie włączoną (możesz to sprawdzić pod `brave://flags/#brave-global-privacy-control-enabled`). Banery zgody na pliki cookie są blokowane przez listę filtrów **EasyList Cookie**. W wersji na iOS GPC działa jako sygnał **tylko dla JavaScript** i warto jawnie włączyć **Enable Global Privacy Control** w sekcji *Shields & Privacy*. Dodatkowo na iOS dostępne jest osobne ustawienie **Block Cookie Consent Notices**.
+    **Na Androidzie:** Global Privacy Control (GPC) jest flagą domyślnie włączoną (możesz to zweryfikować pod `brave://flags/#brave-global-privacy-control-enabled`). Banery zgody na pliki cookie są blokowane przez listę filtrów **EasyList Cookie**.
+    
+    **Na iOS:** Platforma nie obsługuje flag (brak dostępu do `brave://flags`), więc GPC jest zwykłym przełącznikiem. Warto jawnie włączyć **Enable Global Privacy Control** w sekcji *Shields & Privacy*. Działa on jako sygnał tylko dla JavaScript. Dodatkowo na iOS dostępne jest osobne ustawienie **Block Cookie Consent Notices**.
 
 ## Pozostałe ustawienia prywatności
 
