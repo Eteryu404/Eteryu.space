@@ -140,10 +140,13 @@ Polecani dostawcy (wybierz jednego):
     Vanadium to utwardzona przeglądarka oparta na Chromium, dostarczana domyślnie z GrapheneOS. Jej filozofia różni się od Brave — zamiast rozbudowanych opcji konfiguracyjnych, stawia na **bezpieczne ustawienia domyślne (secure defaults)**.
 
 **Kluczowe cechy Vanadium:**
-- **Brak rozszerzeń:** Podsystem rozszerzeń nie istnieje w Chromium na Androida, a GrapheneOS celowo go nie dodaje. Jest to podyktowane chęcią minimalizacji powierzchni ataku i zapobiegania fingerprintingowi.
-- **Wbudowane filtrowanie treści:** Vanadium posiada wbudowany bloker reklam i trackerów oparty na listach EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listach językowych.
-- **Utwardzenie jądra:** Domyślnie wyłączone JIT (Just-In-Time compilation), włączone partycjonowanie stanu sieci oraz kontrola przepływu sterowania (Control-flow integrity).
-- **Memory Tagging Extension (MTE):** Vanadium jako pierwsza przeglądarka na świecie wykorzystuje MTE w środowisku produkcyjnym do ochrony sterty przed exploitami.
-- **Origin Keyed Processes:** Włączone domyślnie od wersji 141.0.7390.111.0, zapewniają lepszą izolację witryn (site isolation sandboxing).
+
+| Cecha | Opis |
+| :--- | :--- |
+| **Brak rozszerzeń** | Podsystem rozszerzeń nie istnieje w Chromium na Androida, a GrapheneOS celowo go nie dodaje. Jest to podyktowane chęcią minimalizacji powierzchni ataku i zapobiegania fingerprintingowi. |
+| **Wbudowane filtrowanie treści** | Vanadium posiada wbudowany bloker reklam i trackerów oparty na listach EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listach językowych. |
+| **Utwardzenie jądra** | Domyślnie wyłączone JIT (Just-In-Time compilation), włączone partycjonowanie stanu sieci oraz kontrola przepływu sterowania (Control-flow integrity). |
+| **Memory Tagging Extension (MTE)** | Vanadium jako pierwsza przeglądarka na świecie wykorzystuje MTE w środowisku produkcyjnym do ochrony sterty przed exploitami. |
+| **Origin Keyed Processes** | Włączone domyślnie od wersji 141.0.7390.111.0, zapewniają lepszą izolację witryn (site isolation sandboxing). |
 
 *Szczegółowa instrukcja konfiguracji Vanadium pojawi się wkrótce.*
