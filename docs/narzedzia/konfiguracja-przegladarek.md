@@ -40,7 +40,7 @@ Ustawienia znajdziesz w:
     <details class="warning" markdown>
     <summary>Używaj domyślnych list filtrów</summary>
 
-    Brave pozwala na wybór dodatkowych filtrów treści w menu **Filtrowanie treści** lub na wewnętrznej stronie `brave://adblock`. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
+    Brave pozwala na wybór dodatkowych filtrów treści w menu **Filtrowanie treści** lub na wewnętrznej stronie `brave://adblock`. Odradzam korzystanie z tej funkcji. Trzymanie się domyślnych list jest bezpieczniejsze. Im więcej niestandardowych reguł dodasz, tym bardziej Twoja przeglądarka będzie się wyróżniać na tle innych. W skrajnym przypadku, źle skonstruowane dodatkowe listy mogą nawet zwiększyć powierzchnię ataku w razie wystąpienia luki w zabezpieczeniach.
     </details>
 
     - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
@@ -64,7 +64,7 @@ Ustawienia znajdziesz w:
     <details class="warning" markdown>
     <summary>Używaj domyślnych list filtrów</summary>
 
-    Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
+    Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Trzymanie się domyślnych list jest bezpieczniejsze. Im więcej niestandardowych reguł dodasz, tym bardziej Twoja przeglądarka będzie się wyróżniać na tle innych. W skrajnym przypadku, źle skonstruowane dodatkowe listy mogą nawet zwiększyć powierzchnię ataku w razie wystąpienia luki w zabezpieczeniach.
     </details>
 
     </div>
@@ -197,4 +197,4 @@ Vanadium posiada wbudowany bloker oparty na listach **EasyList** (EasyList, Easy
 - Działa jako *subresource filtering*: blokuje żądania sieciowe do znanych źródeł reklam i trackerów.
 - **Ograniczenia:** nie zapewnia filtrowania kosmetycznego ani wstrzykiwania scriptletów. Reklamy osadzane dynamicznie (np. w odtwarzaczu YouTube) mogą pozostać widoczne. W tym aspekcie jest słabszy od Brave Shields, ale nadal skuteczniejszy niż samo filtrowanie DNS.
 
-Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacy-guides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
+Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
