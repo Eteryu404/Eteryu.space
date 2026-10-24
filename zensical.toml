@@ -136,7 +136,6 @@ permalink = true
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 
-[project.markdown_extensions.pymdownx.blocks.annotate]
 [project.markdown_extensions.pymdownx.betterem]
 [project.markdown_extensions.pymdownx.caret]
 [project.markdown_extensions.pymdownx.details]
