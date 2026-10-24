@@ -6,7 +6,7 @@ icon: lucide/settings-2
 
 # Konfiguracja przeglądarek
 
-Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
+Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają jednak anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
 
 # Brave
 
@@ -99,14 +99,18 @@ DNS (w tym szyfrowany DoH/DoT) działa wyłącznie na poziomie **nazwy domeny**.
 **Rekomendacja:** Jeśli priorytetem jest ochrona przed phishingiem i malware, pozostaw Safe Browsing włączony, akceptując kompromis. Jeśli priorytetem jest minimalizacja kontaktu z Google, wyłącz go świadomie i polegaj na warstwie DNS oraz ostrożności. Nie traktuj DNS jako „zamiennika” Safe Browsing — to nieprawda.
 </details>
 
-## Autouzupełnianie i dane lokalne
+## Autouzupełnianie, AI i wyszukiwanie
+
+Poniższe ustawienia ograniczają gromadzenie danych lokalnych oraz funkcje pomocnicze, które mogą wysyłać zapytania do zewnętrznych usług.
+
+### Autouzupełnianie i dane lokalne
 
 - [ ] Odznacz **Zapisywanie haseł / Menedżer haseł**
 - [ ] Odznacz **Autouzupełnianie adresów i kart płatniczych**
 - [ ] Odznacz **Ankiety Brave**
 - [ ] Odznacz **Brave Rewards / Wallet / VPN / News** — warto ukryć ich ikony w ustawieniach wyglądu
 
-## Leo AI
+### Leo AI
 
 Ustawienia znajdziesz w:
 
@@ -122,7 +126,7 @@ Ustawienia znajdziesz w:
 
     - [ ] Odznacz **Show In Quick Search Engine Bar**
 
-## Wyszukiwarki
+### Wyszukiwarki
 
 Ustawienia znajdziesz w:
 
@@ -146,12 +150,12 @@ Nawet najbardziej rygorystyczna konfiguracja przeglądarki traci sens, jeśli Tw
 
 Poniżej zestawienie sprawdzonych resolverów. Wybór zależy od tego, czy ważniejsza jest dla Ciebie filtracja reklam, maksymalna prywatność, czy zaawansowana konfiguracja.
 
-| Dostawca | Adresy (DoH / DoT) | Filtrowanie | Logi | Uwagi |
-|---|---|---|---|---|
-| **Control D** | `p2.freedns.controld.com` | Reklamy, trackery, malware | Brak (plan darmowy) | Darmowy resolver bez konta; tworzony przez zespół Windscribe. |
-| **Quad9** | `dns.quad9.net` | Malware i phishing (opcjonalnie) | Brak adresów IP | Szwajcarska fundacja non-profit; nie filtruje reklam. |
-| **AdGuard DNS** | `dns.adguard-dns.com` | Reklamy, trackery, złośliwe domeny | Zależnie od planu | Prosty w konfiguracji, dobry dla początkujących. |
-| **NextDNS** | Konfigurowany indywidualnie | Pełna personalizacja | Konfigurowalne | Wymaga konta; zaawansowana zapora DNS. |
+| Dostawca | Adresy (DoH / DoT) | Filtrowanie i uwagi |
+|---|---|---|
+| **Control D** | `p2.freedns.controld.com` | Reklamy, trackery, malware. Darmowy resolver bez konta. Tworzony przez zespół Windscribe. Nie przechowuje logów w planie darmowym. |
+| **Quad9** | `dns.quad9.net` | Malware i phishing (opcjonalnie). Szwajcarska fundacja non-profit. **Nie loguje adresów IP.** Nie filtruje reklam. |
+| **AdGuard DNS** | `dns.adguard-dns.com` | Reklamy, trackery, złośliwe domeny. Prosty w konfiguracji. Zależnie od planu może prowadzić logi. |
+| **NextDNS** | Konfigurowany indywidualnie | Pełna personalizacja i zaawansowana zapora DNS. Wymaga konta. Logi konfigurowalne przez użytkownika. |
 
 === "Android"
 
@@ -165,8 +169,13 @@ Poniżej zestawienie sprawdzonych resolverów. Wybór zależy od tego, czy ważn
 
 ## Vanadium (WIP)
 
-> **Status: Work in progress.** Poniższa sekcja jest w fazie opracowywania. Ustawienia mogą ulec zmianie wraz z aktualizacjami GrapheneOS i Vanadium.
+!!! warning "Status: Work in progress"
+    Poniższa sekcja jest w fazie opracowywania. Ustawienia mogą ulec zmianie wraz z aktualizacjami GrapheneOS i Vanadium.
 
-Vanadium to domyślna, utwardzona przeglądarka oparta na Chromium, dostarczana z GrapheneOS. Kładzie nacisk na bezpieczeństwo dostosowane do mobilnego zagrożenia: domyślnie wyłącza kompilację JIT dla JavaScript (co utrudnia wykorzystanie błędów w silniku), zawiera wbudowany bloker treści i integruje się z piaskownicą GrapheneOS. Filozofia Vanadium jest odmienna od Brave — zamiast agresywnego blokowania trackerów na poziomie przeglądarki, stawia na **bezpieczeństwo fundamentu** i pozostawia filtrację warstwie DNS oraz świadomym wyborom użytkownika.
+Vanadium to domyślna, utwardzona przeglądarka oparta na Chromium, dostarczana z GrapheneOS. Jej filozofia bezpieczeństwa jest odmienna od Brave: zamiast rozbudowanego ekosystemu funkcji prywatności, stawia na **bezpieczeństwo fundamentu** — ścisłą izolację procesów, ograniczenie dynamicznego generowania kodu i minimalizację powierzchni ataku.
+
+Vanadium **domyślnie wyłącza kompilację JIT** dla JavaScript, z możliwością włączenia jej per-site w rzadkich przypadkach wymagających wydajności. Wykorzystuje także mechanizmy seccomp-bpf do blokowania dynamicznego generowania kodu w procesach innych niż piaskownica renderera.
+
+W przeglądarce wbudowany jest **bloker treści oparty na listach EasyList** — EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listy językowe dopasowywane do języka interfejsu[reference:0]. Działa on jako *subresource filtering*: blokuje żądania sieciowe do znanych źródeł reklam i trackerów, ale **nie zapewnia filtrowania kosmetycznego ani wstrzykiwania scriptletów**, więc reklamy osadzane dynamicznie (np. w odtwarzaczu YouTube) mogą pozostać widoczne. W tym zakresie jest słabszy od Brave Shields, choć nadal skuteczniejszy niż filtrowanie DNS.
 
 Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
