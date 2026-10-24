@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja Przeglądarek
-description: Autorski zestaw rekomendacji utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
+description: Zestaw rekomendacji utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
 icon: lucide/settings-2
 ---
 
@@ -71,7 +71,7 @@ Ustawienia znajdziesz w:
 
 === "Android"
 
-    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji **Bezpieczne przeglądanie (Safe Browsing)** (2)
+    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji **Bezpieczne przeglądanie** (Safe Browsing) (1)
     - [x] Wybierz **Wyłącz nieobsługiwany przez serwer proxy protokół UDP** w sekcji *WebRTC*
     - [ ] Odznacz **Zezwalaj witrynom na sprawdzanie zapisanych metod płatności**
     - [x] Wybierz opcję wyłączającą przyspieszanie stron w sekcji *Optymalizacja JavaScript*
@@ -87,7 +87,7 @@ Ustawienia znajdziesz w:
 
 </div>
 
-2. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Szczegółowe wyjaśnienie kompromisu znajdziesz w rozwijanej notatce poniżej.
+1. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Szczegółowe wyjaśnienie kompromisu znajdziesz w rozwijanej notatce poniżej.
 
 <details class="info" markdown>
 <summary>Jak działa Safe Browsing i dlaczego nie zastąpi go DNS? (rozwiń)</summary>
@@ -180,4 +180,4 @@ Vanadium **domyślnie wyłącza kompilację JIT** dla JavaScript, z możliwości
 
 W przeglądarce wbudowany jest **bloker treści oparty na listach EasyList** — EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listy językowe dopasowywane do języka interfejsu. Działa on jako *subresource filtering*: blokuje żądania sieciowe do znanych źródeł reklam i trackerów, ale **nie zapewnia filtrowania kosmetycznego ani wstrzykiwania scriptletów**, więc reklamy osadzane dynamicznie (np. w odtwarzaczu YouTube) mogą pozostać widoczne. W tym zakresie jest słabszy od Brave Shields, choć nadal skuteczniejszy niż filtrowanie DNS.
 
-Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika. niniejszego przewodnika.
+Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika. część niniejszego przewodnika. niniejszego przewodnika.
