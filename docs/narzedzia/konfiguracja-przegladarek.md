@@ -92,6 +92,14 @@ Ustawienia znajdziesz w:
 
 === "iOS"
 
+    - [ ] (Opcjonalnie) Odznacz **Block Dangerous Sites** w sekcji *Shields & Privacy*
+
+    <details class="info" markdown>
+    <summary>Jak działa ochrona przed złośliwymi stronami na iOS? (rozwiń)</summary>
+
+    Na iOS odpowiednikiem Safe Browsing jest opcja **Block Dangerous Sites**. Podobnie jak na Androidzie, ochrona ta opiera się na danych Google (lub Tencent w niektórych regionach), ale jest realizowana przez systemowy mechanizm `WKWebView`. Oznacza to, że **żądania weryfikacyjne nie przechodzą przez serwer proxy Brave** i mogą być widoczne dla Apple, Google lub Tencent. Wyłączenie tej opcji jest świadomym kompromisem między bezpieczeństwem a prywatnością, analogicznym do decyzji podejmowanej na Androidzie.
+    </details>
+
     - [ ] Odznacz **Allow Privacy-Preserving Product Analytics (P3A)**
     - [ ] Odznacz **Automatically send daily usage ping to Brave**
     - [x] Zaznacz **Close tabs on exit** w sekcji *Auto Shred*
