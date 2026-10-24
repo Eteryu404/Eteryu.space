@@ -1,13 +1,12 @@
 ---
 title: Konfiguracja Przeglądarek
-description: Rygorystyczne instrukcje utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii i bezpiecznego DNS.
+description: Autorski zestaw rekomendacji utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
 icon: lucide/settings-2
 ---
 
 # Konfiguracja przeglądarek
 
-!!! abstract "Podejście do konfiguracji"
-    Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
+Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
 
 # Brave
 
@@ -25,9 +24,9 @@ Ustawienia znajdziesz w:
 
 ### Globalne ustawienia Tarcz
 
-=== "Android"
+<div class="annotate" markdown>
 
-    <div class="annotate" markdown>
+=== "Android"
 
     - [x] Wybierz **Agresywne** w sekcji *Blokowanie trackerów i reklam*
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
@@ -46,13 +45,7 @@ Ustawienia znajdziesz w:
 
     - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
-    1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
-
-    </div>
-
 === "iOS"
-
-    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Trackers & Ads Blocking*
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
@@ -68,20 +61,15 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-    1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+</div>
 
-    </div>
-
-!!! note "Global Privacy Control i banery cookie"
-    **Na Androidzie:** Global Privacy Control (GPC) jest flagą domyślnie włączoną (możesz to zweryfikować pod `brave://flags/#brave-global-privacy-control-enabled`). Banery zgody na pliki cookie są blokowane przez listę filtrów **EasyList Cookie**.
-    
-    **Na iOS:** Platforma nie obsługuje flag (brak dostępu do `brave://flags`), więc GPC jest zwykłym przełącznikiem. Warto jawnie włączyć **Enable Global Privacy Control** w sekcji *Shields & Privacy*. Działa on jako sygnał tylko dla JavaScript. Dodatkowo na iOS dostępne jest osobne ustawienie **Block Cookie Consent Notices**.
+1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 ## Pozostałe ustawienia prywatności
 
-=== "Android"
+<div class="annotate" markdown>
 
-    <div class="annotate" markdown>
+=== "Android"
 
     - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji *Bezpieczne przeglądanie (Safe Browsing)* (1)
     - [x] Wybierz **Wyłącz nieobsługiwany przez serwer proxy protokół UDP** w sekcji *WebRTC*
@@ -91,48 +79,79 @@ Ustawienia znajdziesz w:
     - [ ] Odznacz **P3A (Analiza produktu) oraz raporty diagnostyczne**
     - [ ] Odznacz **Codzienny ping użycia**
 
-    1. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Jeśli zależy Ci na prywatności, bezpieczniej jest polegać na systemowym filtrowaniu DNS (patrz sekcja poniżej).
-
-    </div>
-
 === "iOS"
-
-    <div class="annotate" markdown>
 
     - [ ] Odznacz **Allow Privacy-Preserving Product Analytics (P3A)**
     - [ ] Odznacz **Automatically send daily usage ping to Brave**
     - [x] Zaznacz **Close tabs on exit** w sekcji *Auto Shred*
 
-    </div>
+</div>
 
-## Autouzupełnianie, AI i dane lokalne
+<details class="info" markdown>
+<summary>Jak działa Safe Browsing i dlaczego nie zastąpi go DNS? (rozwiń)</summary>
+
+Safe Browsing to usługa reputacyjna, która weryfikuje **pełne adresy URL** (a nie tylko nazwy domen) pod kątem list zagrożeń — phishingowych, hostujących malware czy niechciane oprogramowanie. W przeglądarce działa ona warstwowo: przeglądarka okresowo pobiera skróty lokalnej listy, a przy trafieniu może odpytać serwer o szczegóły. Dzięki temu ochrona obejmuje ścieżki i parametry, których DNS nie widzi.
+
+Na Androidzie implementacja Safe Browsing w Brave **nie pośredniczy w żądaniach sieciowych** tak jak w wersji desktopowej. Oznacza to, że Twój adres IP może być widoczny dla Google przy zapytaniach weryfikacyjnych. To właśnie ten kompromis — realna ochrona przed znanymi zagrożeniami w zamian za częściowe ujawnienie metadanych dostawcy usługi — sprawia, że wyłączenie Safe Browsing jest **świadomą decyzją**, a nie oczywistością.
+
+DNS (w tym szyfrowany DoH/DoT) działa wyłącznie na poziomie **nazwy domeny**. Może blokować całe domeny z listy, ale nie sprawdzi, czy konkretny artykuł lub plik do pobrania na zaufanej domenie został właśnie przejęty i hostuje malware. Co więcej, dostawcy DNS tacy jak NextDNS czy Control D oferują wprawdzie filtrowanie oparte na danych Safe Browsing, ale jest to **inna warstwa** — działa na domenach, a nie na pełnych adresach URL. Nie jest więc zamiennikiem, lecz uzupełnieniem.
+
+**Rekomendacja:** Jeśli priorytetem jest ochrona przed phishingiem i malware, pozostaw Safe Browsing włączony, akceptując kompromis. Jeśli priorytetem jest minimalizacja kontaktu z Google, wyłącz go świadomie i polegaj na warstwie DNS oraz ostrożności. Nie traktuj DNS jako „zamiennika” Safe Browsing — to nieprawda.
+</details>
+
+## Autouzupełnianie i dane lokalne
 
 - [ ] Odznacz **Zapisywanie haseł / Menedżer haseł**
 - [ ] Odznacz **Autouzupełnianie adresów i kart płatniczych**
 - [ ] Odznacz **Ankiety Brave**
 - [ ] Odznacz **Brave Rewards / Wallet / VPN / News** — warto ukryć ich ikony w ustawieniach wyglądu
-- [ ] Odznacz **Sugestie w pasku adresu** (sekcja Leo AI)
-- [ ] Odznacz **Sugestie w wyszukiwarce** (sekcja Wyszukiwarki)
-- [ ] **Wyszukiwarka:** Ustaw **Brave Search** (lub inną prywatną) jako domyślną w `Ustawienia` → `Wyszukiwarki`. Brave Search nie profiluje użytkowników ani nie śledzi zapytań.
+
+## Leo AI
+
+Ustawienia znajdziesz w:
+
+=== "Android"
+
+    Menu `⋮` → **Ustawienia** → **Leo AI**.
+
+    - [ ] Odznacz **Sugestie w pasku adresu**
+
+=== "iOS"
+
+    Menu `⋯` → **Wszystkie ustawienia** → **Leo AI**.
+
+    - [ ] Odznacz **Show In Quick Search Engine Bar**
+
+## Wyszukiwarki
+
+Ustawienia znajdziesz w:
+
+=== "Android"
+
+    Menu `⋮` → **Ustawienia** → **Wyszukiwarki**.
+
+    - [ ] Odznacz **Sugestie wyszukiwania**
+
+=== "iOS"
+
+    Menu `⋯` → **Wszystkie ustawienia** → **Search engines**.
+
+    - [ ] Odznacz **Show In Quick Search Engine Bar**
 
 ---
 
 ## Bezpieczny DNS
 
-!!! tip "Dlaczego DNS ma znaczenie?"
-    Nawet najbardziej rygorystyczna konfiguracja przeglądarki traci sens, jeśli Twój dostawca internetu (ISP) widzi niezabezpieczone zapytania DNS. Zamiast konfigurować to w samej przeglądarce, **przenieś ten ciężar na system operacyjny**. Ochroni to ruch globalnie, dla wszystkich aplikacji na telefonie.
+Nawet najbardziej rygorystyczna konfiguracja przeglądarki traci sens, jeśli Twój dostawca internetu widzi niezabezpieczone zapytania DNS. Zaleca się skonfigurowanie prywatnego DNS w ustawieniach systemu, co chroni ruch globalnie, dla wszystkich aplikacji.
 
-!!! note "Dlaczego DNS nie zastępuje Safe Browsing 1:1?"
-    DNS działa na poziomie **domeny** (np. blokuje `zlosliwa-domena.com`). Safe Browsing działa na poziomie **konkretnego adresu URL** (np. blokuje `bezpieczna-domena.com/phishing`). Jeśli złośliwa treść znajduje się na zaufanej domenie (np. w linku do fałszywego logowania), DNS jej nie zatrzyma. DNS to warstwa sieciowa (blokuje połączenie), Safe Browsing to warstwa aplikacji (weryfikuje reputację ścieżki). Rezygnacja z Safe Browsing na rzecz DNS to świadomy kompromis, a nie pełna zamiana.
+Poniżej zestawienie sprawdzonych resolverów. Wybór zależy od tego, czy ważniejsza jest dla Ciebie filtracja reklam, maksymalna prywatność, czy zaawansowana konfiguracja.
 
-**Polecani dostawcy (wybierz jednego):**
-
-| Dostawca | Adres hosta | Opis |
-| :--- | :--- | :--- |
-| **Control D** | `p2.freedns.controld.com` | Darmowy resolver bez konta. Blokuje reklamy, trackery i malware. Nie przechowuje logów. |
-| **Quad9** | `dns.quad9.net` | Maksymalna prywatność i ochrona przed malware. Szwajcarska fundacja non-profit, nie loguje adresów IP. |
-| **AdGuard DNS** | `dns.adguard-dns.com` | Blokowanie reklam, trackerów i złośliwych domen. |
-| **NextDNS** | *Wymaga własnego ID* | Zaawansowana, w pełni konfigurowalna zapora (wymaga konta i wygenerowania własnego adresu). |
+| Dostawca | Adresy (DoH / DoT) | Filtrowanie | Logi | Uwagi |
+|---|---|---|---|---|
+| **Control D** | `p2.freedns.controld.com` | Reklamy, trackery, malware | Brak (plan darmowy) | Darmowy resolver bez konta; tworzony przez zespół Windscribe. |
+| **Quad9** | `dns.quad9.net` | Malware i phishing (opcjonalnie) | Brak adresów IP | Szwajcarska fundacja non-profit; nie filtruje reklam. |
+| **AdGuard DNS** | `dns.adguard-dns.com` | Reklamy, trackery, złośliwe domeny | Zależnie od planu | Prosty w konfiguracji, dobry dla początkujących. |
+| **NextDNS** | Konfigurowany indywidualnie | Pełna personalizacja | Konfigurowalne | Wymaga konta; zaawansowana zapora DNS. |
 
 === "Android"
 
@@ -144,19 +163,10 @@ Ustawienia znajdziesz w:
 
 ---
 
-## Vanadium (GrapheneOS)
+## Vanadium (WIP)
 
-!!! warning "Sekcja w przygotowaniu"
-    Vanadium to utwardzona przeglądarka oparta na Chromium, dostarczana domyślnie z GrapheneOS. Jej filozofia różni się od Brave — zamiast rozbudowanych opcji konfiguracyjnych, stawia na **bezpieczne ustawienia domyślne (secure defaults)**.
+> **Status: Work in progress.** Poniższa sekcja jest w fazie opracowywania. Ustawienia mogą ulec zmianie wraz z aktualizacjami GrapheneOS i Vanadium.
 
-**Kluczowe cechy Vanadium:**
+Vanadium to domyślna, utwardzona przeglądarka oparta na Chromium, dostarczana z GrapheneOS. Kładzie nacisk na bezpieczeństwo dostosowane do mobilnego zagrożenia: domyślnie wyłącza kompilację JIT dla JavaScript (co utrudnia wykorzystanie błędów w silniku), zawiera wbudowany bloker treści i integruje się z piaskownicą GrapheneOS. Filozofia Vanadium jest odmienna od Brave — zamiast agresywnego blokowania trackerów na poziomie przeglądarki, stawia na **bezpieczeństwo fundamentu** i pozostawia filtrację warstwie DNS oraz świadomym wyborom użytkownika.
 
-| Cecha | Opis |
-| :--- | :--- |
-| **Brak rozszerzeń** | Podsystem rozszerzeń nie istnieje w Chromium na Androida, a GrapheneOS celowo go nie dodaje. Jest to podyktowane chęcią minimalizacji powierzchni ataku i zapobiegania fingerprintingowi. |
-| **Wbudowane filtrowanie treści** | Vanadium posiada wbudowany bloker reklam i trackerów oparty na listach EasyList, EasyPrivacy, EasyList Adblock Warning Removal List oraz listach językowych. |
-| **Utwardzenie jądra** | Domyślnie wyłączone JIT (Just-In-Time compilation), włączone partycjonowanie stanu sieci oraz kontrola przepływu sterowania (Control-flow integrity). |
-| **Memory Tagging Extension (MTE)** | Vanadium jako pierwsza przeglądarka na świecie wykorzystuje MTE w środowisku produkcyjnym do ochrony sterty przed exploitami. |
-| **Origin Keyed Processes** | Włączone domyślnie od wersji 141.0.7390.111.0, zapewniają lepszą izolację witryn (site isolation sandboxing). |
-
-*Szczegółowa instrukcja konfiguracji Vanadium pojawi się wkrótce.*
+Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
