@@ -24,13 +24,15 @@ Ustawienia znajdziesz w:
 
 ### Globalne ustawienia Tarcz
 
+<div class="annotate" markdown>
+
 === "Android"
 
     - [x] Wybierz **Agresywne** w sekcji *Blokowanie trackerów i reklam*
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
     - [x] Wybierz **Auto-przekierowywanie adresów śledzących**
     - [x] Wybierz **Wymagaj, aby wszystkie połączenia używały HTTPS (rygorystyczne)**
-    - [x] (Opcjonalnie) Wybierz **Blokowanie skryptów**[^1]
+    - [x] (Opcjonalnie) Wybierz **Blokowanie skryptów** (1)
     - [x] Wybierz **Blokuj pliki cookie z innych witryn**
     - [x] Wybierz **Blokowanie fingerprintingu**
     - [x] Wybierz **Zapobiegaj fingerprintingowi przez ustawienia języka**
@@ -49,7 +51,7 @@ Ustawienia znajdziesz w:
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
     - [x] Wybierz **Auto-Redirect AMP pages**
     - [x] Wybierz **Auto-Redirect Tracking URLs**
-    - [x] (Opcjonalnie) Wybierz **Block Scripts**[^1]
+    - [x] (Opcjonalnie) Wybierz **Block Scripts** (1)
     - [x] Wybierz **Block Fingerprinting**
     - [x] Wybierz **Site Tabs Closed** w sekcji *Auto Shred*
 
@@ -59,13 +61,17 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-[^1]: Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+</div>
+
+1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 ## Pozostałe ustawienia prywatności
 
+<div class="annotate" markdown>
+
 === "Android"
 
-    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji *Bezpieczne przeglądanie (Safe Browsing)*[^2]
+    - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji *Bezpieczne przeglądanie (Safe Browsing)* (1)
     - [x] Wybierz **Wyłącz nieobsługiwany przez serwer proxy protokół UDP** w sekcji *WebRTC*
     - [ ] Odznacz **Zezwalaj witrynom na sprawdzanie zapisanych metod płatności**
     - [x] Wybierz opcję wyłączającą przyspieszanie stron w sekcji *Optymalizacja JavaScript*
@@ -79,7 +85,9 @@ Ustawienia znajdziesz w:
     - [ ] Odznacz **Automatically send daily usage ping to Brave**
     - [x] Zaznacz **Close tabs on exit** w sekcji *Auto Shred*
 
-[^2]: Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Szczegółowe wyjaśnienie kompromisu znajdziesz w rozwijanej notatce poniżej.
+</div>
+
+1. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Szczegółowe wyjaśnienie kompromisu znajdziesz w rozwijanej notatce poniżej.
 
 <details class="info" markdown>
 <summary>Jak działa Safe Browsing i dlaczego nie zastąpi go DNS? (rozwiń)</summary>
