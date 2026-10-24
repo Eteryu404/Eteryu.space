@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja Przeglądarek
-description: Rekomendowane ustawienia utwardzania przeglądarek (Brave, Vanadium) na Androidzie i iOS. Konfiguracja Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
+description: Autorski zestaw rekomendacji utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
 icon: lucide/settings-2
 ---
 
@@ -24,9 +24,9 @@ Ustawienia znajdziesz w:
 
 ### Globalne ustawienia Tarcz
 
-=== "Android"
+<div class="annotate" markdown>
 
-    <div class="annotate" markdown>
+=== "Android"
 
     - [x] Wybierz **Agresywne** w sekcji *Blokowanie trackerów i reklam*
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
@@ -45,13 +45,7 @@ Ustawienia znajdziesz w:
 
     - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
-    </div>
-
-    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
-
 === "iOS"
-
-    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Trackers & Ads Blocking*
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
@@ -67,15 +61,28 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-    </div>
+</div>
 
-    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 ## Pozostałe ustawienia prywatności
 
 === "Android"
 
     - [x] (Opcjonalnie) Wybierz **Brak ochrony** w sekcji **Bezpieczne przeglądanie (Safe Browsing)**
+
+    <details class="info" markdown>
+    <summary>Jak działa Safe Browsing i dlaczego nie zastąpi go DNS? (rozwiń)</summary>
+
+    Safe Browsing to usługa reputacyjna, która weryfikuje **pełne adresy URL** (a nie tylko nazwy domen) pod kątem list zagrożeń — phishingowych, hostujących malware czy niechciane oprogramowanie. W przeglądarce działa ona warstwowo: przeglądarka okresowo pobiera skróty lokalnej listy, a przy trafieniu może odpytać serwer o szczegóły. Dzięki temu ochrona obejmuje ścieżki i parametry, których DNS nie widzi.
+
+    Na Androidzie implementacja Safe Browsing w Brave **nie pośredniczy w żądaniach sieciowych** tak jak w wersji desktopowej. Oznacza to, że Twój adres IP może być widoczny dla Google przy zapytaniach weryfikacyjnych. To właśnie ten kompromis — realna ochrona przed znanymi zagrożeniami w zamian za częściowe ujawnienie metadanych dostawcy usługi — sprawia, że wyłączenie Safe Browsing jest **świadomą decyzją**, a nie oczywistością.
+
+    DNS (w tym szyfrowany DoH/DoT) działa wyłącznie na poziomie **nazwy domeny**. Może blokować całe domeny z listy, ale nie sprawdzi, czy konkretny artykuł lub plik do pobrania na zaufanej domenie został właśnie przejęty i hostuje malware. Co więcej, dostawcy DNS tacy jak NextDNS czy Control D oferują wprawdzie filtrowanie oparte na danych Safe Browsing, ale jest to **inna warstwa** — działa na domenach, a nie na pełnych adresach URL. Nie jest więc zamiennikiem, lecz uzupełnieniem.
+
+    **Rekomendacja:** Jeśli priorytetem jest ochrona przed phishingiem i malware, pozostaw Safe Browsing włączony, akceptując kompromis. Jeśli priorytetem jest minimalizacja kontaktu z Google, wyłącz go świadomie i polegaj na warstwie DNS oraz ostrożności. Nie traktuj DNS jako „zamiennika” Safe Browsing — to nieprawda.
+    </details>
+
     - [x] Wybierz **Wyłącz nieobsługiwany przez serwer proxy protokół UDP** w sekcji *WebRTC*
     - [ ] Odznacz **Zezwalaj witrynom na sprawdzanie zapisanych metod płatności**
     - [x] Wybierz opcję wyłączającą przyspieszanie stron w sekcji *Optymalizacja JavaScript*
@@ -88,18 +95,6 @@ Ustawienia znajdziesz w:
     - [ ] Odznacz **Allow Privacy-Preserving Product Analytics (P3A)**
     - [ ] Odznacz **Automatically send daily usage ping to Brave**
     - [x] Zaznacz **Close tabs on exit** w sekcji *Auto Shred*
-
-<details class="info" markdown>
-<summary>Jak działa Safe Browsing i dlaczego nie zastąpi go DNS? (rozwiń)</summary>
-
-Safe Browsing to usługa reputacyjna, która weryfikuje **pełne adresy URL** (a nie tylko nazwy domen) pod kątem list zagrożeń — phishingowych, hostujących malware czy niechciane oprogramowanie. W przeglądarce działa ona warstwowo: przeglądarka okresowo pobiera skróty lokalnej listy, a przy trafieniu może odpytać serwer o szczegóły. Dzięki temu ochrona obejmuje ścieżki i parametry, których DNS nie widzi.
-
-Na Androidzie implementacja Safe Browsing w Brave **nie pośredniczy w żądaniach sieciowych** tak jak w wersji desktopowej. Oznacza to, że Twój adres IP może być widoczny dla Google przy zapytaniach weryfikacyjnych. To właśnie ten kompromis — realna ochrona przed znanymi zagrożeniami w zamian za częściowe ujawnienie metadanych dostawcy usługi — sprawia, że wyłączenie Safe Browsing jest **świadomą decyzją**, a nie oczywistością.
-
-DNS (w tym szyfrowany DoH/DoT) działa wyłącznie na poziomie **nazwy domeny**. Może blokować całe domeny z listy, ale nie sprawdzi, czy konkretny artykuł lub plik do pobrania na zaufanej domenie został właśnie przejęty i hostuje malware. Co więcej, dostawcy DNS tacy jak NextDNS czy Control D oferują wprawdzie filtrowanie oparte na danych Safe Browsing, ale jest to **inna warstwa** — działa na domenach, a nie na pełnych adresach URL. Nie jest więc zamiennikiem, lecz uzupełnieniem.
-
-**Rekomendacja:** Jeśli priorytetem jest ochrona przed phishingiem i malware, pozostaw Safe Browsing włączony, akceptując kompromis. Jeśli priorytetem jest minimalizacja kontaktu z Google, wyłącz go świadomie i polegaj na warstwie DNS oraz ostrożności. Nie traktuj DNS jako „zamiennika” Safe Browsing — to nieprawda.
-</details>
 
 ## Autouzupełnianie, AI i wyszukiwanie
 
