@@ -65,9 +65,9 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-</div>
-
 1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+
+</div>
 
 !!! note "Global Privacy Control i banery cookie"
     **Na Androidzie:** Global Privacy Control (GPC) jest flagą domyślnie włączoną (możesz to zweryfikować pod `brave://flags/#brave-global-privacy-control-enabled`). Banery zgody na pliki cookie są blokowane przez listę filtrów **EasyList Cookie**.
@@ -94,9 +94,9 @@ Ustawienia znajdziesz w:
     - [ ] Odznacz **Automatically send daily usage ping to Brave**
     - [x] Zaznacz **Close tabs on exit** w sekcji *Auto Shred*
 
-</div>
-
 1. Implementacja Safe Browsing w Brave na Androidzie **nie** pośredniczy w żądaniach sieciowych. Oznacza to, że Twój adres IP może być widziany przez Google. Jeśli zależy Ci na prywatności, bezpieczniej jest polegać na systemowym filtrowaniu DNS (patrz sekcja poniżej).
+
+</div>
 
 ## Autouzupełnianie, AI i dane lokalne
 
