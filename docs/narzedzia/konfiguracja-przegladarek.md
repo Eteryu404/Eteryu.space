@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja Przeglądarek
-description: Autorski zestaw rekomendacji utwardzania Brave na Androidzie i iOS. Ustawienia Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
+description: Rekomendowane ustawienia utwardzania przeglądarek (Brave, Vanadium) na Androidzie i iOS. Konfiguracja Tarcz, filtrowania treści, telemetrii, bezpiecznego DNS oraz kompromisów bezpieczeństwa.
 icon: lucide/settings-2
 ---
 
@@ -24,9 +24,9 @@ Ustawienia znajdziesz w:
 
 ### Globalne ustawienia Tarcz
 
-<div class="annotate" markdown>
-
 === "Android"
+
+    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Blokowanie trackerów i reklam*
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
@@ -45,7 +45,13 @@ Ustawienia znajdziesz w:
 
     - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
+    </div>
+
+    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+
 === "iOS"
+
+    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Trackers & Ads Blocking*
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
@@ -61,9 +67,9 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-</div>
+    </div>
 
-1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 ## Pozostałe ustawienia prywatności
 
