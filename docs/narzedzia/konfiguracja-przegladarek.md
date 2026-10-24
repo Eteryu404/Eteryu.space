@@ -9,9 +9,6 @@ icon: lucide/settings-2
 !!! abstract "Podejście do konfiguracji"
     Poniższe instrukcje opisują rygorystyczną konfigurację przeglądarek pod kątem maksymalnego bezpieczeństwa i prywatności. Ustawienia te **nie zapewniają anonimowości w sieci** — do tego celu służy wyłącznie Tor Browser. Konfiguracja ma na celu ograniczenie profilowania, telemetrii i powierzchni ataku w codziennym korzystaniu z internetu.
 
-!!! info "Projekt w ciągłym rozwoju"
-    Ta strona jest na bieżąco aktualizowana. Obecnie pracuję nad rozbudową sekcji dotyczącej **Vanadium** (przeglądarki domyślnej dla GrapheneOS).
-
 # Brave
 
 ## Ustawienia Tarcz
@@ -40,13 +37,14 @@ Ustawienia znajdziesz w:
     - [x] Wybierz **Blokuj pliki cookie z innych witryn**
     - [x] Wybierz **Blokowanie fingerprintingu**
     - [x] Wybierz **Zapobiegaj fingerprintingowi przez ustawienia języka**
-    - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
     <details class="warning" markdown>
     <summary>Używaj domyślnych list filtrów</summary>
 
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Filtrowanie treści** lub na wewnętrznej stronie `brave://adblock`. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
+
+    - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
     1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
