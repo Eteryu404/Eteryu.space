@@ -105,7 +105,7 @@ Ustawienia znajdziesz w:
 - [ ] Odznacz **Ankiety Brave**
 - [ ] Odznacz **Brave Rewards / Wallet / VPN / News** — warto ukryć ich ikony w ustawieniach wyglądu
 - [ ] Odznacz **Sugestie w pasku adresu** (sekcja Leo AI)
-- [ ] Odznacz **Sugestie wyszukiwania** (sekcja Wyszukiwarki)
+- [ ] Odznacz **Sugestie w wyszukiwarce** (sekcja Wyszukiwarki)
 - [ ] **Wyszukiwarka:** Ustaw **Brave Search** (lub inną prywatną) jako domyślną w `Ustawienia` → `Wyszukiwarki`. Brave Search nie profiluje użytkowników ani nie śledzi zapytań.
 
 ---
@@ -118,11 +118,14 @@ Ustawienia znajdziesz w:
 !!! note "Dlaczego DNS nie zastępuje Safe Browsing 1:1?"
     DNS działa na poziomie **domeny** (np. blokuje `zlosliwa-domena.com`). Safe Browsing działa na poziomie **konkretnego adresu URL** (np. blokuje `bezpieczna-domena.com/phishing`). Jeśli złośliwa treść znajduje się na zaufanej domenie (np. w linku do fałszywego logowania), DNS jej nie zatrzyma. DNS to warstwa sieciowa (blokuje połączenie), Safe Browsing to warstwa aplikacji (weryfikuje reputację ścieżki). Rezygnacja z Safe Browsing na rzecz DNS to świadomy kompromis, a nie pełna zamiana.
 
-Polecani dostawcy (wybierz jednego):
-- **Control D** (`p2.freedns.controld.com`) — darmowy resolver bez konta, blokuje reklamy, trackery i malware. Nie przechowuje logów.
-- **Quad9** (`dns.quad9.net`) — maksymalna prywatność i ochrona przed malware (szwajcarska fundacja non-profit).
-- **AdGuard DNS** (`dns.adguard-dns.com`) — blokowanie reklam, trackerów i złośliwych domen.
-- **NextDNS** — zaawansowana, w pełni konfigurowalna zapora (wymaga konta).
+**Polecani dostawcy (wybierz jednego):**
+
+| Dostawca | Adres hosta | Opis |
+| :--- | :--- | :--- |
+| **Control D** | `p2.freedns.controld.com` | Darmowy resolver bez konta. Blokuje reklamy, trackery i malware. Nie przechowuje logów. |
+| **Quad9** | `dns.quad9.net` | Maksymalna prywatność i ochrona przed malware. Szwajcarska fundacja non-profit, nie loguje adresów IP. |
+| **AdGuard DNS** | `dns.adguard-dns.com` | Blokowanie reklam, trackerów i złośliwych domen. |
+| **NextDNS** | *Wymaga własnego ID* | Zaawansowana, w pełni konfigurowalna zapora (wymaga konta i wygenerowania własnego adresu). |
 
 === "Android"
 
