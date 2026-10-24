@@ -24,9 +24,9 @@ Ustawienia znajdziesz w:
 
 ### Globalne ustawienia Tarcz
 
-<div class="annotate" markdown>
-
 === "Android"
+
+    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Blokowanie trackerów i reklam*
     - [x] Wybierz **Auto-przekierowywanie stron AMP**
@@ -45,7 +45,13 @@ Ustawienia znajdziesz w:
 
     - [x] Wybierz **Karty witryny zamknięte** w sekcji *Auto Shred*
 
+    </div>
+
+    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+
 === "iOS"
+
+    <div class="annotate" markdown>
 
     - [x] Wybierz **Agresywne** w sekcji *Trackers & Ads Blocking*
     - [x] Wybierz **Rygorystyczne** w sekcji *Upgrade Connections to HTTPS*
@@ -61,9 +67,9 @@ Ustawienia znajdziesz w:
     Brave pozwala na wybór dodatkowych filtrów treści w menu **Content Filtering**. Odradzam korzystanie z tej funkcji. Używanie dodatkowych list sprawi, że będziesz się wyróżniać na tle innych użytkowników Brave, a w przypadku exploita, może to zwiększyć powierzchnię ataku.
     </details>
 
-</div>
+    </div>
 
-1. Ta opcja wyłącza JavaScript, co „zepsuje" wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
+    1. Ta opcja wyłącza JavaScript, co „zepsuje” wiele stron. Aby przywrócić działanie zaufanej witryny, kliknij ikonę Tarczy w pasku adresu i odznacz blokowanie skryptów w sekcji *Kontrola zaawansowana*.
 
 ## Pozostałe ustawienia prywatności
 
@@ -191,4 +197,4 @@ Vanadium posiada wbudowany bloker oparty na listach **EasyList** (EasyList, Easy
 - Działa jako *subresource filtering*: blokuje żądania sieciowe do znanych źródeł reklam i trackerów.
 - **Ograniczenia:** nie zapewnia filtrowania kosmetycznego ani wstrzykiwania scriptletów. Reklamy osadzane dynamicznie (np. w odtwarzaczu YouTube) mogą pozostać widoczne. W tym aspekcie jest słabszy od Brave Shields, ale nadal skuteczniejszy niż samo filtrowanie DNS.
 
-Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacyguides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
+Wkrótce uzupełnię tę sekcję o pełną listę rekomendowanych ustawień. Tymczasem warto zapoznać się z [zaleceniami społeczności Privacy Guides dla Vanadium](https://discuss.privacy-guides.net/t/vanadium-recommended-settings/27338), pamiętając, że są to rekomendacje zewnętrzne, a nie część niniejszego przewodnika.
